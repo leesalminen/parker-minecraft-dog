@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:black_hole_cannon"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "gx:energy_cell"
+      },
+      {
+        "item": "minecraft:obsidian"
+      },
+      {
+        "item": "minecraft:nether_star"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "result": {
+      "item": "gx:black_hole_cannon",
+      "count": 1
+    }
+  }
+}

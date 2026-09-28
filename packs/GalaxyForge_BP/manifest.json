@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Galaxy Forge (Behavior)",
+    "description": "Creatures, droids, mechs, tanks, grenades, armor, sabers, multi-tools, weapons.",
+    "uuid": "51264da3-93de-4ba5-9302-f49ca514a785",
+    "version": [
+      1,
+      6,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "dc75b608-0394-4a6f-96c8-6c2370eeceac",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "6f2c1a84-5b7e-4d19-9c03-2a7d51e6b4f8",
+      "entry": "scripts/main.js",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "dca88322-51ff-4aa9-bc53-65510fc9f972",
+      "version": [
+        1,
+        6,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    }
+  ]
+}

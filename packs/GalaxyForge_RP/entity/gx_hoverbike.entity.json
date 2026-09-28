@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:hoverbike",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_hoverbike"
+      },
+      "geometry": {
+        "default": "geometry.gx_hoverbike"
+      },
+      "animations": {
+        "move": "animation.gx_hoverbike.move",
+        "idle": "animation.gx_hoverbike.idle",
+        "attack": "animation.gx_hoverbike.attack"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_hoverbike"
+      ],
+      "spawn_egg": {
+        "base_color": "#59626d",
+        "overlay_color": "#ff7a1f"
+      }
+    }
+  }
+}

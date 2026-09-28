@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:multitool_netherite"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:netherite_pickaxe"
+      },
+      {
+        "item": "minecraft:netherite_shovel"
+      },
+      {
+        "item": "minecraft:netherite_axe"
+      },
+      {
+        "item": "minecraft:netherite_sword"
+      },
+      {
+        "item": "minecraft:bow"
+      }
+    ],
+    "result": {
+      "item": "gx:multitool_netherite",
+      "count": 1
+    }
+  }
+}

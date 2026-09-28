@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:sabertooth",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_sabertooth"
+      },
+      "geometry": {
+        "default": "geometry.gx_sabertooth"
+      },
+      "animations": {
+        "walk": "animation.gx_sabertooth.walk",
+        "idle": "animation.gx_sabertooth.idle",
+        "attack": "animation.gx_sabertooth.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_sabertooth"
+      ],
+      "spawn_egg": {
+        "base_color": "#d9e6f2",
+        "overlay_color": "#3a5a7a"
+      }
+    }
+  }
+}

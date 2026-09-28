@@ -1,0 +1,207 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_titan.walk": {
+      "loop": true,
+      "bones": {
+        "thigh_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 0) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "thigh_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 90) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 270) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "pelvis": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 15)) * 1.6 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30) * 3 * query.modified_move_speed",
+            "0",
+            "math.cos(query.modified_distance_moved * 15) * 4 * query.modified_move_speed"
+          ]
+        },
+        "arm_l_up": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30) * 10 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r_up": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 10 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30) * 2 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_titan.idle": {
+      "loop": true,
+      "bones": {
+        "pelvis": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 40) * 0.7",
+            "0"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.sin(query.life_time * 35 + 0) * 1.6",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 30 + 0) * 4.0",
+            "0"
+          ]
+        },
+        "core": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 110) * 0.4",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 55) * 4",
+            "0"
+          ]
+        },
+        "exhaust_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 70 + 0) * 1.5"
+          ]
+        },
+        "exhaust_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 70 + 1.4) * 1.5"
+          ]
+        },
+        "pod_l": {
+          "rotation": [
+            "math.sin(query.life_time * 40) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "pod_r": {
+          "rotation": [
+            "math.sin(query.life_time * 40 + 2.0) * 2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_titan.attack": {
+      "loop": false,
+      "bones": {
+        "arm_r_up": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -40",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r_fore": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -55",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l_up": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 20",
+            "0",
+            "0"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 14",
+            "0",
+            "0"
+          ]
+        },
+        "pelvis": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 6",
+            "0",
+            "0"
+          ]
+        },
+        "core": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 1.5"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 6",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:saber_violet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  B",
+      " B ",
+      "HI"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "H": {
+        "item": "minecraft:iron_ingot"
+      },
+      "I": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gx:saber_violet",
+      "count": 1
+    }
+  }
+}

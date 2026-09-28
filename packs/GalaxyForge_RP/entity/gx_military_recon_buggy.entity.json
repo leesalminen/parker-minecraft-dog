@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:military_recon_buggy",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_military_recon_buggy"
+      },
+      "geometry": {
+        "default": "geometry.gx_military_recon_buggy"
+      },
+      "animations": {
+        "move": "animation.gx_military_recon_buggy.move",
+        "idle": "animation.gx_military_recon_buggy.idle",
+        "attack": "animation.gx_military_recon_buggy.attack"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_military_recon_buggy"
+      ],
+      "spawn_egg": {
+        "base_color": "#a58a5c",
+        "overlay_color": "#8fd8ff"
+      }
+    }
+  }
+}

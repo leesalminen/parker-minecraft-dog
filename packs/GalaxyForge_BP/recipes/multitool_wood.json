@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:multitool_wood"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:wooden_pickaxe"
+      },
+      {
+        "item": "minecraft:wooden_shovel"
+      },
+      {
+        "item": "minecraft:wooden_axe"
+      },
+      {
+        "item": "minecraft:wooden_sword"
+      },
+      {
+        "item": "minecraft:bow"
+      }
+    ],
+    "result": {
+      "item": "gx:multitool_wood",
+      "count": 1
+    }
+  }
+}

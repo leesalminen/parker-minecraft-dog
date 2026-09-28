@@ -1,0 +1,263 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_military_siege_tank.move": {
+      "loop": true,
+      "bones": {
+        "wheel_l0": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_l1": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_l2": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_l3": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_l4": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_l5": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r0": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r1": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r2": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r3": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r4": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_r5": {
+          "rotation": [
+            "query.modified_distance_moved * 180",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 150) * 0.24",
+            "0"
+          ],
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 20) * 1.4 * query.modified_move_speed",
+            "0",
+            "math.sin(query.modified_distance_moved * 20) * 2.2 * query.modified_move_speed"
+          ]
+        },
+        "turret": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 20) * 1.0 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "dozer": {
+          "rotation": [
+            "math.sin(query.life_time * 150) * 1.2",
+            "0",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 130) * 10"
+          ]
+        },
+        "exhaust_l": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 210) * 0.18",
+            "0"
+          ]
+        },
+        "exhaust_r": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 210 + 0.7) * 0.18",
+            "0"
+          ]
+        },
+        "skirt_l": {
+          "rotation": [
+            "math.sin(query.life_time * 150) * 1.4",
+            "0",
+            "0"
+          ]
+        },
+        "skirt_r": {
+          "rotation": [
+            "math.sin(query.life_time * 150 + 0.6) * 1.4",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_military_siege_tank.idle": {
+      "loop": true,
+      "bones": {
+        "turret": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 24) * 18",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 60) * 7"
+          ]
+        },
+        "exhaust_l": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.12",
+            "0"
+          ]
+        },
+        "exhaust_r": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80 + 0.9) * 0.12",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 100) * 0.08",
+            "0"
+          ]
+        },
+        "missile_pod": {
+          "rotation": [
+            "math.sin(query.life_time * 40) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "cupola": {
+          "rotation": [
+            "math.sin(query.life_time * 38) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "hatch": {
+          "rotation": [
+            "math.sin(query.life_time * 34 + 1.0) * 4",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_military_siege_tank.attack": {
+      "loop": false,
+      "bones": {
+        "barrel_l": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 3.0"
+          ]
+        },
+        "barrel_r": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 3.0"
+          ]
+        },
+        "turret": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -4",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -2.5",
+            "0",
+            "0"
+          ]
+        },
+        "missile_pod": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 4",
+            "0",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 16"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_starforge_bow",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "weapon",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                -1,
+                -4
+              ],
+              "size": [
+                3,
+                3,
+                8
+              ],
+              "uv": [
+                16,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                -6,
+                -6
+              ],
+              "size": [
+                2,
+                12,
+                2
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                -6,
+                4
+              ],
+              "size": [
+                2,
+                12,
+                2
+              ],
+              "uv": [
+                8,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                0,
+                -8
+              ],
+              "size": [
+                2,
+                1,
+                6
+              ],
+              "uv": [
+                38,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                -1,
+                4
+              ],
+              "size": [
+                2,
+                2,
+                5
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            }
+          ],
+          "binding": "q.item_slot_to_bone_name(c.item_slot)"
+        }
+      ]
+    }
+  ]
+}

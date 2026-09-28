@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "galaxy:pup",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/galaxy_pup" },
+      "geometry": { "default": "geometry.galaxy_pup" },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.galaxy_pup.walk",
+        "sit": "animation.galaxy_pup.sit",
+        "tail_wag": "animation.galaxy_pup.tail_wag",
+        "head_tilt": "animation.galaxy_pup.head_tilt"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look_at_target",
+          { "walk": "!query.is_sitting" },
+          { "sit": "query.is_sitting" },
+          "tail_wag",
+          "head_tilt"
+        ]
+      },
+      "render_controllers": ["controller.render.galaxy_pup"],
+      "spawn_egg": { "base_color": "#F4F4F4", "overlay_color": "#1E1E2E" }
+    }
+  }
+}

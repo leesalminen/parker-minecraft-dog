@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:phoenix_repeater"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "gx:energy_cell"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:blaze_rod"
+      },
+      {
+        "item": "minecraft:feather"
+      }
+    ],
+    "result": {
+      "item": "gx:phoenix_repeater",
+      "count": 1
+    }
+  }
+}

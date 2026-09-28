@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:plasma_scattergun"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "gx:energy_cell"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "minecraft:magenta_dye"
+      },
+      {
+        "item": "minecraft:slime_ball"
+      }
+    ],
+    "result": {
+      "item": "gx:plasma_scattergun",
+      "count": 1
+    }
+  }
+}

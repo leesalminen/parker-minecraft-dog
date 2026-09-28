@@ -1,0 +1,16 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Galaxy Pup (Behavior)",
+    "description": "The cutest dog in the galaxy.",
+    "uuid": "dbfcf803-7f03-400c-88cd-354f605fae93",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    { "type": "data", "uuid": "947971ab-5a6e-41d3-9316-1179731b7413", "version": [1, 0, 0] }
+  ],
+  "dependencies": [
+    { "uuid": "9b382d76-5f2f-4730-9a09-a505819b0e03", "version": [1, 0, 0] }
+  ]
+}

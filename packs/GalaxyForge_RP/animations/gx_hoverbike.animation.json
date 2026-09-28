@@ -1,0 +1,163 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_hoverbike.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 180) * 0.35",
+            "0"
+          ],
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 22) * 3 * query.modified_move_speed",
+            "0",
+            "math.sin(query.modified_distance_moved * 22) * 7 * query.modified_move_speed"
+          ]
+        },
+        "fin_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260) * 10"
+          ]
+        },
+        "fin_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260 + 1.5) * 10"
+          ]
+        },
+        "nose": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 22) * 2 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "thruster_l": {
+          "rotation": [
+            "math.sin(query.life_time * 300) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "thruster_r": {
+          "rotation": [
+            "math.sin(query.life_time * 300 + 0.8) * 2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_hoverbike.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 150) * 0.3",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 75) * 1.5",
+            "0",
+            "0"
+          ]
+        },
+        "fin_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 220) * 7"
+          ]
+        },
+        "fin_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 220 + 1.2) * 7"
+          ]
+        },
+        "thruster_l": {
+          "rotation": [
+            "math.sin(query.life_time * 320) * 1.5",
+            "0",
+            "0"
+          ]
+        },
+        "thruster_r": {
+          "rotation": [
+            "math.sin(query.life_time * 320 + 0.6) * 1.5",
+            "0",
+            "0"
+          ]
+        },
+        "handlebar": {
+          "rotation": [
+            "math.sin(query.life_time * 90) * 1.2",
+            "0",
+            "0"
+          ]
+        },
+        "windscreen": {
+          "rotation": [
+            "math.sin(query.life_time * 130) * 0.8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_hoverbike.attack": {
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -12",
+            "0",
+            "0"
+          ]
+        },
+        "nose": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "fin_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 24"
+          ]
+        },
+        "fin_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * -24"
+          ]
+        },
+        "thruster_l": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 1.6"
+          ]
+        },
+        "thruster_r": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 1.6"
+          ]
+        }
+      }
+    }
+  }
+}

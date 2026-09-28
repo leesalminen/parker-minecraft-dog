@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:sandstorm_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "XXX",
+      "X X",
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "gx:sandstorm_leggings",
+      "count": 1
+    }
+  }
+}

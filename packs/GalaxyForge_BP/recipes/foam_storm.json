@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:foam_storm"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:yellow_dye"
+      },
+      {
+        "item": "minecraft:blue_dye"
+      },
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "minecraft:slime_ball"
+      },
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "result": {
+      "item": "gx:foam_storm",
+      "count": 1
+    }
+  }
+}

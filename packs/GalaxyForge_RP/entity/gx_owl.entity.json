@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:owl",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_owl"
+      },
+      "geometry": {
+        "default": "geometry.gx_owl"
+      },
+      "animations": {
+        "walk": "animation.gx_owl.walk",
+        "idle": "animation.gx_owl.idle",
+        "attack": "animation.gx_owl.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_owl"
+      ],
+      "spawn_egg": {
+        "base_color": "#8a6a44",
+        "overlay_color": "#ffbf47"
+      }
+    }
+  }
+}

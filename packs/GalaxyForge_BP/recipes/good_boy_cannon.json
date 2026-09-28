@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:good_boy_cannon"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "gx:energy_cell"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:bone"
+      },
+      {
+        "item": "minecraft:pink_dye"
+      }
+    ],
+    "result": {
+      "item": "gx:good_boy_cannon",
+      "count": 1
+    }
+  }
+}

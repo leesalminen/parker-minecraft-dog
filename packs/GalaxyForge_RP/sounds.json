@@ -1,0 +1,397 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "gx:drake": {
+        "volume": 0.9,
+        "pitch": [
+          1.2,
+          1.4
+        ],
+        "events": {
+          "ambient": "mob.enderdragon.growl",
+          "hurt": "mob.enderdragon.hit",
+          "death": "mob.enderdragon.death",
+          "step": {
+            "sound": "mob.enderdragon.flap",
+            "volume": 0.3,
+            "pitch": 1.2
+          }
+        }
+      },
+      "gx:fennec": {
+        "volume": 0.9,
+        "pitch": [
+          1.15,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.15
+          }
+        }
+      },
+      "gx:mammoth": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.6
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:owl": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:raptor": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "step": {
+            "sound": "mob.phantom.flap",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:sabertooth": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:astro_droid": {
+        "volume": 0.9,
+        "pitch": [
+          1.35,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.35
+          }
+        }
+      },
+      "gx:battle_droid": {
+        "volume": 0.9,
+        "pitch": [
+          0.75,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "hurt": "mob.skeleton.hurt",
+          "death": "mob.skeleton.death",
+          "step": {
+            "sound": "mob.skeleton.step",
+            "volume": 0.3,
+            "pitch": 0.75
+          }
+        }
+      },
+      "gx:destroyer_droid": {
+        "volume": 0.9,
+        "pitch": [
+          0.75,
+          0.95
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.75
+          }
+        }
+      },
+      "gx:probe_droid": {
+        "volume": 0.9,
+        "pitch": [
+          0.45,
+          0.65
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 0.45
+          }
+        }
+      },
+      "gx:protocol_droid": {
+        "volume": 0.9,
+        "pitch": [
+          0.65,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "step": {
+            "sound": "mob.villager.idle",
+            "volume": 0.3,
+            "pitch": 0.65
+          }
+        }
+      },
+      "gx:hoverbike": {
+        "volume": 0.9,
+        "pitch": [
+          0.9,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.9
+          }
+        }
+      },
+      "gx:mech_hound": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.wolf.panting",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:spider_mech": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:titan": {
+        "volume": 0.9,
+        "pitch": [
+          0.4,
+          0.55
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.4
+          }
+        }
+      },
+      "gx:walker": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:military_battle_tank": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:military_recon_buggy": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.05
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:military_siege_tank": {
+        "volume": 0.9,
+        "pitch": [
+          0.4,
+          0.55
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.4
+          }
+        }
+      },
+      "gx:abomination": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:necro_knight": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:zombie_brute": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:zombie_crawler": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      }
+    }
+  }
+}

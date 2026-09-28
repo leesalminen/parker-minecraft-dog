@@ -1,0 +1,213 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_destroyer_droid.walk": {
+      "loop": true,
+      "bones": {
+        "thigh_l": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 34 + 0) * 22 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "thigh_c": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 34 + 180) * 22 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "thigh_r": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 34 + 0) * 22 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "shin_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34 + 180) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_c": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34 + 90) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34 + 90) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34 + 270) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 17)) * 1.2 * query.modified_move_speed",
+            "0"
+          ],
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34) * 3 * query.modified_move_speed",
+            "0",
+            "math.cos(query.modified_distance_moved * 17) * 4 * query.modified_move_speed"
+          ]
+        },
+        "hoop": {
+          "rotation": [
+            "query.modified_distance_moved * 7",
+            "0",
+            "0"
+          ]
+        },
+        "cannon_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34) * 4 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "cannon_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 34 + 180) * 4 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_destroyer_droid.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 36) * 0.9",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 28 + 0) * 2.0",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 24) * 4",
+            "math.sin(query.life_time * 20) * 16",
+            "0"
+          ]
+        },
+        "hoop": {
+          "rotation": [
+            "math.sin(query.life_time * 18) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "cannon_l": {
+          "rotation": [
+            "math.sin(query.life_time * 26 + 1.0) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "cannon_r": {
+          "rotation": [
+            "math.sin(query.life_time * 26 + 2.4) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "thigh_l": {
+          "rotation": [
+            "math.sin(query.life_time * 26) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "thigh_r": {
+          "rotation": [
+            "math.sin(query.life_time * 26 + 3.0) * 2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_destroyer_droid.attack": {
+      "loop": false,
+      "bones": {
+        "cannon_l": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 2.5"
+          ],
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -6",
+            "0",
+            "0"
+          ]
+        },
+        "cannon_r": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 2.5"
+          ],
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -6",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -8",
+            "0",
+            "0"
+          ],
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 1.5"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -6",
+            "0",
+            "0"
+          ]
+        },
+        "hoop": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_mech_hound.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 0) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 0) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 180) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 180) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fl_lo": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 180) * 18 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr_lo": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46) * 18 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl_lo": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46) * 18 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br_lo": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46 + 180) * 18 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 23)) * 0.5 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 46) * 3 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 23) * 6 * query.modified_move_speed",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_mech_hound.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.3",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 140 + 0.4) * 16",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 60) * 2",
+            "math.sin(query.life_time * 28) * 22",
+            "0"
+          ]
+        },
+        "leg_fl": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 95) * 4"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 95 + 1.6) * 4"
+          ]
+        }
+      }
+    },
+    "animation.gx_mech_hound.attack": {
+      "loop": false,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 26",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * -1.6"
+          ]
+        },
+        "leg_fl": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -16",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -16",
+            "0",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(variable.attack_time * 180) * -30",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

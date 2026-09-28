@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:destroyer_droid",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_destroyer_droid"
+      },
+      "geometry": {
+        "default": "geometry.gx_destroyer_droid"
+      },
+      "animations": {
+        "walk": "animation.gx_destroyer_droid.walk",
+        "idle": "animation.gx_destroyer_droid.idle",
+        "attack": "animation.gx_destroyer_droid.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_destroyer_droid"
+      ],
+      "spawn_egg": {
+        "base_color": "#7d8794",
+        "overlay_color": "#5ec8ff"
+      }
+    }
+  }
+}

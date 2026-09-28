@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gx:grenade_emp_proj",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "projectile",
+          "grenade"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:projectile": {
+        "power": 1.3,
+        "gravity": 0.05,
+        "angle_offset": -5,
+        "hit_sound": "land.stone",
+        "on_hit": {
+          "impact_damage": {
+            "damage": {
+              "min": 2,
+              "max": 3
+            },
+            "knockback": true,
+            "catch_fire": false
+          },
+          "remove_on_hit": {},
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "gx:detonate",
+              "target": "self"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "gx:detonate": {
+        "run_command": {
+          "command": [
+            "particle minecraft:electric_spark_particle ~~~",
+            "playsound random.fizz @a ~~~",
+            "effect @e[family=mech,r=10] slowness 8 1",
+            "effect @e[family=mech,r=10] weakness 8 1",
+            "effect @e[family=droid,r=10] slowness 8 1",
+            "effect @e[family=droid,r=10] weakness 8 1"
+          ]
+        }
+      }
+    }
+  }
+}

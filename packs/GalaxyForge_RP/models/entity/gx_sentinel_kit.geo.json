@@ -1,0 +1,112 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_sentinel_kit",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "weapon",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                -3,
+                -6
+              ],
+              "size": [
+                8,
+                6,
+                12
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                -3,
+                -8
+              ],
+              "size": [
+                8,
+                2,
+                2
+              ],
+              "uv": [
+                16,
+                31
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                -9,
+                -3
+              ],
+              "size": [
+                3,
+                6,
+                4
+              ],
+              "uv": [
+                40,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                -1,
+                -9
+              ],
+              "size": [
+                6,
+                4,
+                2
+              ],
+              "uv": [
+                0,
+                31
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                3,
+                -6
+              ],
+              "size": [
+                8,
+                1,
+                12
+              ],
+              "uv": [
+                0,
+                18
+              ]
+            }
+          ],
+          "binding": "q.item_slot_to_bone_name(c.item_slot)"
+        }
+      ]
+    }
+  ]
+}

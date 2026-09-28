@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:combat_drone",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_combat_drone"
+      },
+      "geometry": {
+        "default": "geometry.gx_combat_drone"
+      },
+      "render_controllers": [
+        "controller.render.gx_combat_drone"
+      ],
+      "animations": {
+        "rotors": "animation.gx_combat_drone.rotors"
+      },
+      "scripts": {
+        "animate": [
+          "rotors"
+        ]
+      }
+    }
+  }
+}

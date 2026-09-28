@@ -1,0 +1,292 @@
+{
+  "format_version": "1.20.20",
+  "sound_definitions": {
+    "gx.gun.pistol": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/pistol_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/pistol_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/pistol_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.magnum": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/magnum_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/magnum_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.smg": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/smg_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/smg_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/smg_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.rifle": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/rifle_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/rifle_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/rifle_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.rifle_heavy": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/rifle_heavy_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/rifle_heavy_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/rifle_heavy_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.sniper": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/sniper_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/sniper_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.fifty": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/fifty_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/fifty_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.shotgun": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/shotgun_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/shotgun_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.minigun": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/minigun_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/minigun_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/minigun_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.rocket": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/rocket_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/rocket_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.explosion": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/explosion_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/explosion_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.launcher": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/launcher_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/launcher_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.bolt": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/bolt_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.pump": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/pump_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.brass": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/brass_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/brass_1",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/gx/brass_2",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "gx.gun.spin": {
+      "category": "player",
+      "min_distance": 6.0,
+      "max_distance": 96.0,
+      "sounds": [
+        {
+          "name": "sounds/gx/spin_0",
+          "volume": 1.0,
+          "load_on_low_memory": true
+        }
+      ]
+    }
+  }
+}

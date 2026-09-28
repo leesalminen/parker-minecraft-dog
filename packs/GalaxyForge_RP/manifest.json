@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Galaxy Forge (Resources)",
+    "description": "Models, textures and animations.",
+    "uuid": "dca88322-51ff-4aa9-bc53-65510fc9f972",
+    "version": [
+      1,
+      6,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "adce3bf0-ff7e-4b0b-bdea-c27a37120da8",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "51264da3-93de-4ba5-9302-f49ca514a785",
+      "version": [
+        1,
+        6,
+        0
+      ]
+    }
+  ]
+}

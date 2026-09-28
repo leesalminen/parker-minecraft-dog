@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:m134_minigun"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "result": {
+      "item": "gx:m134_minigun",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:walker",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_walker"
+      },
+      "geometry": {
+        "default": "geometry.gx_walker"
+      },
+      "animations": {
+        "walk": "animation.gx_walker.walk",
+        "idle": "animation.gx_walker.idle",
+        "attack": "animation.gx_walker.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_walker"
+      ],
+      "spawn_egg": {
+        "base_color": "#5b6a63",
+        "overlay_color": "#d8b24a"
+      }
+    }
+  }
+}

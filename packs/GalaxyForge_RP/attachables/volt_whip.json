@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "gx:volt_whip",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/gx_volt_whip",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.gx_volt_whip"
+      },
+      "animations": {
+        "wield": "animation.gx_weapon.wield",
+        "aim": "animation.gx_weapon.aim",
+        "charge": "animation.gx_weapon.charge"
+      },
+      "scripts": {
+        "animate": [
+          "wield",
+          {
+            "aim": "query.is_sneaking"
+          },
+          {
+            "charge": "query.main_hand_item_use_duration > 0.0"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

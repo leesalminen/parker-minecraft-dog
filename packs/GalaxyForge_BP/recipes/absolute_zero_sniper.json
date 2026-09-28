@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:absolute_zero_sniper"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "gx:energy_cell"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "minecraft:blue_ice"
+      }
+    ],
+    "result": {
+      "item": "gx:absolute_zero_sniper",
+      "count": 1
+    }
+  }
+}

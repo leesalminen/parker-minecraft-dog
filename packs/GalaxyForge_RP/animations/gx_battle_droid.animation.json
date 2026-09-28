@@ -1,0 +1,181 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_battle_droid.walk": {
+      "loop": true,
+      "bones": {
+        "thigh_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 0) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "thigh_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 180) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 180) * 22 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40) * 22 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 90) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "foot_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 270) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "pelvis": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 20)) * 1.4 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40) * 4 * query.modified_move_speed",
+            "0",
+            "math.cos(query.modified_distance_moved * 20) * 5 * query.modified_move_speed"
+          ]
+        },
+        "arm_l_up": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r_up": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40 + 180) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40) * 3 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_battle_droid.idle": {
+      "loop": true,
+      "bones": {
+        "neck": {
+          "rotation": [
+            "math.sin(query.life_time * 32 + 0) * 5",
+            "0",
+            "0"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.sin(query.life_time * 28 + 0) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 55) * 1.5",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r_up": {
+          "rotation": [
+            "math.sin(query.life_time * 30 + 1.0) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "rifle": {
+          "rotation": [
+            "math.sin(query.life_time * 30 + 1.0) * 2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_battle_droid.attack": {
+      "loop": false,
+      "bones": {
+        "arm_r_up": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -78",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l_up": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -62",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r_fore": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -12",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l_fore": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -20",
+            "0",
+            "0"
+          ]
+        },
+        "rifle": {
+          "position": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 2.5"
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -6",
+            "0",
+            "0"
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gx:multitool_diamond",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.pickaxe"
+      }
+    },
+    "components": {
+      "minecraft:icon": "gx_multitool_diamond",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 8,
+      "minecraft:durability": {
+        "max_durability": 1561
+      },
+      "minecraft:enchantable": {
+        "slot": "pickaxe",
+        "value": 10
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ],
+            "repair_amount": "q.max_durability * 0.25"
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_tool",
+          "minecraft:is_pickaxe",
+          "minecraft:is_shovel",
+          "minecraft:is_axe",
+          "minecraft:is_sword",
+          "minecraft:diamond_tier"
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "q.any_tag('minecraft:is_pickaxe_item_destructible')"
+            },
+            "speed": 8
+          },
+          {
+            "block": {
+              "tags": "q.any_tag('minecraft:is_shovel_item_destructible')"
+            },
+            "speed": 8
+          },
+          {
+            "block": {
+              "tags": "q.any_tag('minecraft:is_axe_item_destructible')"
+            },
+            "speed": 8
+          },
+          {
+            "block": {
+              "tags": "q.any_tag('minecraft:is_sword_item_destructible')"
+            },
+            "speed": 8
+          }
+        ]
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          {
+            "item": "minecraft:arrow",
+            "use_offhand": true,
+            "search_inventory": true,
+            "use_in_creative": true
+          }
+        ],
+        "max_draw_duration": 1.0,
+        "scale_power_by_draw_duration": true,
+        "charge_on_draw": false
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

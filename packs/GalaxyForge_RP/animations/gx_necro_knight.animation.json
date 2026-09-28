@@ -1,0 +1,200 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_necro_knight.walk": {
+      "loop": true,
+      "bones": {
+        "thigh_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "thigh_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 180) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 180) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "shin_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 16 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "cape0": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 10 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "cape1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 30) * 10 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "cape2": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 60) * 10 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 180) * 10 * query.modified_move_speed",
+            "0",
+            "-6"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38) * 10 * query.modified_move_speed",
+            "0",
+            "6"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 76) * 0.4",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 38 + 0) * 2"
+          ]
+        }
+      }
+    },
+    "animation.gx_necro_knight.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 46) * 0.4",
+            "0"
+          ]
+        },
+        "cape0": {
+          "rotation": [
+            "math.sin(query.life_time * 30 + 0) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "cape1": {
+          "rotation": [
+            "math.sin(query.life_time * 26 + 0.8) * 6",
+            "0",
+            "0"
+          ]
+        },
+        "cape2": {
+          "rotation": [
+            "math.sin(query.life_time * 22 + 1.6) * 10",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 21) * 3",
+            "math.sin(query.life_time * 13) * 5",
+            "0"
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            "math.sin(query.life_time * 41) * 4",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.sin(query.life_time * 30) * 3",
+            "0",
+            "-6"
+          ]
+        },
+        "sword": {
+          "rotation": [
+            "math.sin(query.life_time * 30 + 1.2) * 3",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_necro_knight.attack": {
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0",
+            "math.sin(variable.attack_time * 180) * 18",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.cos(variable.attack_time * 180) * -80",
+            "0",
+            "-6"
+          ]
+        },
+        "fore_l": {
+          "rotation": [
+            "math.cos(variable.attack_time * 180) * -18",
+            "0",
+            "0"
+          ]
+        },
+        "sword": {
+          "rotation": [
+            "math.cos(variable.attack_time * 180) * 14",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 20",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 30",
+            "0",
+            "6"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:fgm148_javelin"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:tnt"
+      },
+      {
+        "item": "minecraft:tnt"
+      },
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "minecraft:compass"
+      },
+      {
+        "item": "minecraft:glass_pane"
+      }
+    ],
+    "result": {
+      "item": "gx:fgm148_javelin",
+      "count": 1
+    }
+  }
+}

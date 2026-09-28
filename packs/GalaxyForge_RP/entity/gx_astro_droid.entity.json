@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:astro_droid",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_astro_droid"
+      },
+      "geometry": {
+        "default": "geometry.gx_astro_droid"
+      },
+      "animations": {
+        "walk": "animation.gx_astro_droid.walk",
+        "idle": "animation.gx_astro_droid.idle",
+        "attack": "animation.gx_astro_droid.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_astro_droid"
+      ],
+      "spawn_egg": {
+        "base_color": "#2f63c8",
+        "overlay_color": "#c9ced6"
+      }
+    }
+  }
+}

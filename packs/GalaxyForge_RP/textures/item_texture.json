@@ -1,0 +1,297 @@
+{
+  "resource_pack_name": "GalaxyForge",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "gx_saber_azure": {
+      "textures": "textures/items/gx_saber_azure"
+    },
+    "gx_saber_crimson": {
+      "textures": "textures/items/gx_saber_crimson"
+    },
+    "gx_saber_jade": {
+      "textures": "textures/items/gx_saber_jade"
+    },
+    "gx_saber_amber": {
+      "textures": "textures/items/gx_saber_amber"
+    },
+    "gx_saber_violet": {
+      "textures": "textures/items/gx_saber_violet"
+    },
+    "gx_saber_storm": {
+      "textures": "textures/items/gx_saber_storm"
+    },
+    "gx_grenade_frag": {
+      "textures": "textures/items/gx_grenade_frag"
+    },
+    "gx_grenade_smoke": {
+      "textures": "textures/items/gx_grenade_smoke"
+    },
+    "gx_grenade_flashbang": {
+      "textures": "textures/items/gx_grenade_flashbang"
+    },
+    "gx_grenade_incendiary": {
+      "textures": "textures/items/gx_grenade_incendiary"
+    },
+    "gx_grenade_emp": {
+      "textures": "textures/items/gx_grenade_emp"
+    },
+    "gx_jungle_ops_helmet": {
+      "textures": "textures/items/gx_jungle_ops_helmet"
+    },
+    "gx_jungle_ops_chestplate": {
+      "textures": "textures/items/gx_jungle_ops_chestplate"
+    },
+    "gx_jungle_ops_leggings": {
+      "textures": "textures/items/gx_jungle_ops_leggings"
+    },
+    "gx_jungle_ops_boots": {
+      "textures": "textures/items/gx_jungle_ops_boots"
+    },
+    "gx_sandstorm_helmet": {
+      "textures": "textures/items/gx_sandstorm_helmet"
+    },
+    "gx_sandstorm_chestplate": {
+      "textures": "textures/items/gx_sandstorm_chestplate"
+    },
+    "gx_sandstorm_leggings": {
+      "textures": "textures/items/gx_sandstorm_leggings"
+    },
+    "gx_sandstorm_boots": {
+      "textures": "textures/items/gx_sandstorm_boots"
+    },
+    "gx_multitool_wood": {
+      "textures": "textures/items/gx_multitool_wood"
+    },
+    "gx_multitool_iron": {
+      "textures": "textures/items/gx_multitool_iron"
+    },
+    "gx_multitool_diamond": {
+      "textures": "textures/items/gx_multitool_diamond"
+    },
+    "gx_multitool_netherite": {
+      "textures": "textures/items/gx_multitool_netherite"
+    },
+    "gx_acid_sprayer": {
+      "textures": "textures/items/gx_acid_sprayer"
+    },
+    "gx_spore_launcher": {
+      "textures": "textures/items/gx_spore_launcher"
+    },
+    "gx_nanite_swarm_rifle": {
+      "textures": "textures/items/gx_nanite_swarm_rifle"
+    },
+    "gx_aurora_lance": {
+      "textures": "textures/items/gx_aurora_lance"
+    },
+    "gx_supernova_rifle": {
+      "textures": "textures/items/gx_supernova_rifle"
+    },
+    "gx_starforge_bow": {
+      "textures": "textures/items/gx_starforge_bow"
+    },
+    "gx_chrono_pistol": {
+      "textures": "textures/items/gx_chrono_pistol"
+    },
+    "gx_good_boy_cannon": {
+      "textures": "textures/items/gx_good_boy_cannon"
+    },
+    "gx_frost_lance": {
+      "textures": "textures/items/gx_frost_lance"
+    },
+    "gx_glacier_shard_launcher": {
+      "textures": "textures/items/gx_glacier_shard_launcher"
+    },
+    "gx_blizzard_cannon": {
+      "textures": "textures/items/gx_blizzard_cannon"
+    },
+    "gx_absolute_zero_sniper": {
+      "textures": "textures/items/gx_absolute_zero_sniper"
+    },
+    "gx_dragon_breath_flamer": {
+      "textures": "textures/items/gx_dragon_breath_flamer"
+    },
+    "gx_fireball_launcher": {
+      "textures": "textures/items/gx_fireball_launcher"
+    },
+    "gx_meteor_rifle": {
+      "textures": "textures/items/gx_meteor_rifle"
+    },
+    "gx_phoenix_repeater": {
+      "textures": "textures/items/gx_phoenix_repeater"
+    },
+    "gx_magma_mortar": {
+      "textures": "textures/items/gx_magma_mortar"
+    },
+    "gx_inferno_revolver": {
+      "textures": "textures/items/gx_inferno_revolver"
+    },
+    "gx_red_dot_marksman": {
+      "textures": "textures/items/gx_red_dot_marksman"
+    },
+    "gx_prism_beam": {
+      "textures": "textures/items/gx_prism_beam"
+    },
+    "gx_helios_sniper": {
+      "textures": "textures/items/gx_helios_sniper"
+    },
+    "gx_mirror_pistol": {
+      "textures": "textures/items/gx_mirror_pistol"
+    },
+    "gx_gatling_laser": {
+      "textures": "textures/items/gx_gatling_laser"
+    },
+    "gx_tri_beam": {
+      "textures": "textures/items/gx_tri_beam"
+    },
+    "gx_orbital_designator": {
+      "textures": "textures/items/gx_orbital_designator"
+    },
+    "gx_cutter_beam": {
+      "textures": "textures/items/gx_cutter_beam"
+    },
+    "gx_tesla_coil_gun": {
+      "textures": "textures/items/gx_tesla_coil_gun"
+    },
+    "gx_storm_caller": {
+      "textures": "textures/items/gx_storm_caller"
+    },
+    "gx_railgun_mk2": {
+      "textures": "textures/items/gx_railgun_mk2"
+    },
+    "gx_volt_whip": {
+      "textures": "textures/items/gx_volt_whip"
+    },
+    "gx_thunder_shotgun": {
+      "textures": "textures/items/gx_thunder_shotgun"
+    },
+    "gx_glaive_disc": {
+      "textures": "textures/items/gx_glaive_disc"
+    },
+    "gx_m9_pistol": {
+      "textures": "textures/items/gx_m9_pistol"
+    },
+    "gx_magnum_44": {
+      "textures": "textures/items/gx_magnum_44"
+    },
+    "gx_mp5_smg": {
+      "textures": "textures/items/gx_mp5_smg"
+    },
+    "gx_thompson_m1928": {
+      "textures": "textures/items/gx_thompson_m1928"
+    },
+    "gx_m4a1_carbine": {
+      "textures": "textures/items/gx_m4a1_carbine"
+    },
+    "gx_ak47": {
+      "textures": "textures/items/gx_ak47"
+    },
+    "gx_scar_h": {
+      "textures": "textures/items/gx_scar_h"
+    },
+    "gx_m16a4": {
+      "textures": "textures/items/gx_m16a4"
+    },
+    "gx_m14_ebr": {
+      "textures": "textures/items/gx_m14_ebr"
+    },
+    "gx_m24_sws": {
+      "textures": "textures/items/gx_m24_sws"
+    },
+    "gx_barrett_m82": {
+      "textures": "textures/items/gx_barrett_m82"
+    },
+    "gx_mosin_nagant": {
+      "textures": "textures/items/gx_mosin_nagant"
+    },
+    "gx_remington_870": {
+      "textures": "textures/items/gx_remington_870"
+    },
+    "gx_aa12": {
+      "textures": "textures/items/gx_aa12"
+    },
+    "gx_m249_saw": {
+      "textures": "textures/items/gx_m249_saw"
+    },
+    "gx_m134_minigun": {
+      "textures": "textures/items/gx_m134_minigun"
+    },
+    "gx_m20_bazooka": {
+      "textures": "textures/items/gx_m20_bazooka"
+    },
+    "gx_fgm148_javelin": {
+      "textures": "textures/items/gx_fgm148_javelin"
+    },
+    "gx_m79_launcher": {
+      "textures": "textures/items/gx_m79_launcher"
+    },
+    "gx_carl_gustaf": {
+      "textures": "textures/items/gx_carl_gustaf"
+    },
+    "gx_foam_popper": {
+      "textures": "textures/items/gx_foam_popper"
+    },
+    "gx_foam_longshot": {
+      "textures": "textures/items/gx_foam_longshot"
+    },
+    "gx_foam_storm": {
+      "textures": "textures/items/gx_foam_storm"
+    },
+    "gx_pulse_carbine": {
+      "textures": "textures/items/gx_pulse_carbine"
+    },
+    "gx_plasma_repeater": {
+      "textures": "textures/items/gx_plasma_repeater"
+    },
+    "gx_plasma_scattergun": {
+      "textures": "textures/items/gx_plasma_scattergun"
+    },
+    "gx_splitter_rifle": {
+      "textures": "textures/items/gx_splitter_rifle"
+    },
+    "gx_plasma_lance": {
+      "textures": "textures/items/gx_plasma_lance"
+    },
+    "gx_sunfire_cannon": {
+      "textures": "textures/items/gx_sunfire_cannon"
+    },
+    "gx_ion_disruptor": {
+      "textures": "textures/items/gx_ion_disruptor"
+    },
+    "gx_twin_photon_smg": {
+      "textures": "textures/items/gx_twin_photon_smg"
+    },
+    "gx_sonic_cannon": {
+      "textures": "textures/items/gx_sonic_cannon"
+    },
+    "gx_seeker_rack": {
+      "textures": "textures/items/gx_seeker_rack"
+    },
+    "gx_drone_launcher": {
+      "textures": "textures/items/gx_drone_launcher"
+    },
+    "gx_sentinel_kit": {
+      "textures": "textures/items/gx_sentinel_kit"
+    },
+    "gx_gravity_well_launcher": {
+      "textures": "textures/items/gx_gravity_well_launcher"
+    },
+    "gx_void_beam": {
+      "textures": "textures/items/gx_void_beam"
+    },
+    "gx_blink_rifle": {
+      "textures": "textures/items/gx_blink_rifle"
+    },
+    "gx_umbra_smg": {
+      "textures": "textures/items/gx_umbra_smg"
+    },
+    "gx_black_hole_cannon": {
+      "textures": "textures/items/gx_black_hole_cannon"
+    },
+    "gx_repulsor_gauntlet": {
+      "textures": "textures/items/gx_repulsor_gauntlet"
+    },
+    "gx_energy_cell": {
+      "textures": "textures/items/gx_energy_cell"
+    }
+  }
+}

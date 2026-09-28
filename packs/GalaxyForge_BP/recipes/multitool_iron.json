@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:multitool_iron"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_pickaxe"
+      },
+      {
+        "item": "minecraft:iron_shovel"
+      },
+      {
+        "item": "minecraft:iron_axe"
+      },
+      {
+        "item": "minecraft:iron_sword"
+      },
+      {
+        "item": "minecraft:bow"
+      }
+    ],
+    "result": {
+      "item": "gx:multitool_iron",
+      "count": 1
+    }
+  }
+}

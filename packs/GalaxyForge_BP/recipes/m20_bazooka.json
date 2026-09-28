@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gx:m20_bazooka"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:tnt"
+      },
+      {
+        "item": "minecraft:tnt"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "minecraft:green_dye"
+      }
+    ],
+    "result": {
+      "item": "gx:m20_bazooka",
+      "count": 1
+    }
+  }
+}

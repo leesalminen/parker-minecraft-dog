@@ -1,0 +1,182 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_military_recon_buggy.move": {
+      "loop": true,
+      "bones": {
+        "wheel_fl": {
+          "rotation": [
+            "query.modified_distance_moved * 150",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_fr": {
+          "rotation": [
+            "query.modified_distance_moved * 150",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rl": {
+          "rotation": [
+            "query.modified_distance_moved * 150",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rr": {
+          "rotation": [
+            "query.modified_distance_moved * 150",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 260) * 0.3",
+            "0"
+          ],
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 40) * 3 * query.modified_move_speed",
+            "0",
+            "math.sin(query.modified_distance_moved * 40) * 5 * query.modified_move_speed"
+          ]
+        },
+        "rollcage": {
+          "rotation": [
+            "math.sin(query.life_time * 260 + 0.4) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 320) * 14"
+          ]
+        },
+        "exhaust": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 300) * 0.2",
+            "0"
+          ]
+        },
+        "jerry": {
+          "rotation": [
+            "math.sin(query.life_time * 260) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "spare": {
+          "rotation": [
+            "math.sin(query.life_time * 260 + 0.8) * 2.5",
+            "0",
+            "0"
+          ]
+        },
+        "bullbar": {
+          "rotation": [
+            "math.sin(query.life_time * 260) * 2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_military_recon_buggy.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 160) * 0.12",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 70) * 1.2",
+            "0",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 120) * 8"
+          ]
+        },
+        "lightbar": {
+          "rotation": [
+            "math.sin(query.life_time * 90) * 1.5",
+            "0",
+            "0"
+          ]
+        },
+        "exhaust": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 200) * 0.1",
+            "0"
+          ]
+        },
+        "rollcage": {
+          "rotation": [
+            "math.sin(query.life_time * 110) * 0.8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_military_recon_buggy.attack": {
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -14",
+            "0",
+            "0"
+          ],
+          "position": [
+            "0",
+            "math.sin(variable.attack_time * 180) * 0.6",
+            "0"
+          ]
+        },
+        "rollcage": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 6",
+            "0",
+            "0"
+          ]
+        },
+        "bullbar": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 10",
+            "0",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(variable.attack_time * 180) * 24"
+          ]
+        },
+        "jerry": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}
