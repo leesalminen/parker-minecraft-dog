@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_star_scorpion",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_star_scorpion"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_star_scorpion"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_star_scorpion.walk",
+        "idle": "animation.gx_ed_star_scorpion.idle",
+        "attack": "animation.gx_ed_star_scorpion.attack"
+      },
+      "scripts": {
+        "scale": "1.4",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_star_scorpion"
+      ],
+      "spawn_egg": {
+        "base_color": "#3a2a6a",
+        "overlay_color": "#ff4aff"
+      }
+    }
+  }
+}

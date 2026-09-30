@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_ufo_drone",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_ufo_drone"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_ufo_drone"
+      },
+      "animations": {
+        "idle": "animation.gx_ed_ufo_drone.idle"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_ufo_drone"
+      ],
+      "spawn_egg": {
+        "base_color": "#8d9bab",
+        "overlay_color": "#7dffb0"
+      }
+    }
+  }
+}

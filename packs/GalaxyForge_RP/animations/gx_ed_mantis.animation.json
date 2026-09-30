@@ -1,0 +1,111 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_mantis.walk": {
+      "loop": true,
+      "bones": {
+        "leg_ml": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 0) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_rr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 0) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_mr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 180) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_rl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 180) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 0) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 180) * 12 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 100) * 0.4",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_mantis.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 45) * 0.3",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.sin(query.life_time * 55 + 0.0) * 7",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.sin(query.life_time * 55 + 3.14) * 7",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 30) * 3",
+            "math.sin(query.life_time * 21) * 24",
+            "math.sin(query.life_time * 17) * 6"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_mantis.attack": {
+      "loop": false,
+      "bones": {
+        "arm_l": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -70",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -70",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

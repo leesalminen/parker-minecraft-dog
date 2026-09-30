@@ -1,0 +1,120 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_giant_beetle.walk": {
+      "loop": true,
+      "bones": {
+        "leg_lf": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 0) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_rf": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 180) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_rm": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 0) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_lm": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 180) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_lr": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 0) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_rr": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 40 + 180) * 28 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 160) * 0.4",
+            "0"
+          ]
+        },
+        "ant_l": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 120 + 0.0) * 12",
+            "0"
+          ]
+        },
+        "ant_r": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 120 + 0.0) * -12",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_giant_beetle.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 50) * 0.3",
+            "0"
+          ]
+        },
+        "ant_l": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 80 + 0.0) * 14",
+            "0"
+          ]
+        },
+        "ant_r": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 80 + 1.0) * -14",
+            "0"
+          ]
+        },
+        "elytra_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 90 + 0.0) * 2.5"
+          ]
+        },
+        "elytra_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 90 + 0.0) * -2.5"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 30) * 4",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

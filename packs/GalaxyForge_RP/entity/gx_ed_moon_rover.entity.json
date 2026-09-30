@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_moon_rover",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_moon_rover"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_moon_rover"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_moon_rover.walk",
+        "idle": "animation.gx_ed_moon_rover.idle"
+      },
+      "scripts": {
+        "scale": "1.4",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_moon_rover"
+      ],
+      "spawn_egg": {
+        "base_color": "#f4d878",
+        "overlay_color": "#4a505c"
+      }
+    }
+  }
+}

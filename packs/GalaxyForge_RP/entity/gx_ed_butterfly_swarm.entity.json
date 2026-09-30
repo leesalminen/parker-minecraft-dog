@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_butterfly_swarm",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_butterfly_swarm"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_butterfly_swarm"
+      },
+      "animations": {
+        "idle": "animation.gx_ed_butterfly_swarm.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_butterfly_swarm"
+      ],
+      "spawn_egg": {
+        "base_color": "#ff9a1c",
+        "overlay_color": "#3a8cff"
+      }
+    }
+  }
+}

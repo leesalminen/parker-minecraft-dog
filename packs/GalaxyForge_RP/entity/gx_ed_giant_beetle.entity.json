@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_giant_beetle",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_giant_beetle"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_giant_beetle"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_giant_beetle.walk",
+        "idle": "animation.gx_ed_giant_beetle.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.5",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_giant_beetle"
+      ],
+      "spawn_egg": {
+        "base_color": "#1c7a5e",
+        "overlay_color": "#48e0aa"
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_giant_ant.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 0) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r1": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 180) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_l2": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 0) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 180) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_l1": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 0) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r2": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 45 + 180) * 34 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 170) * 0.35",
+            "0"
+          ]
+        },
+        "ant_l": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 140 + 0.0) * 14",
+            "0"
+          ]
+        },
+        "ant_r": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 140 + 0.0) * -14",
+            "0"
+          ]
+        },
+        "gaster": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 90 + 0.0) * 4",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_giant_ant.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 60) * 0.2",
+            "0"
+          ]
+        },
+        "ant_l": {
+          "rotation": [
+            "math.sin(query.life_time * 50 + 0.0) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "ant_r": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 70 + 1) * -16",
+            "0"
+          ]
+        },
+        "gaster": {
+          "rotation": [
+            "math.sin(query.life_time * 40 + 0.0) * 3",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 24) * 14",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

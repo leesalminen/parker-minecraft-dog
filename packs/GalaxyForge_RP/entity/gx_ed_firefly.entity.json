@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_firefly",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_firefly"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_firefly"
+      },
+      "animations": {
+        "idle": "animation.gx_ed_firefly.idle"
+      },
+      "scripts": {
+        "scale": "1.6",
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_firefly"
+      ],
+      "spawn_egg": {
+        "base_color": "#c8ff3a",
+        "overlay_color": "#2b2118"
+      }
+    }
+  }
+}

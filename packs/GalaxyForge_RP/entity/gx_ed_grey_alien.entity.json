@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_grey_alien",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_grey_alien"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_grey_alien"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_grey_alien.walk",
+        "idle": "animation.gx_ed_grey_alien.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "0.85",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_grey_alien"
+      ],
+      "spawn_egg": {
+        "base_color": "#9fb1a9",
+        "overlay_color": "#41507f"
+      }
+    }
+  }
+}

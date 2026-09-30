@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_mower_bot.walk": {
+      "loop": true,
+      "bones": {
+        "wheel_fl": {
+          "rotation": [
+            "query.modified_distance_moved * 220",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_fr": {
+          "rotation": [
+            "query.modified_distance_moved * 220",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rl": {
+          "rotation": [
+            "query.modified_distance_moved * 220",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rr": {
+          "rotation": [
+            "query.modified_distance_moved * 220",
+            "0",
+            "0"
+          ]
+        },
+        "blade": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 600 + 0.0) * 360",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 900) * 0.25",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_mower_bot.idle": {
+      "loop": true,
+      "bones": {
+        "blade": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 300 + 0.0) * 360",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 700) * 0.2",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gx:ed_cosmic_whale",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "gx_ed_cosmic_whale",
+          "gx_creature",
+          "alien",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 70,
+        "max": 70
+      },
+      "minecraft:collision_box": {
+        "width": 2.2,
+        "height": 2.2
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:nameable": {},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:leashable": {},
+      "minecraft:knockback_resistance": {
+        "value": 0.6
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 64
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_pass_doors": true
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:can_fly": {},
+      "minecraft:flying_speed": {
+        "value": 0.18
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.horse",
+        "seats": [
+          {
+            "position": [
+              0,
+              2.0,
+              -0.6
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              0,
+              2.0,
+              0.7
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:input_air_controlled": {},
+      "minecraft:is_tamed": {},
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.4
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 8,
+        "xz_dist": 8,
+        "y_dist": 4,
+        "y_offset": -1,
+        "interval": 120,
+        "hover_height": [
+          1,
+          4
+        ]
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 10
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/gx_ed_cosmic_whale.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {}
+    }
+  }
+}
