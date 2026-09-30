@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ankylosaurus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ankylosaurus"
+      },
+      "geometry": {
+        "default": "geometry.gx_ankylosaurus"
+      },
+      "animations": {
+        "walk": "animation.gx_ankylosaurus.walk",
+        "idle": "animation.gx_ankylosaurus.idle",
+        "attack": "animation.gx_ankylosaurus.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ankylosaurus"
+      ],
+      "spawn_egg": {
+        "base_color": "#8a7a56",
+        "overlay_color": "#e5dcc0"
+      }
+    }
+  }
+}

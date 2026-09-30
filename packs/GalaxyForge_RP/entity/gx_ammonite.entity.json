@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ammonite",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ammonite"
+      },
+      "geometry": {
+        "default": "geometry.gx_ammonite"
+      },
+      "animations": {
+        "walk": "animation.gx_ammonite.walk",
+        "idle": "animation.gx_ammonite.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ammonite"
+      ],
+      "spawn_egg": {
+        "base_color": "#f0d9a8",
+        "overlay_color": "#b8703a"
+      }
+    }
+  }
+}

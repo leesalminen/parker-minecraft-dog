@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:compsognathus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_compsognathus"
+      },
+      "geometry": {
+        "default": "geometry.gx_compsognathus"
+      },
+      "animations": {
+        "walk": "animation.gx_compsognathus.walk",
+        "idle": "animation.gx_compsognathus.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_compsognathus"
+      ],
+      "spawn_egg": {
+        "base_color": "#9fd8b0",
+        "overlay_color": "#ffb35a"
+      }
+    }
+  }
+}

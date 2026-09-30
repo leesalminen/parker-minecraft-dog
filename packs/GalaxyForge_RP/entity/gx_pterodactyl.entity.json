@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:pterodactyl",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_pterodactyl"
+      },
+      "geometry": {
+        "default": "geometry.gx_pterodactyl"
+      },
+      "animations": {
+        "idle": "animation.gx_pterodactyl.idle",
+        "walk": "animation.gx_pterodactyl.walk",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          "idle",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_pterodactyl"
+      ],
+      "spawn_egg": {
+        "base_color": "#a86f45",
+        "overlay_color": "#d04a3a"
+      }
+    }
+  }
+}

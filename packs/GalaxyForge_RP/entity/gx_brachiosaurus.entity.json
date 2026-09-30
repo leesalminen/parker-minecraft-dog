@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:brachiosaurus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_brachiosaurus"
+      },
+      "geometry": {
+        "default": "geometry.gx_brachiosaurus"
+      },
+      "animations": {
+        "walk": "animation.gx_brachiosaurus.walk",
+        "idle": "animation.gx_brachiosaurus.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_brachiosaurus"
+      ],
+      "spawn_egg": {
+        "base_color": "#7d9aa8",
+        "overlay_color": "#4f6a58"
+      }
+    }
+  }
+}

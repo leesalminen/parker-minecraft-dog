@@ -1,0 +1,141 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_mastodon.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 0) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 0) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 180) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 180) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 52 + 0) * 7 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 52 + 180) * 7 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.modified_distance_moved * 52 + 0) * 1.5 * query.modified_move_speed"
+          ]
+        },
+        "trunk0": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 0) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "trunk1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 0) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "trunk2": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 52 + 0) * 8 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_mastodon.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.4",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0.0) * 6",
+            "0"
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 37 + 0.8) * 8",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 70) * 3",
+            "math.sin(query.life_time * 37) * 7",
+            "0"
+          ]
+        },
+        "ears": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 90 + 0.0) * 6"
+          ]
+        },
+        "trunk0": {
+          "rotation": [
+            "math.sin(query.life_time * 60 + 0.0) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "trunk1": {
+          "rotation": [
+            "math.sin(query.life_time * 60 + 0.8) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "trunk2": {
+          "rotation": [
+            "math.sin(query.life_time * 60 + 1.6) * 8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

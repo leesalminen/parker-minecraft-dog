@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:spinosaurus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_spinosaurus"
+      },
+      "geometry": {
+        "default": "geometry.gx_spinosaurus"
+      },
+      "animations": {
+        "walk": "animation.gx_spinosaurus.walk",
+        "idle": "animation.gx_spinosaurus.idle",
+        "attack": "animation.gx_spinosaurus.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_spinosaurus"
+      ],
+      "spawn_egg": {
+        "base_color": "#3f7f6a",
+        "overlay_color": "#e5643c"
+      }
+    }
+  }
+}

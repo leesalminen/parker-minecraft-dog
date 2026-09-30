@@ -1,0 +1,92 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_pterodactyl.idle": {
+      "loop": true,
+      "bones": {
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260) * 35 * 1"
+          ]
+        },
+        "wing_l2": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260 - 40) * 25 * 1"
+          ]
+        },
+        "wing_l3": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260 - 80) * 18 * 1"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260) * 35 * -1"
+          ]
+        },
+        "wing_r2": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260 - 40) * 25 * -1"
+          ]
+        },
+        "wing_r3": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 260 - 80) * 18 * -1"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 130) * 0.6",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 0) * 8",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 70) * 4",
+            "math.sin(query.life_time * 40) * 8",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_pterodactyl.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 0) * 25 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 50 + 180) * 25 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

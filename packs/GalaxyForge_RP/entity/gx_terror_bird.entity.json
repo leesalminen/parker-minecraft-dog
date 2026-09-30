@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:terror_bird",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_terror_bird"
+      },
+      "geometry": {
+        "default": "geometry.gx_terror_bird"
+      },
+      "animations": {
+        "walk": "animation.gx_terror_bird.walk",
+        "idle": "animation.gx_terror_bird.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_terror_bird"
+      ],
+      "spawn_egg": {
+        "base_color": "#5a4a8a",
+        "overlay_color": "#e8c04a"
+      }
+    }
+  }
+}
