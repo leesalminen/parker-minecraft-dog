@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:griffin",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_griffin"
+      },
+      "geometry": {
+        "default": "geometry.gx_griffin"
+      },
+      "animations": {
+        "walk": "animation.gx_griffin.walk",
+        "idle": "animation.gx_griffin.idle",
+        "flap": "animation.gx_griffin.flap",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.1",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02 && query.is_on_ground"
+          },
+          {
+            "flap": "!query.is_on_ground"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_griffin"
+      ],
+      "spawn_egg": {
+        "base_color": "#7a4a26",
+        "overlay_color": "#f2b632"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:sand_golem",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_sand_golem"
+      },
+      "geometry": {
+        "default": "geometry.gx_sand_golem"
+      },
+      "animations": {
+        "walk": "animation.gx_sand_golem.walk",
+        "idle": "animation.gx_sand_golem.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.05",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_sand_golem"
+      ],
+      "spawn_egg": {
+        "base_color": "#dcc07a",
+        "overlay_color": "#2fa8a0"
+      }
+    }
+  }
+}

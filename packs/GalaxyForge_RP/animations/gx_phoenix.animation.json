@@ -1,0 +1,104 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_phoenix.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 0) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 180) * 30 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 0) * 8",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 200) * 0.4",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_phoenix.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 90) * 0.6",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0) * 10",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 50 + 0) * 8",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "-40 + math.sin(query.life_time * 80) * 5"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "40 - math.sin(query.life_time * 80) * 5"
+          ]
+        }
+      }
+    },
+    "animation.gx_phoenix.flap": {
+      "loop": true,
+      "bones": {
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 340) * 45 * 1"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 340) * 45 * -1"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "math.sin(query.life_time * 80 + 0) * 8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

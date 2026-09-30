@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:fairy",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_fairy"
+      },
+      "geometry": {
+        "default": "geometry.gx_fairy"
+      },
+      "animations": {
+        "walk": "animation.gx_fairy.walk",
+        "idle": "animation.gx_fairy.idle",
+        "flap": "animation.gx_fairy.flap",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "0.45",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02 && query.is_on_ground"
+          },
+          {
+            "flap": "!query.is_on_ground"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_fairy"
+      ],
+      "spawn_egg": {
+        "base_color": "#ff8fd0",
+        "overlay_color": "#a8f0ff"
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_griffin.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 0) * 38 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 0) * 38 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 180) * 38 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17 + 180) * 38 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 0) * 10",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "-55 + math.sin(query.life_time * 70) * 3"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "55 - math.sin(query.life_time * 70) * 3"
+          ]
+        }
+      }
+    },
+    "animation.gx_griffin.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.4",
+            "0"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0) * 10",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 60) * 3",
+            "math.sin(query.life_time * 33) * 6",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "-55 + math.sin(query.life_time * 70) * 3"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "55 - math.sin(query.life_time * 70) * 3"
+          ]
+        }
+      }
+    },
+    "animation.gx_griffin.flap": {
+      "loop": true,
+      "bones": {
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 300) * 40 * 1"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 300) * 40 * -1"
+          ]
+        }
+      }
+    }
+  }
+}

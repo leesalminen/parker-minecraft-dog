@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:wyvern",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_wyvern"
+      },
+      "geometry": {
+        "default": "geometry.gx_wyvern"
+      },
+      "animations": {
+        "walk": "animation.gx_wyvern.walk",
+        "idle": "animation.gx_wyvern.idle",
+        "flap": "animation.gx_wyvern.flap"
+      },
+      "scripts": {
+        "scale": "1.25",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02 && query.is_on_ground"
+          },
+          {
+            "flap": "!query.is_on_ground"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_wyvern"
+      ],
+      "spawn_egg": {
+        "base_color": "#7a3a30",
+        "overlay_color": "#d8b078"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:wisp",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_wisp"
+      },
+      "geometry": {
+        "default": "geometry.gx_wisp"
+      },
+      "animations": {
+        "idle": "animation.gx_wisp.idle",
+        "walk": "animation.gx_wisp.walk",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_wisp"
+      ],
+      "spawn_egg": {
+        "base_color": "#3ad0b0",
+        "overlay_color": "#c8fff0"
+      }
+    }
+  }
+}

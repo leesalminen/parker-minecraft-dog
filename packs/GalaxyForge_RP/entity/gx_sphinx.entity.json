@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:sphinx",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_sphinx"
+      },
+      "geometry": {
+        "default": "geometry.gx_sphinx"
+      },
+      "animations": {
+        "walk": "animation.gx_sphinx.walk",
+        "idle": "animation.gx_sphinx.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_sphinx"
+      ],
+      "spawn_egg": {
+        "base_color": "#d9b878",
+        "overlay_color": "#2c58b8"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:unicorn",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_unicorn"
+      },
+      "geometry": {
+        "default": "geometry.gx_unicorn"
+      },
+      "animations": {
+        "walk": "animation.gx_unicorn.walk",
+        "idle": "animation.gx_unicorn.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_unicorn"
+      ],
+      "spawn_egg": {
+        "base_color": "#f6f2fa",
+        "overlay_color": "#c9b3f0"
+      }
+    }
+  }
+}

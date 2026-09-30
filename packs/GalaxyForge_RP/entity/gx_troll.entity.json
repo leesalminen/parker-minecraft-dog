@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:troll",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_troll"
+      },
+      "geometry": {
+        "default": "geometry.gx_troll"
+      },
+      "animations": {
+        "walk": "animation.gx_troll.walk",
+        "idle": "animation.gx_troll.idle",
+        "attack": "animation.gx_troll.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.25",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_troll"
+      ],
+      "spawn_egg": {
+        "base_color": "#7d8f6a",
+        "overlay_color": "#6b4522"
+      }
+    }
+  }
+}

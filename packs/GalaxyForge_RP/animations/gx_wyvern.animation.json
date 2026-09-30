@@ -1,0 +1,209 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_wyvern.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 0) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 180) * 32 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 0) * 6",
+            "0"
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 0.8) * 9",
+            "0"
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 1.6) * 12",
+            "0"
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 60 + 2.4) * 14",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "-40 + math.sin(query.life_time * 60) * 3"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "40 - math.sin(query.life_time * 60) * 3"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 200) * 0.4",
+            "0"
+          ]
+        },
+        "neck0": {
+          "rotation": [
+            "10",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_wyvern.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 70) * 0.5",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 35 + 0) * 5",
+            "0"
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 35 + 1) * 8",
+            "0"
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 35 + 2) * 11",
+            "0"
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 35 + 3) * 14",
+            "0"
+          ]
+        },
+        "neck0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0) * 4",
+            "0"
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 45 + 1) * 6",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "-40 + math.sin(query.life_time * 60) * 3"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "40 - math.sin(query.life_time * 60) * 3"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 60) * 4",
+            "math.sin(query.life_time * 31) * 10",
+            "0"
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            "math.max(0, math.sin(query.life_time * 80)) * 6",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_wyvern.flap": {
+      "loop": true,
+      "bones": {
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 300) * 42 * 1"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 300) * 42 * -1"
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            "math.sin(query.life_time * 90 + 0) * 10",
+            "0",
+            "0"
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            "math.sin(query.life_time * 90 + 1) * 12",
+            "0",
+            "0"
+          ]
+        },
+        "leg_l": {
+          "rotation": [
+            "25",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "25",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:baby_dragon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_baby_dragon"
+      },
+      "geometry": {
+        "default": "geometry.gx_baby_dragon"
+      },
+      "animations": {
+        "walk": "animation.gx_baby_dragon.walk",
+        "idle": "animation.gx_baby_dragon.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_baby_dragon"
+      ],
+      "spawn_egg": {
+        "base_color": "#3fb0a0",
+        "overlay_color": "#f0a040"
+      }
+    }
+  }
+}

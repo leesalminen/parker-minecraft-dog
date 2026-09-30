@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:pegasus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_pegasus"
+      },
+      "geometry": {
+        "default": "geometry.gx_pegasus"
+      },
+      "animations": {
+        "walk": "animation.gx_pegasus.walk",
+        "idle": "animation.gx_pegasus.idle",
+        "flap": "animation.gx_pegasus.flap",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02 && query.is_on_ground"
+          },
+          {
+            "flap": "!query.is_on_ground"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_pegasus"
+      ],
+      "spawn_egg": {
+        "base_color": "#c9d3e2",
+        "overlay_color": "#2c3a63"
+      }
+    }
+  }
+}

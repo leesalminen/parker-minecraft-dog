@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:hydra",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_hydra"
+      },
+      "geometry": {
+        "default": "geometry.gx_hydra"
+      },
+      "animations": {
+        "walk": "animation.gx_hydra.walk",
+        "idle": "animation.gx_hydra.idle"
+      },
+      "scripts": {
+        "scale": "1.15",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_hydra"
+      ],
+      "spawn_egg": {
+        "base_color": "#4f8a4a",
+        "overlay_color": "#e8842a"
+      }
+    }
+  }
+}
