@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:helicopter",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_helicopter"
+      },
+      "geometry": {
+        "default": "geometry.gx_helicopter"
+      },
+      "animations": {
+        "fly": "animation.gx_helicopter.fly",
+        "idle": "animation.gx_helicopter.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "fly": "query.has_rider"
+          },
+          {
+            "idle": "!query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_helicopter"
+      ],
+      "spawn_egg": {
+        "base_color": "#f2f4f5",
+        "overlay_color": "#e04232"
+      }
+    }
+  }
+}

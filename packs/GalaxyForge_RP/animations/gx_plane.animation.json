@@ -1,0 +1,78 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_plane.fly": {
+      "loop": true,
+      "bones": {
+        "prop": {
+          "rotation": [
+            "0",
+            "0",
+            "query.life_time * 2600"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 170) * 0.2",
+            "0"
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 200) * 1.2"
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 200 + 1.0) * -1.2"
+          ]
+        },
+        "stab_l": {
+          "rotation": [
+            "math.sin(query.life_time * 260) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "stab_r": {
+          "rotation": [
+            "math.sin(query.life_time * 260 + 0.6) * 2",
+            "0",
+            "0"
+          ]
+        },
+        "fin": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 90) * 4",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_plane.idle": {
+      "loop": true,
+      "bones": {
+        "prop": {
+          "rotation": [
+            "0",
+            "0",
+            "query.life_time * 40"
+          ]
+        },
+        "fin": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40) * 2",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:car",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_car"
+      },
+      "geometry": {
+        "default": "geometry.gx_car"
+      },
+      "animations": {
+        "move": "animation.gx_car.move",
+        "idle": "animation.gx_car.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_car"
+      ],
+      "spawn_egg": {
+        "base_color": "#2f8fe0",
+        "overlay_color": "#ffe27a"
+      }
+    }
+  }
+}
