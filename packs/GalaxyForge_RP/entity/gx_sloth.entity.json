@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:sloth",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_sloth"
+      },
+      "geometry": {
+        "default": "geometry.gx_sloth"
+      },
+      "animations": {
+        "walk": "animation.gx_sloth.walk",
+        "idle": "animation.gx_sloth.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_sloth"
+      ],
+      "spawn_egg": {
+        "base_color": "#8d7a5c",
+        "overlay_color": "#77894e"
+      }
+    }
+  }
+}

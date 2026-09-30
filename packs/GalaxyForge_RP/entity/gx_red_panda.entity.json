@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:red_panda",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_red_panda"
+      },
+      "geometry": {
+        "default": "geometry.gx_red_panda"
+      },
+      "animations": {
+        "walk": "animation.gx_red_panda.walk",
+        "idle": "animation.gx_red_panda.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_red_panda"
+      ],
+      "spawn_egg": {
+        "base_color": "#b8562a",
+        "overlay_color": "#f6efe2"
+      }
+    }
+  }
+}

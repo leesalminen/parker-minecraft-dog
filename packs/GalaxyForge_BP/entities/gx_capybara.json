@@ -1,0 +1,115 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gx:capybara",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "gx_capybara",
+          "gx_creature",
+          "capybara",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 22,
+        "max": 22
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.1
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:nameable": {},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:leashable": {},
+      "minecraft:knockback_resistance": {
+        "value": 0.0
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 64
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "avoid_damage_blocks": true,
+        "can_break_doors": false
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.1,
+        "track_target": true,
+        "reach_multiplier": 1.0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.horse",
+        "seats": [
+          {
+            "position": [
+              0,
+              0.95,
+              0
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 1,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:horse.jump_strength": {
+        "value": 0.4
+      },
+      "minecraft:is_tamed": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 10
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/gx_capybara.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {}
+    }
+  }
+}

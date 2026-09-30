@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:skunk",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_skunk"
+      },
+      "geometry": {
+        "default": "geometry.gx_skunk"
+      },
+      "animations": {
+        "walk": "animation.gx_skunk.walk",
+        "idle": "animation.gx_skunk.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_skunk"
+      ],
+      "spawn_egg": {
+        "base_color": "#2a2630",
+        "overlay_color": "#f4f2ee"
+      }
+    }
+  }
+}
