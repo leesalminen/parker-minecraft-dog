@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_trilobite.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 0) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 180) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r1": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 0) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_l1": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 180) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_l2": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 0) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "leg_r2": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 90 + 180) * 30 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0",
+            "math.sin(query.modified_distance_moved * 90) * 4 * query.modified_move_speed",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_trilobite.idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 90 + 0) * 3",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

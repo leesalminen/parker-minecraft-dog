@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:archaeopteryx",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_archaeopteryx"
+      },
+      "geometry": {
+        "default": "geometry.gx_archaeopteryx"
+      },
+      "animations": {
+        "idle": "animation.gx_archaeopteryx.idle",
+        "walk": "animation.gx_archaeopteryx.walk",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          "idle",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_archaeopteryx"
+      ],
+      "spawn_egg": {
+        "base_color": "#2c4c7a",
+        "overlay_color": "#f2c14a"
+      }
+    }
+  }
+}

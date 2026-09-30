@@ -1,0 +1,85 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_megaloceros.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 0) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 0) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 180) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 36 + 180) * 34 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 36 + 0) * 7 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.modified_distance_moved * 36 + 0) * 1.5 * query.modified_move_speed"
+          ]
+        }
+      }
+    },
+    "animation.gx_megaloceros.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.4",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0.0) * 6",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 70) * 3",
+            "math.sin(query.life_time * 37) * 7",
+            "0"
+          ]
+        },
+        "antlers": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 50 + 0) * 2"
+          ]
+        }
+      }
+    }
+  }
+}

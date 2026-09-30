@@ -1,0 +1,85 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_giant_sloth.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 0) * 22 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 22 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 30 + 0) * 8 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 0) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_giant_sloth.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 85) * 0.3",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0.0) * 5",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 90) * 4",
+            "math.sin(query.life_time * 47) * 8",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.sin(query.life_time * 40 + 0) * 8",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.sin(query.life_time * 40 + 1.5) * 8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

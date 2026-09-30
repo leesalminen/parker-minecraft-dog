@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:megaloceros",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_megaloceros"
+      },
+      "geometry": {
+        "default": "geometry.gx_megaloceros"
+      },
+      "animations": {
+        "walk": "animation.gx_megaloceros.walk",
+        "idle": "animation.gx_megaloceros.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_megaloceros"
+      ],
+      "spawn_egg": {
+        "base_color": "#8a5a36",
+        "overlay_color": "#d8c9a0"
+      }
+    }
+  }
+}
