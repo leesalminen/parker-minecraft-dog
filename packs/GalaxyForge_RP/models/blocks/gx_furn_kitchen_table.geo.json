@@ -1,0 +1,271 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_kitchen_table",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                11,
+                -7
+              ],
+              "size": [
+                14,
+                2,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "white_wood"
+                },
+                "south": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "white_wood"
+                },
+                "east": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "white_wood"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "white_wood"
+                },
+                "up": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    28,
+                    28
+                  ],
+                  "material_instance": "white_wood"
+                },
+                "down": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    28,
+                    28
+                  ],
+                  "material_instance": "white_wood"
+                }
+              }
+            },
+            {
+              "origin": [
+                -1,
+                1,
+                -1
+              ],
+              "size": [
+                2,
+                10,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    14,
+                    10
+                  ],
+                  "uv_size": [
+                    4,
+                    20
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    14,
+                    10
+                  ],
+                  "uv_size": [
+                    4,
+                    20
+                  ],
+                  "material_instance": "oak"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    10
+                  ],
+                  "uv_size": [
+                    4,
+                    20
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    10
+                  ],
+                  "uv_size": [
+                    4,
+                    20
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    14,
+                    14
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    14,
+                    14
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            },
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                1,
+                8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "oak"
+                },
+                "east": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

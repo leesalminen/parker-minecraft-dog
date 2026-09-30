@@ -1,0 +1,511 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_kids_desk",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                8,
+                -6
+              ],
+              "size": [
+                16,
+                2,
+                12
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    12
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "birch"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    12
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "birch"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    12
+                  ],
+                  "uv_size": [
+                    24,
+                    4
+                  ],
+                  "material_instance": "birch"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    12
+                  ],
+                  "uv_size": [
+                    24,
+                    4
+                  ],
+                  "material_instance": "birch"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    32,
+                    24
+                  ],
+                  "material_instance": "birch"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    32,
+                    24
+                  ],
+                  "material_instance": "birch"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -6
+              ],
+              "size": [
+                2,
+                8,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                4
+              ],
+              "size": [
+                2,
+                8,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "east": {
+                  "uv": [
+                    24,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "west": {
+                  "uv": [
+                    24,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    24
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    24
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                }
+              }
+            },
+            {
+              "origin": [
+                6,
+                0,
+                -6
+              ],
+              "size": [
+                2,
+                8,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    28,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "south": {
+                  "uv": [
+                    28,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "up": {
+                  "uv": [
+                    28,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "down": {
+                  "uv": [
+                    28,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                }
+              }
+            },
+            {
+              "origin": [
+                6,
+                0,
+                4
+              ],
+              "size": [
+                2,
+                8,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    28,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "south": {
+                  "uv": [
+                    28,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "east": {
+                  "uv": [
+                    24,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "west": {
+                  "uv": [
+                    24,
+                    16
+                  ],
+                  "uv_size": [
+                    4,
+                    16
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "up": {
+                  "uv": [
+                    28,
+                    24
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                },
+                "down": {
+                  "uv": [
+                    28,
+                    24
+                  ],
+                  "uv_size": [
+                    4,
+                    4
+                  ],
+                  "material_instance": "paint_yellow"
+                }
+              }
+            },
+            {
+              "origin": [
+                0,
+                3,
+                -5
+              ],
+              "size": [
+                7,
+                4.98,
+                0.98
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    16.04
+                  ],
+                  "uv_size": [
+                    14,
+                    9.96
+                  ],
+                  "material_instance": "birch"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "drawers2"
+                },
+                "east": {
+                  "uv": [
+                    6,
+                    16.04
+                  ],
+                  "uv_size": [
+                    1.96,
+                    9.96
+                  ],
+                  "material_instance": "birch"
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    16.04
+                  ],
+                  "uv_size": [
+                    1.96,
+                    9.96
+                  ],
+                  "material_instance": "birch"
+                },
+                "up": {
+                  "uv": [
+                    16,
+                    6
+                  ],
+                  "uv_size": [
+                    14,
+                    1.96
+                  ],
+                  "material_instance": "birch"
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    6
+                  ],
+                  "uv_size": [
+                    14,
+                    1.96
+                  ],
+                  "material_instance": "birch"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

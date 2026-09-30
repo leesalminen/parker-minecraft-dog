@@ -1,0 +1,271 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_floor_lamp",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                0,
+                -3
+              ],
+              "size": [
+                6,
+                1,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    10,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "south": {
+                  "uv": [
+                    10,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "east": {
+                  "uv": [
+                    10,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "west": {
+                  "uv": [
+                    10,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "up": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "iron"
+                },
+                "down": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "iron"
+                }
+              }
+            },
+            {
+              "origin": [
+                -0.5,
+                1,
+                -0.5
+              ],
+              "size": [
+                1.0,
+                10,
+                1.0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    15.0,
+                    10
+                  ],
+                  "uv_size": [
+                    2.0,
+                    20
+                  ],
+                  "material_instance": "iron"
+                },
+                "south": {
+                  "uv": [
+                    15.0,
+                    10
+                  ],
+                  "uv_size": [
+                    2.0,
+                    20
+                  ],
+                  "material_instance": "iron"
+                },
+                "east": {
+                  "uv": [
+                    15.0,
+                    10
+                  ],
+                  "uv_size": [
+                    2.0,
+                    20
+                  ],
+                  "material_instance": "iron"
+                },
+                "west": {
+                  "uv": [
+                    15.0,
+                    10
+                  ],
+                  "uv_size": [
+                    2.0,
+                    20
+                  ],
+                  "material_instance": "iron"
+                },
+                "up": {
+                  "uv": [
+                    15.0,
+                    15.0
+                  ],
+                  "uv_size": [
+                    2.0,
+                    2.0
+                  ],
+                  "material_instance": "iron"
+                },
+                "down": {
+                  "uv": [
+                    15.0,
+                    15.0
+                  ],
+                  "uv_size": [
+                    2.0,
+                    2.0
+                  ],
+                  "material_instance": "iron"
+                }
+              }
+            },
+            {
+              "origin": [
+                -4,
+                11,
+                -4
+              ],
+              "size": [
+                8,
+                5,
+                8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    10
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "south": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    10
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "east": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    10
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "west": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    10
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "lampshade"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

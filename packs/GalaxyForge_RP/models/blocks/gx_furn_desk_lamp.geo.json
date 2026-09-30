@@ -1,0 +1,351 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_desk_lamp",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                1,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "south": {
+                  "uv": [
+                    8,
+                    30
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "east": {
+                  "uv": [
+                    12,
+                    30
+                  ],
+                  "uv_size": [
+                    8,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "west": {
+                  "uv": [
+                    12,
+                    30
+                  ],
+                  "uv_size": [
+                    8,
+                    2
+                  ],
+                  "material_instance": "iron"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    12
+                  ],
+                  "uv_size": [
+                    12,
+                    8
+                  ],
+                  "material_instance": "iron"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    12
+                  ],
+                  "uv_size": [
+                    12,
+                    8
+                  ],
+                  "material_instance": "iron"
+                }
+              }
+            },
+            {
+              "origin": [
+                -1.4800000000000004,
+                1,
+                -0.4800000000000004
+              ],
+              "size": [
+                0.9800000000000004,
+                7,
+                0.9600000000000009
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    13.04,
+                    16
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    14
+                  ],
+                  "material_instance": "iron"
+                },
+                "south": {
+                  "uv": [
+                    13.04,
+                    16
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    14
+                  ],
+                  "material_instance": "iron"
+                },
+                "east": {
+                  "uv": [
+                    15.04,
+                    16
+                  ],
+                  "uv_size": [
+                    1.9200000000000017,
+                    14
+                  ],
+                  "material_instance": "iron"
+                },
+                "west": {
+                  "uv": [
+                    15.04,
+                    16
+                  ],
+                  "uv_size": [
+                    1.9200000000000017,
+                    14
+                  ],
+                  "material_instance": "iron"
+                },
+                "up": {
+                  "uv": [
+                    13.04,
+                    15.04
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    1.9200000000000017
+                  ],
+                  "material_instance": "iron"
+                },
+                "down": {
+                  "uv": [
+                    13.04,
+                    15.04
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    1.9200000000000017
+                  ],
+                  "material_instance": "iron"
+                }
+              }
+            },
+            {
+              "origin": [
+                -1.5,
+                7,
+                -0.5
+              ],
+              "size": [
+                5.5,
+                0.9800000000000004,
+                1.0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    13.0,
+                    16.04
+                  ],
+                  "uv_size": [
+                    11.0,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "iron"
+                },
+                "south": {
+                  "uv": [
+                    13.0,
+                    16.04
+                  ],
+                  "uv_size": [
+                    11.0,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "iron"
+                },
+                "east": {
+                  "uv": [
+                    15.0,
+                    16.04
+                  ],
+                  "uv_size": [
+                    2.0,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "iron"
+                },
+                "west": {
+                  "uv": [
+                    15.0,
+                    16.04
+                  ],
+                  "uv_size": [
+                    2.0,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "iron"
+                },
+                "up": {
+                  "uv": [
+                    13.0,
+                    15.0
+                  ],
+                  "uv_size": [
+                    11.0,
+                    2.0
+                  ],
+                  "material_instance": "iron"
+                },
+                "down": {
+                  "uv": [
+                    13.0,
+                    15.0
+                  ],
+                  "uv_size": [
+                    11.0,
+                    2.0
+                  ],
+                  "material_instance": "iron"
+                }
+              }
+            },
+            {
+              "origin": [
+                2,
+                5,
+                -2
+              ],
+              "size": [
+                4,
+                3,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    20,
+                    16
+                  ],
+                  "uv_size": [
+                    8,
+                    6
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "south": {
+                  "uv": [
+                    20,
+                    16
+                  ],
+                  "uv_size": [
+                    8,
+                    6
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "east": {
+                  "uv": [
+                    12,
+                    16
+                  ],
+                  "uv_size": [
+                    8,
+                    6
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "west": {
+                  "uv": [
+                    12,
+                    16
+                  ],
+                  "uv_size": [
+                    8,
+                    6
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "up": {
+                  "uv": [
+                    20,
+                    12
+                  ],
+                  "uv_size": [
+                    8,
+                    8
+                  ],
+                  "material_instance": "lampshade"
+                },
+                "down": {
+                  "uv": [
+                    20,
+                    12
+                  ],
+                  "uv_size": [
+                    8,
+                    8
+                  ],
+                  "material_instance": "lampshade"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

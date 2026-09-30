@@ -1,0 +1,215 @@
+{
+  "resource_pack_name": "GalaxyForge",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "gx_furn_awning": {
+      "textures": "textures/blocks/gx_furn/awning"
+    },
+    "gx_furn_bathtile": {
+      "textures": "textures/blocks/gx_furn/bathtile"
+    },
+    "gx_furn_birch": {
+      "textures": "textures/blocks/gx_furn/birch"
+    },
+    "gx_furn_books": {
+      "textures": "textures/blocks/gx_furn/books"
+    },
+    "gx_furn_brass": {
+      "textures": "textures/blocks/gx_furn/brass"
+    },
+    "gx_furn_brick": {
+      "textures": "textures/blocks/gx_furn/brick"
+    },
+    "gx_furn_bulb": {
+      "textures": "textures/blocks/gx_furn/bulb"
+    },
+    "gx_furn_cab_door": {
+      "textures": "textures/blocks/gx_furn/cab_door"
+    },
+    "gx_furn_cab_door_dark": {
+      "textures": "textures/blocks/gx_furn/cab_door_dark"
+    },
+    "gx_furn_charcoal": {
+      "textures": "textures/blocks/gx_furn/charcoal"
+    },
+    "gx_furn_chrome": {
+      "textures": "textures/blocks/gx_furn/chrome"
+    },
+    "gx_furn_concrete": {
+      "textures": "textures/blocks/gx_furn/concrete"
+    },
+    "gx_furn_dark_wood": {
+      "textures": "textures/blocks/gx_furn/dark_wood"
+    },
+    "gx_furn_drawers2": {
+      "textures": "textures/blocks/gx_furn/drawers2"
+    },
+    "gx_furn_drawers3": {
+      "textures": "textures/blocks/gx_furn/drawers3"
+    },
+    "gx_furn_dryer_front": {
+      "textures": "textures/blocks/gx_furn/dryer_front"
+    },
+    "gx_furn_embers": {
+      "textures": "textures/blocks/gx_furn/embers"
+    },
+    "gx_furn_fab_black": {
+      "textures": "textures/blocks/gx_furn/fab_black"
+    },
+    "gx_furn_fab_blue": {
+      "textures": "textures/blocks/gx_furn/fab_blue"
+    },
+    "gx_furn_fab_brown": {
+      "textures": "textures/blocks/gx_furn/fab_brown"
+    },
+    "gx_furn_fab_cream": {
+      "textures": "textures/blocks/gx_furn/fab_cream"
+    },
+    "gx_furn_fab_gray": {
+      "textures": "textures/blocks/gx_furn/fab_gray"
+    },
+    "gx_furn_fab_green": {
+      "textures": "textures/blocks/gx_furn/fab_green"
+    },
+    "gx_furn_fab_navy": {
+      "textures": "textures/blocks/gx_furn/fab_navy"
+    },
+    "gx_furn_fab_pink": {
+      "textures": "textures/blocks/gx_furn/fab_pink"
+    },
+    "gx_furn_fab_red": {
+      "textures": "textures/blocks/gx_furn/fab_red"
+    },
+    "gx_furn_fab_white": {
+      "textures": "textures/blocks/gx_furn/fab_white"
+    },
+    "gx_furn_fab_yellow": {
+      "textures": "textures/blocks/gx_furn/fab_yellow"
+    },
+    "gx_furn_filing_front": {
+      "textures": "textures/blocks/gx_furn/filing_front"
+    },
+    "gx_furn_fire": {
+      "textures": "textures/blocks/gx_furn/fire"
+    },
+    "gx_furn_flowers_red": {
+      "textures": "textures/blocks/gx_furn/flowers_red"
+    },
+    "gx_furn_flowers_yellow": {
+      "textures": "textures/blocks/gx_furn/flowers_yellow"
+    },
+    "gx_furn_fridge_front": {
+      "textures": "textures/blocks/gx_furn/fridge_front"
+    },
+    "gx_furn_glass": {
+      "textures": "textures/blocks/gx_furn/glass"
+    },
+    "gx_furn_iron": {
+      "textures": "textures/blocks/gx_furn/iron"
+    },
+    "gx_furn_lampshade": {
+      "textures": "textures/blocks/gx_furn/lampshade"
+    },
+    "gx_furn_leather": {
+      "textures": "textures/blocks/gx_furn/leather"
+    },
+    "gx_furn_leaves": {
+      "textures": "textures/blocks/gx_furn/leaves"
+    },
+    "gx_furn_mail_blue": {
+      "textures": "textures/blocks/gx_furn/mail_blue"
+    },
+    "gx_furn_marble": {
+      "textures": "textures/blocks/gx_furn/marble"
+    },
+    "gx_furn_micro_front": {
+      "textures": "textures/blocks/gx_furn/micro_front"
+    },
+    "gx_furn_mirror": {
+      "textures": "textures/blocks/gx_furn/mirror"
+    },
+    "gx_furn_oak": {
+      "textures": "textures/blocks/gx_furn/oak"
+    },
+    "gx_furn_oven_front": {
+      "textures": "textures/blocks/gx_furn/oven_front"
+    },
+    "gx_furn_paint_blue": {
+      "textures": "textures/blocks/gx_furn/paint_blue"
+    },
+    "gx_furn_paint_green": {
+      "textures": "textures/blocks/gx_furn/paint_green"
+    },
+    "gx_furn_paint_red": {
+      "textures": "textures/blocks/gx_furn/paint_red"
+    },
+    "gx_furn_paint_yellow": {
+      "textures": "textures/blocks/gx_furn/paint_yellow"
+    },
+    "gx_furn_painting": {
+      "textures": "textures/blocks/gx_furn/painting"
+    },
+    "gx_furn_play_mat": {
+      "textures": "textures/blocks/gx_furn/play_mat"
+    },
+    "gx_furn_porcelain": {
+      "textures": "textures/blocks/gx_furn/porcelain"
+    },
+    "gx_furn_quilt_blue": {
+      "textures": "textures/blocks/gx_furn/quilt_blue"
+    },
+    "gx_furn_quilt_rose": {
+      "textures": "textures/blocks/gx_furn/quilt_rose"
+    },
+    "gx_furn_rug_blue": {
+      "textures": "textures/blocks/gx_furn/rug_blue"
+    },
+    "gx_furn_rug_red": {
+      "textures": "textures/blocks/gx_furn/rug_red"
+    },
+    "gx_furn_screen_off": {
+      "textures": "textures/blocks/gx_furn/screen_off"
+    },
+    "gx_furn_screen_on": {
+      "textures": "textures/blocks/gx_furn/screen_on"
+    },
+    "gx_furn_soil": {
+      "textures": "textures/blocks/gx_furn/soil"
+    },
+    "gx_furn_steel": {
+      "textures": "textures/blocks/gx_furn/steel"
+    },
+    "gx_furn_stone": {
+      "textures": "textures/blocks/gx_furn/stone"
+    },
+    "gx_furn_stove_top": {
+      "textures": "textures/blocks/gx_furn/stove_top"
+    },
+    "gx_furn_terracotta": {
+      "textures": "textures/blocks/gx_furn/terracotta"
+    },
+    "gx_furn_towel_stripe": {
+      "textures": "textures/blocks/gx_furn/towel_stripe"
+    },
+    "gx_furn_walnut": {
+      "textures": "textures/blocks/gx_furn/walnut"
+    },
+    "gx_furn_wardrobe_front": {
+      "textures": "textures/blocks/gx_furn/wardrobe_front"
+    },
+    "gx_furn_washer_front": {
+      "textures": "textures/blocks/gx_furn/washer_front"
+    },
+    "gx_furn_water": {
+      "textures": "textures/blocks/gx_furn/water"
+    },
+    "gx_furn_white_wood": {
+      "textures": "textures/blocks/gx_furn/white_wood"
+    },
+    "gx_furn_wicker": {
+      "textures": "textures/blocks/gx_furn/wicker"
+    }
+  }
+}

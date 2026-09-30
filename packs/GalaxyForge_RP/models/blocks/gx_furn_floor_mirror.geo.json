@@ -1,0 +1,351 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_floor_mirror",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5,
+                0,
+                -6
+              ],
+              "size": [
+                10,
+                16,
+                1.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    6,
+                    0
+                  ],
+                  "uv_size": [
+                    20,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    6,
+                    0
+                  ],
+                  "uv_size": [
+                    20,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    6,
+                    4
+                  ],
+                  "uv_size": [
+                    20,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    6,
+                    4
+                  ],
+                  "uv_size": [
+                    20,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            },
+            {
+              "origin": [
+                -4,
+                1,
+                -4.5
+              ],
+              "size": [
+                8,
+                14,
+                0.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    2
+                  ],
+                  "uv_size": [
+                    16,
+                    28
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "mirror"
+                },
+                "east": {
+                  "uv": [
+                    7.0,
+                    2
+                  ],
+                  "uv_size": [
+                    1.0,
+                    28
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    7.0,
+                    2
+                  ],
+                  "uv_size": [
+                    1.0,
+                    28
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    7.0
+                  ],
+                  "uv_size": [
+                    16,
+                    1.0
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    7.0
+                  ],
+                  "uv_size": [
+                    16,
+                    1.0
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            },
+            {
+              "origin": [
+                -5,
+                0,
+                -4.5
+              ],
+              "size": [
+                1,
+                16,
+                1.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    6,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    6,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "east": {
+                  "uv": [
+                    7.0,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    7.0,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    6,
+                    7.0
+                  ],
+                  "uv_size": [
+                    2,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    6,
+                    7.0
+                  ],
+                  "uv_size": [
+                    2,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -4.5
+              ],
+              "size": [
+                1,
+                16,
+                1.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    24,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "east": {
+                  "uv": [
+                    7.0,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    7.0,
+                    0
+                  ],
+                  "uv_size": [
+                    3.0,
+                    32
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    24,
+                    7.0
+                  ],
+                  "uv_size": [
+                    2,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    24,
+                    7.0
+                  ],
+                  "uv_size": [
+                    2,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

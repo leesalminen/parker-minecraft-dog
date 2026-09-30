@@ -1,0 +1,271 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_tv_stand",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7.98,
+                0.02,
+                -5
+              ],
+              "size": [
+                15.96,
+                9.96,
+                13
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0.04,
+                    12.04
+                  ],
+                  "uv_size": [
+                    31.92,
+                    19.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0.04,
+                    12.04
+                  ],
+                  "uv_size": [
+                    31.92,
+                    19.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "east": {
+                  "uv": [
+                    6,
+                    12.04
+                  ],
+                  "uv_size": [
+                    26,
+                    19.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    12.04
+                  ],
+                  "uv_size": [
+                    26,
+                    19.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0.04,
+                    6
+                  ],
+                  "uv_size": [
+                    31.92,
+                    26
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0.04,
+                    6
+                  ],
+                  "uv_size": [
+                    31.92,
+                    26
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                7
+              ],
+              "size": [
+                16,
+                10,
+                0.9800000000000004
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    12
+                  ],
+                  "uv_size": [
+                    32,
+                    20
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "drawers2"
+                },
+                "east": {
+                  "uv": [
+                    30,
+                    12
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    20
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    30,
+                    12
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    20
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    30
+                  ],
+                  "uv_size": [
+                    32,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    30
+                  ],
+                  "uv_size": [
+                    32,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                10,
+                -6
+              ],
+              "size": [
+                16,
+                2,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "dark_wood"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "dark_wood"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    8
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "dark_wood"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    8
+                  ],
+                  "uv_size": [
+                    28,
+                    4
+                  ],
+                  "material_instance": "dark_wood"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    32,
+                    28
+                  ],
+                  "material_instance": "dark_wood"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    32,
+                    28
+                  ],
+                  "material_instance": "dark_wood"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

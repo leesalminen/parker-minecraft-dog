@@ -1,0 +1,431 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_houseplant",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                6,
+                8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    20
+                  ],
+                  "uv_size": [
+                    16,
+                    12
+                  ],
+                  "material_instance": "terracotta"
+                },
+                "south": {
+                  "uv": [
+                    8,
+                    20
+                  ],
+                  "uv_size": [
+                    16,
+                    12
+                  ],
+                  "material_instance": "terracotta"
+                },
+                "east": {
+                  "uv": [
+                    8,
+                    20
+                  ],
+                  "uv_size": [
+                    16,
+                    12
+                  ],
+                  "material_instance": "terracotta"
+                },
+                "west": {
+                  "uv": [
+                    8,
+                    20
+                  ],
+                  "uv_size": [
+                    16,
+                    12
+                  ],
+                  "material_instance": "terracotta"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "terracotta"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "terracotta"
+                }
+              }
+            },
+            {
+              "origin": [
+                -3,
+                6,
+                -3
+              ],
+              "size": [
+                6,
+                1,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    10,
+                    18
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "soil"
+                },
+                "south": {
+                  "uv": [
+                    10,
+                    18
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "soil"
+                },
+                "east": {
+                  "uv": [
+                    10,
+                    18
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "soil"
+                },
+                "west": {
+                  "uv": [
+                    10,
+                    18
+                  ],
+                  "uv_size": [
+                    12,
+                    2
+                  ],
+                  "material_instance": "soil"
+                },
+                "up": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "soil"
+                },
+                "down": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "soil"
+                }
+              }
+            },
+            {
+              "origin": [
+                -6,
+                7.02,
+                0
+              ],
+              "size": [
+                12,
+                7.960000000000001,
+                0.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    4,
+                    2.039999999999999
+                  ],
+                  "uv_size": [
+                    24,
+                    15.920000000000002
+                  ],
+                  "material_instance": "leaves"
+                },
+                "south": {
+                  "uv": [
+                    4,
+                    2.039999999999999
+                  ],
+                  "uv_size": [
+                    24,
+                    15.920000000000002
+                  ],
+                  "material_instance": "leaves"
+                },
+                "east": {
+                  "uv": [
+                    16,
+                    2.039999999999999
+                  ],
+                  "uv_size": [
+                    1.0,
+                    15.920000000000002
+                  ],
+                  "material_instance": "leaves"
+                },
+                "west": {
+                  "uv": [
+                    16,
+                    2.039999999999999
+                  ],
+                  "uv_size": [
+                    1.0,
+                    15.920000000000002
+                  ],
+                  "material_instance": "leaves"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    24,
+                    1.0
+                  ],
+                  "material_instance": "leaves"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    24,
+                    1.0
+                  ],
+                  "material_instance": "leaves"
+                }
+              }
+            },
+            {
+              "origin": [
+                0,
+                7,
+                -6
+              ],
+              "size": [
+                0.5,
+                8,
+                12
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    2
+                  ],
+                  "uv_size": [
+                    1.0,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    2
+                  ],
+                  "uv_size": [
+                    1.0,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    24,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    24,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                },
+                "up": {
+                  "uv": [
+                    16,
+                    4
+                  ],
+                  "uv_size": [
+                    1.0,
+                    24
+                  ],
+                  "material_instance": "leaves"
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    4
+                  ],
+                  "uv_size": [
+                    1.0,
+                    24
+                  ],
+                  "material_instance": "leaves"
+                }
+              }
+            },
+            {
+              "origin": [
+                -4,
+                9,
+                -4
+              ],
+              "size": [
+                8,
+                7,
+                8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    14
+                  ],
+                  "material_instance": "leaves"
+                },
+                "south": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    14
+                  ],
+                  "material_instance": "leaves"
+                },
+                "east": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    14
+                  ],
+                  "material_instance": "leaves"
+                },
+                "west": {
+                  "uv": [
+                    8,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    14
+                  ],
+                  "material_instance": "leaves"
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "leaves"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
