@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_helicopter.fly": {
+      "loop": true,
+      "bones": {
+        "rotor": {
+          "rotation": [
+            "0",
+            "query.life_time * 3200",
+            "0"
+          ]
+        },
+        "tail_rotor": {
+          "rotation": [
+            "query.life_time * 3600",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 210) * 0.25",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 130) * 0.9",
+            "0",
+            "math.sin(query.life_time * 100) * 0.7"
+          ]
+        },
+        "boom": {
+          "rotation": [
+            "math.sin(query.life_time * 330) * 0.6",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_helicopter.idle": {
+      "loop": true,
+      "bones": {
+        "rotor": {
+          "rotation": [
+            "0",
+            "query.life_time * 60",
+            "0"
+          ]
+        },
+        "tail_rotor": {
+          "rotation": [
+            "query.life_time * 90",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

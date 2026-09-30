@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:plane",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_plane"
+      },
+      "geometry": {
+        "default": "geometry.gx_plane"
+      },
+      "animations": {
+        "fly": "animation.gx_plane.fly",
+        "idle": "animation.gx_plane.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "fly": "query.has_rider"
+          },
+          {
+            "idle": "!query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_plane"
+      ],
+      "spawn_egg": {
+        "base_color": "#ffc21f",
+        "overlay_color": "#dd3b2c"
+      }
+    }
+  }
+}
