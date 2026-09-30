@@ -1,0 +1,125 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_moose.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 24 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 24 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 180) * 24 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 180) * 24 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 114) * 0.3",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 38 + 0) * 7 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38 + 0) * 3 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_moose.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 70) * 0.3",
+            "0"
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.sin(query.life_time * 40) * 3",
+            "math.sin(query.life_time * 21) * 14",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 45 + 0.0) * 6",
+            "0"
+          ]
+        },
+        "ear_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 120 + 1.7) * 6 * 1"
+          ]
+        },
+        "ear_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 120 + 1.7) * 6 * -1"
+          ]
+        }
+      }
+    },
+    "animation.gx_moose.attack": {
+      "loop": false,
+      "bones": {
+        "neck": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 24",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fl": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -18",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * -18",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

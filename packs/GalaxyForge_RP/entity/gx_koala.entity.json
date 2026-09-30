@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:koala",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_koala"
+      },
+      "geometry": {
+        "default": "geometry.gx_koala"
+      },
+      "animations": {
+        "walk": "animation.gx_koala.walk",
+        "idle": "animation.gx_koala.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_koala"
+      ],
+      "spawn_egg": {
+        "base_color": "#8f8e98",
+        "overlay_color": "#e6e4e4"
+      }
+    }
+  }
+}

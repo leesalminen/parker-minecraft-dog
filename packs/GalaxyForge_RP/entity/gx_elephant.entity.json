@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:elephant",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_elephant"
+      },
+      "geometry": {
+        "default": "geometry.gx_elephant"
+      },
+      "animations": {
+        "walk": "animation.gx_elephant.walk",
+        "idle": "animation.gx_elephant.idle",
+        "attack": "animation.gx_elephant.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_elephant"
+      ],
+      "spawn_egg": {
+        "base_color": "#8a888e",
+        "overlay_color": "#efe6cf"
+      }
+    }
+  }
+}

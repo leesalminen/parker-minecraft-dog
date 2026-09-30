@@ -1,0 +1,99 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_sloth.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 26 + 0) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_br": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 26 + 0) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_fr": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 26 + 180) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_bl": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 26 + 180) * 14 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 78) * 0.15",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.cos(query.modified_distance_moved * 26 + 0) * 7 * query.modified_move_speed",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 26 + 0) * 3 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_sloth.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 70) * 0.15",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 40) * 3",
+            "math.sin(query.life_time * 21) * 14",
+            "0"
+          ]
+        },
+        "tail0": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 45 + 0.0) * 6",
+            "0"
+          ]
+        },
+        "ear_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 120 + 1.7) * 6 * 1"
+          ]
+        },
+        "ear_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 120 + 1.7) * 6 * -1"
+          ]
+        }
+      }
+    }
+  }
+}

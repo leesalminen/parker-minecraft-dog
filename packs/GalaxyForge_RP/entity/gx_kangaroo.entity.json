@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:kangaroo",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_kangaroo"
+      },
+      "geometry": {
+        "default": "geometry.gx_kangaroo"
+      },
+      "animations": {
+        "walk": "animation.gx_kangaroo.walk",
+        "idle": "animation.gx_kangaroo.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_kangaroo"
+      ],
+      "spawn_egg": {
+        "base_color": "#b98559",
+        "overlay_color": "#efdcbc"
+      }
+    }
+  }
+}

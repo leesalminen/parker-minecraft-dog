@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:flamingo",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_flamingo"
+      },
+      "geometry": {
+        "default": "geometry.gx_flamingo"
+      },
+      "animations": {
+        "walk": "animation.gx_flamingo.walk",
+        "idle": "animation.gx_flamingo.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "0.75",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_flamingo"
+      ],
+      "spawn_egg": {
+        "base_color": "#f07a9a",
+        "overlay_color": "#26202a"
+      }
+    }
+  }
+}
