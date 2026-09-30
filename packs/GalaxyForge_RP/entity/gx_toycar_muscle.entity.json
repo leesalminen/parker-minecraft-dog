@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:toycar_muscle",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_toycar_muscle"
+      },
+      "geometry": {
+        "default": "geometry.gx_toycar_muscle"
+      },
+      "animations": {
+        "roll": "animation.gx_toycar_muscle.roll",
+        "move": "animation.gx_toycar_muscle.move",
+        "idle": "animation.gx_toycar_muscle.idle",
+        "fx": "animation.gx_toycar_muscle.fx"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "roll",
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          {
+            "idle": "query.modified_move_speed <= 0.02"
+          },
+          "fx"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_toycar_muscle"
+      ],
+      "spawn_egg": {
+        "base_color": "#1f5fd8",
+        "overlay_color": "#ff6a00"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_toycar_rover.roll": {
+      "loop": true,
+      "bones": {
+        "wheel_fl": {
+          "rotation": [
+            "query.modified_distance_moved * 236.1",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_fr": {
+          "rotation": [
+            "query.modified_distance_moved * 236.1",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rl": {
+          "rotation": [
+            "query.modified_distance_moved * 236.1",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rr": {
+          "rotation": [
+            "query.modified_distance_moved * 236.1",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_rover.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 1500) * 0.18",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 1100) * 0.9 - query.modified_move_speed * 3",
+            "0",
+            "math.sin(query.life_time * 830) * 0.8"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_rover.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 200) * 0.06",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 120) * 0.4",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_rover.fx": {
+      "loop": true,
+      "bones": {
+        "dish": {
+          "rotation": [
+            "0",
+            "query.life_time * 60",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "math.sin(query.life_time * 300) * 6",
+            "0",
+            "math.sin(query.life_time * 380) * 4"
+          ]
+        }
+      }
+    }
+  }
+}

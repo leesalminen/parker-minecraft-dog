@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:toycar_dunebuggy",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_toycar_dunebuggy"
+      },
+      "geometry": {
+        "default": "geometry.gx_toycar_dunebuggy"
+      },
+      "animations": {
+        "roll": "animation.gx_toycar_dunebuggy.roll",
+        "move": "animation.gx_toycar_dunebuggy.move",
+        "idle": "animation.gx_toycar_dunebuggy.idle",
+        "fx": "animation.gx_toycar_dunebuggy.fx"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "roll",
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          {
+            "idle": "query.modified_move_speed <= 0.02"
+          },
+          "fx"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_toycar_dunebuggy"
+      ],
+      "spawn_egg": {
+        "base_color": "#8ad42a",
+        "overlay_color": "#ff6a00"
+      }
+    }
+  }
+}

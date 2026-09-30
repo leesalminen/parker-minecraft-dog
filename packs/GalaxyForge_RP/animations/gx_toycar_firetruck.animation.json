@@ -1,0 +1,91 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_toycar_firetruck.roll": {
+      "loop": true,
+      "bones": {
+        "wheel_fl": {
+          "rotation": [
+            "query.modified_distance_moved * 314.8",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_fr": {
+          "rotation": [
+            "query.modified_distance_moved * 314.8",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rl": {
+          "rotation": [
+            "query.modified_distance_moved * 314.8",
+            "0",
+            "0"
+          ]
+        },
+        "wheel_rr": {
+          "rotation": [
+            "query.modified_distance_moved * 314.8",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_firetruck.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 1500) * 0.18",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 1100) * 0.9 - query.modified_move_speed * 3",
+            "0",
+            "math.sin(query.life_time * 830) * 0.8"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_firetruck.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 200) * 0.06",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 120) * 0.4",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_toycar_firetruck.fx": {
+      "loop": true,
+      "bones": {
+        "beacon": {
+          "scale": [
+            "math.sin(query.life_time * 700) > 0 ? 1 : 0.01",
+            "math.sin(query.life_time * 700) > 0 ? 1 : 0.01",
+            "math.sin(query.life_time * 700) > 0 ? 1 : 0.01"
+          ]
+        },
+        "ladder": {
+          "rotation": [
+            "math.sin(query.life_time * 90) * 1.5",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

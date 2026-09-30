@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:toycar_racer",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_toycar_racer"
+      },
+      "geometry": {
+        "default": "geometry.gx_toycar_racer"
+      },
+      "animations": {
+        "roll": "animation.gx_toycar_racer.roll",
+        "move": "animation.gx_toycar_racer.move",
+        "idle": "animation.gx_toycar_racer.idle",
+        "fx": "animation.gx_toycar_racer.fx"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "roll",
+          {
+            "move": "query.modified_move_speed > 0.02"
+          },
+          {
+            "idle": "query.modified_move_speed <= 0.02"
+          },
+          "fx"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_toycar_racer"
+      ],
+      "spawn_egg": {
+        "base_color": "#c9161f",
+        "overlay_color": "#f6c90e"
+      }
+    }
+  }
+}
