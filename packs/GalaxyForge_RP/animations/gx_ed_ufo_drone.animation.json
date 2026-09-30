@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_ufo_drone.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 110) * 0.9",
+            "0"
+          ],
+          "rotation": [
+            "math.sin(query.life_time * 70) * 4 + query.modified_move_speed * 60",
+            "0",
+            "math.sin(query.life_time * 55) * 5"
+          ]
+        },
+        "ring": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 250 + 0) * 360",
+            "0"
+          ]
+        },
+        "antenna": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 160 + 0.0) * 10"
+          ]
+        }
+      }
+    }
+  }
+}

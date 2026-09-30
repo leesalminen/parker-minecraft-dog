@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_cyber_bunny",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_cyber_bunny"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_cyber_bunny"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_cyber_bunny.walk",
+        "idle": "animation.gx_ed_cyber_bunny.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_cyber_bunny"
+      ],
+      "spawn_egg": {
+        "base_color": "#f6f2ff",
+        "overlay_color": "#4af0ff"
+      }
+    }
+  }
+}

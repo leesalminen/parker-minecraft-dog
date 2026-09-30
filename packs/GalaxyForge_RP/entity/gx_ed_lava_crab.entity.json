@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_lava_crab",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_lava_crab"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_lava_crab"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_lava_crab.walk",
+        "idle": "animation.gx_ed_lava_crab.idle",
+        "attack": "animation.gx_ed_lava_crab.attack"
+      },
+      "scripts": {
+        "scale": "1.3",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_lava_crab"
+      ],
+      "spawn_egg": {
+        "base_color": "#3c2a2a",
+        "overlay_color": "#ff7a1a"
+      }
+    }
+  }
+}

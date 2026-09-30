@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_cube_bot",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_cube_bot"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_cube_bot"
+      },
+      "animations": {
+        "walk": "animation.gx_ed_cube_bot.walk",
+        "idle": "animation.gx_ed_cube_bot.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_cube_bot"
+      ],
+      "spawn_egg": {
+        "base_color": "#9aa7b6",
+        "overlay_color": "#3fd06a"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:ed_sputnik_bird",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_ed_sputnik_bird"
+      },
+      "geometry": {
+        "default": "geometry.gx_ed_sputnik_bird"
+      },
+      "animations": {
+        "idle": "animation.gx_ed_sputnik_bird.idle"
+      },
+      "scripts": {
+        "scale": "1.3",
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_ed_sputnik_bird"
+      ],
+      "spawn_egg": {
+        "base_color": "#c8d0dc",
+        "overlay_color": "#f08a1c"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_ed_cube_bot.walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 60)) * 2.0 * query.modified_move_speed * 3",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.modified_distance_moved * 60) * 6"
+          ]
+        },
+        "gear": {
+          "position": [
+            "0",
+            "math.abs(math.sin(query.modified_distance_moved * 60)) * 2.0 * query.modified_move_speed * 3",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 300 + 0.0) * 200",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_ed_cube_bot.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.5",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 40 + 0.0) * 5",
+            "0"
+          ]
+        },
+        "gear": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.5",
+            "0"
+          ],
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 120 + 0.0) * 90",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}
