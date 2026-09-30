@@ -31,13 +31,14 @@ emoji. E2..F8 are free in vanilla, so E2 cannot collide.
 title scale, which cannot be measured without the console. The grid width/rows in
 `scope.js` (`WIDTH = 9`) is the single tuning knob; TESTING.md flags it.
 
-## 3. First-person pose numbers are conservative
+## 3. First-person pose is derived, not device-tested
 
-Vanilla's trident needs a large rotation because its pole is drawn along +Y. Our weapons
-are drawn along -Z (muzzle forward), which is already the held orientation, so the shared
-`animation.gx_weapon.wield` pose is identity plus a small `aim` tilt. This avoids guessing
-large offsets blind. If the weapon sits oddly in hand on the PS5, the numbers in
-`RP/animations/gx_weapon.animation.json` are the tuning knob.
+Models are drawn along -Z, but vanilla's first-person arm transform `[95,-45,115]` is applied
+even when holding an item, so -Z is NOT the held orientation. The original hold rotation
+(copied from a donor add-on) pitched barrels ~66 deg upward. `FP_ROT` in
+`tools/weapons/model.py` is now solved so the barrel points forward and the grip down.
+It is computed, not confirmed on device: if guns sit oddly, tune `FP_POS`/`FP_ROT` in
+`RP/animations/gx_weapon.animation.json` (regenerated from model.py).
 
 ## 4. Lobbies / aim state
 

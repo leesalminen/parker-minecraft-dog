@@ -383,12 +383,13 @@ def write_shared_animations():
     `wield` carries the full first- and third-person hold pose; aim/charge only add
     small third-person nudges on top (Bedrock sums animations on a bone).
     """
-    # Hold poses copied from a shipping Bedrock gun add-on whose models use our exact
-    # convention (bone bound via q.item_slot_to_bone_name, pivot 0, barrel along -z, grip
-    # down): koukuma5968/minecraft_addon, animation.sniper_rifle.hold_first_person /
-    # hold_therd_person.  Deriving these from the vanilla arm rotation did not match the
-    # game, so do not "fix" them from first principles; tune against a screenshot.
-    FP_POS, FP_ROT, FP_SCALE = (10.0, 12.0, 6.0), (-15.5, 51.7, -36.2), 0.85
+    # Third-person pose copied from koukuma5968/minecraft_addon (animation.sniper_rifle.
+    # hold_therd_person).  The donor's first-person *hold* rotation (-15.5, 51.7, -36.2)
+    # left the barrel ~66 deg upward under vanilla's [95,-45,115] first-person arm, because
+    # the donor swaps to a +110 deg X "shot" pose we never had.  FP_ROT below is solved so
+    # arm * FP_ROT maps barrel(-z) -> forward and grip -> down (Blockbench first-person
+    # preview convention).  Derived, not yet confirmed on device: tune FP_POS on a screenshot.
+    FP_POS, FP_ROT, FP_SCALE = (10.0, 12.0, 6.0), (82.636095, 61.260361, -51.574206), 0.85
     TP_POS, TP_ROT = (0.0, 24.0, 0.0), (-92.5, 0.0, 0.0)
 
     def pose(tp_pos=(0, 0, 0), tp_rot=(0, 0, 0), base=False):

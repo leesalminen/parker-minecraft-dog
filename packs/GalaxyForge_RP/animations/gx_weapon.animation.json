@@ -11,9 +11,9 @@
             "c.is_first_person ? 6.0 : 0.0"
           ],
           "rotation": [
-            "c.is_first_person ? -15.5 : -92.5",
-            "c.is_first_person ? 51.7 : 0.0",
-            "c.is_first_person ? -36.2 : 0.0"
+            "c.is_first_person ? 82.636095 : -92.5",
+            "c.is_first_person ? 61.260361 : 0.0",
+            "c.is_first_person ? -51.574206 : 0.0"
           ],
           "scale": "c.is_first_person ? 0.85 : 1.0"
         }
