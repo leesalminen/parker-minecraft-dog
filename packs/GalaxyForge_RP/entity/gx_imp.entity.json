@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:imp",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_imp"
+      },
+      "geometry": {
+        "default": "geometry.gx_imp"
+      },
+      "animations": {
+        "walk": "animation.gx_imp.walk",
+        "idle": "animation.gx_imp.idle",
+        "flap": "animation.gx_imp.flap",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02 && query.is_on_ground"
+          },
+          {
+            "flap": "!query.is_on_ground"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_imp"
+      ],
+      "spawn_egg": {
+        "base_color": "#c8321e",
+        "overlay_color": "#ffb02a"
+      }
+    }
+  }
+}

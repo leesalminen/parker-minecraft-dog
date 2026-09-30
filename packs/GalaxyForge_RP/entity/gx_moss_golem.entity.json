@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:moss_golem",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_moss_golem"
+      },
+      "geometry": {
+        "default": "geometry.gx_moss_golem"
+      },
+      "animations": {
+        "walk": "animation.gx_moss_golem.walk",
+        "idle": "animation.gx_moss_golem.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_moss_golem"
+      ],
+      "spawn_egg": {
+        "base_color": "#8d8f84",
+        "overlay_color": "#4f8a34"
+      }
+    }
+  }
+}

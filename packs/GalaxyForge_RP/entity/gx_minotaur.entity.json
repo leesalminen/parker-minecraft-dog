@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:minotaur",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_minotaur"
+      },
+      "geometry": {
+        "default": "geometry.gx_minotaur"
+      },
+      "animations": {
+        "walk": "animation.gx_minotaur.walk",
+        "idle": "animation.gx_minotaur.idle",
+        "attack": "animation.gx_minotaur.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_minotaur"
+      ],
+      "spawn_egg": {
+        "base_color": "#5a3a26",
+        "overlay_color": "#f2c94c"
+      }
+    }
+  }
+}

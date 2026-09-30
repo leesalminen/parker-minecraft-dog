@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "gx:troll",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:weight": {
+          "default": 4
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "value": "swamp"
+            },
+            {
+              "test": "has_biome_tag",
+              "value": "taiga"
+            },
+            {
+              "test": "has_biome_tag",
+              "value": "forest"
+            }
+          ]
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": false
+        }
+      }
+    ]
+  }
+}

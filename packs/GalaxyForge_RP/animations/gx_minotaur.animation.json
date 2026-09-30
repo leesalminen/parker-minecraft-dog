@@ -1,0 +1,90 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_minotaur.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 0) * 28 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "leg_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 28 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 180) * 20 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 30 + 0) * 20 * query.modified_move_speed",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_minotaur.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 80) * 0.5",
+            "0"
+          ]
+        },
+        "arm_l": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 70 + 0) * 4"
+          ]
+        },
+        "arm_r": {
+          "rotation": [
+            "0",
+            "0",
+            "math.sin(query.life_time * 70 + 3.1) * 4"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 40) * 3",
+            "math.sin(query.life_time * 24) * 9",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_minotaur.attack": {
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 24",
+            "0",
+            "0"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time * 180) * 16",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:centaur",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_centaur"
+      },
+      "geometry": {
+        "default": "geometry.gx_centaur"
+      },
+      "animations": {
+        "walk": "animation.gx_centaur.walk",
+        "idle": "animation.gx_centaur.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.05",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_centaur"
+      ],
+      "spawn_egg": {
+        "base_color": "#8a4a26",
+        "overlay_color": "#d8a078"
+      }
+    }
+  }
+}

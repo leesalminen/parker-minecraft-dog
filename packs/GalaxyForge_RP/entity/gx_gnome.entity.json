@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:gnome",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_gnome"
+      },
+      "geometry": {
+        "default": "geometry.gx_gnome"
+      },
+      "animations": {
+        "walk": "animation.gx_gnome.walk",
+        "idle": "animation.gx_gnome.idle",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "0.75",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_gnome"
+      ],
+      "spawn_egg": {
+        "base_color": "#d43a3a",
+        "overlay_color": "#f6f6f2"
+      }
+    }
+  }
+}

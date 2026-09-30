@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:yeti",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_yeti"
+      },
+      "geometry": {
+        "default": "geometry.gx_yeti"
+      },
+      "animations": {
+        "walk": "animation.gx_yeti.walk",
+        "idle": "animation.gx_yeti.idle",
+        "attack": "animation.gx_yeti.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.15",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_yeti"
+      ],
+      "spawn_egg": {
+        "base_color": "#f2f6fb",
+        "overlay_color": "#7d95b0"
+      }
+    }
+  }
+}
