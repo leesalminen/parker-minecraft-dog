@@ -1,0 +1,191 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_wardrobe",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7.98,
+                0.02,
+                -6
+              ],
+              "size": [
+                15.96,
+                15.96,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0.04,
+                    0.03999999999999915
+                  ],
+                  "uv_size": [
+                    31.92,
+                    31.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0.04,
+                    0.03999999999999915
+                  ],
+                  "uv_size": [
+                    31.92,
+                    31.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    0.03999999999999915
+                  ],
+                  "uv_size": [
+                    28,
+                    31.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    0.03999999999999915
+                  ],
+                  "uv_size": [
+                    28,
+                    31.92
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0.04,
+                    4
+                  ],
+                  "uv_size": [
+                    31.92,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0.04,
+                    4
+                  ],
+                  "uv_size": [
+                    31.92,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                7
+              ],
+              "size": [
+                16,
+                16,
+                0.9800000000000004
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "wardrobe_front"
+                },
+                "east": {
+                  "uv": [
+                    30,
+                    0
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    30,
+                    0
+                  ],
+                  "uv_size": [
+                    1.9600000000000009,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    30
+                  ],
+                  "uv_size": [
+                    32,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    30
+                  ],
+                  "uv_size": [
+                    32,
+                    1.9600000000000009
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

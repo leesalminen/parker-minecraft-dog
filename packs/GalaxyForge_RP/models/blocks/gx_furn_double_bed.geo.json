@@ -1,0 +1,671 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_double_bed",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                16,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    32
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    4
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -6
+              ],
+              "size": [
+                2,
+                5,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    22
+                  ],
+                  "uv_size": [
+                    4,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    22
+                  ],
+                  "uv_size": [
+                    4,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    22
+                  ],
+                  "uv_size": [
+                    28,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    22
+                  ],
+                  "uv_size": [
+                    28,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                6,
+                0,
+                -6
+              ],
+              "size": [
+                2,
+                5,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    28,
+                    22
+                  ],
+                  "uv_size": [
+                    4,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "south": {
+                  "uv": [
+                    28,
+                    22
+                  ],
+                  "uv_size": [
+                    4,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    22
+                  ],
+                  "uv_size": [
+                    28,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    22
+                  ],
+                  "uv_size": [
+                    28,
+                    10
+                  ],
+                  "material_instance": "walnut"
+                },
+                "up": {
+                  "uv": [
+                    28,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                },
+                "down": {
+                  "uv": [
+                    28,
+                    4
+                  ],
+                  "uv_size": [
+                    4,
+                    28
+                  ],
+                  "material_instance": "walnut"
+                }
+              }
+            },
+            {
+              "origin": [
+                -6,
+                5,
+                -6
+              ],
+              "size": [
+                12,
+                3,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    24,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "south": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    24,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    28,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    16
+                  ],
+                  "uv_size": [
+                    28,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    4
+                  ],
+                  "uv_size": [
+                    24,
+                    28
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    4
+                  ],
+                  "uv_size": [
+                    24,
+                    28
+                  ],
+                  "material_instance": "fab_white"
+                }
+              }
+            },
+            {
+              "origin": [
+                -6,
+                8,
+                1
+              ],
+              "size": [
+                12,
+                1,
+                7
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    4,
+                    14
+                  ],
+                  "uv_size": [
+                    24,
+                    2
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "south": {
+                  "uv": [
+                    4,
+                    14
+                  ],
+                  "uv_size": [
+                    24,
+                    2
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    14
+                  ],
+                  "uv_size": [
+                    14,
+                    2
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "west": {
+                  "uv": [
+                    18,
+                    14
+                  ],
+                  "uv_size": [
+                    14,
+                    2
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    18
+                  ],
+                  "uv_size": [
+                    24,
+                    14
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    18
+                  ],
+                  "uv_size": [
+                    24,
+                    14
+                  ],
+                  "material_instance": "quilt_blue"
+                }
+              }
+            },
+            {
+              "origin": [
+                -6,
+                8,
+                -5
+              ],
+              "size": [
+                6,
+                3,
+                5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    4,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "south": {
+                  "uv": [
+                    4,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "east": {
+                  "uv": [
+                    6,
+                    10
+                  ],
+                  "uv_size": [
+                    10,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    10
+                  ],
+                  "uv_size": [
+                    10,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "fab_white"
+                }
+              }
+            },
+            {
+              "origin": [
+                0,
+                8,
+                -5
+              ],
+              "size": [
+                6,
+                3,
+                5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "east": {
+                  "uv": [
+                    6,
+                    10
+                  ],
+                  "uv_size": [
+                    10,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    10
+                  ],
+                  "uv_size": [
+                    10,
+                    6
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "up": {
+                  "uv": [
+                    16,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "fab_white"
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "fab_white"
+                }
+              }
+            },
+            {
+              "origin": [
+                -5.98,
+                8.02,
+                0
+              ],
+              "size": [
+                11.96,
+                1.9800000000000004,
+                7.98
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    4.04,
+                    12
+                  ],
+                  "uv_size": [
+                    23.92,
+                    3.960000000000001
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "south": {
+                  "uv": [
+                    4.04,
+                    12
+                  ],
+                  "uv_size": [
+                    23.92,
+                    3.960000000000001
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "east": {
+                  "uv": [
+                    16,
+                    12
+                  ],
+                  "uv_size": [
+                    15.96,
+                    3.960000000000001
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "west": {
+                  "uv": [
+                    16,
+                    12
+                  ],
+                  "uv_size": [
+                    15.96,
+                    3.960000000000001
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "up": {
+                  "uv": [
+                    4.04,
+                    16
+                  ],
+                  "uv_size": [
+                    23.92,
+                    15.96
+                  ],
+                  "material_instance": "quilt_blue"
+                },
+                "down": {
+                  "uv": [
+                    4.04,
+                    16
+                  ],
+                  "uv_size": [
+                    23.92,
+                    15.96
+                  ],
+                  "material_instance": "quilt_blue"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

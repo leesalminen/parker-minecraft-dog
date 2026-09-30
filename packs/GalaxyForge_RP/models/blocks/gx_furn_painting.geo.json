@@ -1,0 +1,111 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.gx_furn_painting",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                2,
+                -8
+              ],
+              "size": [
+                14,
+                12,
+                1.5
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    2,
+                    4
+                  ],
+                  "uv_size": [
+                    28,
+                    24
+                  ],
+                  "material_instance": "oak"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    32,
+                    32
+                  ],
+                  "material_instance": "painting"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    3.0,
+                    24
+                  ],
+                  "material_instance": "oak"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    4
+                  ],
+                  "uv_size": [
+                    3.0,
+                    24
+                  ],
+                  "material_instance": "oak"
+                },
+                "up": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    28,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                },
+                "down": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    28,
+                    3.0
+                  ],
+                  "material_instance": "oak"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

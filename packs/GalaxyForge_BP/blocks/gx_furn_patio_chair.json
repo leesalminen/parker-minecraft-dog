@@ -1,0 +1,189 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "gx:furn_patio_chair",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.gx_home",
+        "is_hidden_in_commands": false
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.gx_furn_patio_chair",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "gx_furn_white_wood",
+          "render_method": "opaque"
+        },
+        "white_wood": {
+          "texture": "gx_furn_white_wood",
+          "render_method": "opaque",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        },
+        "wicker": {
+          "texture": "gx_furn_wicker",
+          "render_method": "opaque",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        },
+        "fab_cream": {
+          "texture": "gx_furn_fab_cream",
+          "render_method": "opaque",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          16,
+          12
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          16,
+          12
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3
+      },
+      "minecraft:map_color": "#d7d4cd"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
