@@ -188,6 +188,1706 @@
           }
         }
       },
+      "gx:ammonite": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.7
+        ],
+        "events": {
+          "ambient": "mob.turtle.ambient",
+          "hurt": "mob.turtle.hurt",
+          "death": "mob.turtle.death",
+          "step": {
+            "sound": "mob.turtle.step",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:ankylosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:archaeopteryx": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.9
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:brachiosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          0.4,
+          0.5
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.4
+          }
+        }
+      },
+      "gx:compsognathus": {
+        "volume": 0.9,
+        "pitch": [
+          1.7,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.7
+          }
+        }
+      },
+      "gx:dilophosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          1.1,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "step": {
+            "sound": "mob.phantom.flap",
+            "volume": 0.3,
+            "pitch": 1.1
+          }
+        }
+      },
+      "gx:dimetrodon": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:dino_hatchling": {
+        "volume": 0.9,
+        "pitch": [
+          1.7,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.7
+          }
+        }
+      },
+      "gx:dire_wolf": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.wolf.panting",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:dodo": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:gallimimus": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:giant_sloth": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.65
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:glyptodon": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.turtle.ambient",
+          "hurt": "mob.turtle.hurt",
+          "death": "mob.turtle.death",
+          "step": {
+            "sound": "mob.turtle.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:mastodon": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:megaloceros": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:pachycephalosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          1.1,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.1
+          }
+        }
+      },
+      "gx:parasaurolophus": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:pterodactyl": {
+        "volume": 0.9,
+        "pitch": [
+          1.2,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "step": {
+            "sound": "mob.phantom.flap",
+            "volume": 0.3,
+            "pitch": 1.2
+          }
+        }
+      },
+      "gx:quetzalcoatlus": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.enderdragon.growl",
+          "hurt": "mob.enderdragon.hit",
+          "death": "mob.enderdragon.death",
+          "step": {
+            "sound": "mob.enderdragon.flap",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:spinosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:stegosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:terror_bird": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:triceratops": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:trilobite": {
+        "volume": 0.9,
+        "pitch": [
+          1.6,
+          1.9
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 1.6
+          }
+        }
+      },
+      "gx:tyrannosaurus": {
+        "volume": 0.9,
+        "pitch": [
+          0.55,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.55
+          }
+        }
+      },
+      "gx:baby_dragon": {
+        "volume": 0.9,
+        "pitch": [
+          1.9,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.enderdragon.growl",
+          "hurt": "mob.enderdragon.hit",
+          "death": "mob.enderdragon.death",
+          "step": {
+            "sound": "mob.enderdragon.flap",
+            "volume": 0.3,
+            "pitch": 1.9
+          }
+        }
+      },
+      "gx:centaur": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          0.95
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:cerberus_pup": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.wolf.panting",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:crystal_golem": {
+        "volume": 0.9,
+        "pitch": [
+          1.2,
+          1.4
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.2
+          }
+        }
+      },
+      "gx:fairy": {
+        "volume": 0.9,
+        "pitch": [
+          1.9,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.9
+          }
+        }
+      },
+      "gx:gargoyle": {
+        "volume": 0.9,
+        "pitch": [
+          0.9,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.9
+          }
+        }
+      },
+      "gx:gnome": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.7
+        ],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "step": {
+            "sound": "mob.villager.idle",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:goblin": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "step": {
+            "sound": "mob.villager.idle",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:griffin": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "step": {
+            "sound": "mob.phantom.flap",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:hydra": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          0.95
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:imp": {
+        "volume": 0.9,
+        "pitch": [
+          1.1,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.1
+          }
+        }
+      },
+      "gx:jackalope": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:kitsune": {
+        "volume": 0.9,
+        "pitch": [
+          1.1,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.1
+          }
+        }
+      },
+      "gx:magma_golem": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:minotaur": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:moss_golem": {
+        "volume": 0.9,
+        "pitch": [
+          0.75,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.75
+          }
+        }
+      },
+      "gx:pegasus": {
+        "volume": 0.9,
+        "pitch": [
+          0.9,
+          1.1
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.9
+          }
+        }
+      },
+      "gx:phoenix": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:sand_golem": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.1
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:sphinx": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.cat.meow",
+          "hurt": "mob.cat.hitt",
+          "death": "mob.cat.hitt",
+          "step": {
+            "sound": "mob.cat.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:troll": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:unicorn": {
+        "volume": 0.9,
+        "pitch": [
+          1.2,
+          1.4
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 1.2
+          }
+        }
+      },
+      "gx:wisp": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:wyvern": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.enderdragon.growl",
+          "hurt": "mob.enderdragon.hit",
+          "death": "mob.enderdragon.death",
+          "step": {
+            "sound": "mob.enderdragon.flap",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:yeti": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:badger": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:bison": {
+        "volume": 0.9,
+        "pitch": [
+          0.85,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.85
+          }
+        }
+      },
+      "gx:capybara": {
+        "volume": 0.9,
+        "pitch": [
+          0.75,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 0.75
+          }
+        }
+      },
+      "gx:cheetah": {
+        "volume": 0.9,
+        "pitch": [
+          0.6,
+          0.75
+        ],
+        "events": {
+          "ambient": "mob.cat.meow",
+          "hurt": "mob.cat.hitt",
+          "death": "mob.cat.hitt",
+          "step": {
+            "sound": "mob.cat.step",
+            "volume": 0.3,
+            "pitch": 0.6
+          }
+        }
+      },
+      "gx:elephant": {
+        "volume": 0.9,
+        "pitch": [
+          0.55,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.55
+          }
+        }
+      },
+      "gx:flamingo": {
+        "volume": 0.9,
+        "pitch": [
+          0.65,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.65
+          }
+        }
+      },
+      "gx:giraffe": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:gorilla": {
+        "volume": 0.9,
+        "pitch": [
+          0.55,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.55
+          }
+        }
+      },
+      "gx:hedgehog": {
+        "volume": 0.9,
+        "pitch": [
+          1.7,
+          1.9
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.7
+          }
+        }
+      },
+      "gx:hippo": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:kangaroo": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:koala": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:lion": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:meerkat": {
+        "volume": 0.9,
+        "pitch": [
+          1.6,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.6
+          }
+        }
+      },
+      "gx:moose": {
+        "volume": 0.9,
+        "pitch": [
+          0.65,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 0.65
+          }
+        }
+      },
+      "gx:otter": {
+        "volume": 0.9,
+        "pitch": [
+          1.25,
+          1.4
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.25
+          }
+        }
+      },
+      "gx:raccoon": {
+        "volume": 0.9,
+        "pitch": [
+          1.15,
+          1.3
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.15
+          }
+        }
+      },
+      "gx:red_panda": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:rhino": {
+        "volume": 0.9,
+        "pitch": [
+          0.65,
+          0.8
+        ],
+        "events": {
+          "ambient": "mob.ravager.ambient",
+          "hurt": "mob.ravager.hurt",
+          "death": "mob.ravager.death",
+          "step": {
+            "sound": "mob.ravager.step",
+            "volume": 0.3,
+            "pitch": 0.65
+          }
+        }
+      },
+      "gx:skunk": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:sloth": {
+        "volume": 0.9,
+        "pitch": [
+          0.9,
+          1.05
+        ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death",
+          "step": {
+            "sound": "mob.fox.step",
+            "volume": 0.3,
+            "pitch": 0.9
+          }
+        }
+      },
+      "gx:tiger": {
+        "volume": 0.9,
+        "pitch": [
+          0.75,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.polarbear.idle",
+          "hurt": "mob.polarbear.hurt",
+          "death": "mob.polarbear.death",
+          "step": {
+            "sound": "mob.polarbear.step",
+            "volume": 0.3,
+            "pitch": 0.75
+          }
+        }
+      },
+      "gx:tortoise": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.85
+        ],
+        "events": {
+          "ambient": "mob.turtle.ambient",
+          "hurt": "mob.turtle.hurt",
+          "death": "mob.turtle.death",
+          "step": {
+            "sound": "mob.turtle.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:toucan": {
+        "volume": 0.9,
+        "pitch": [
+          0.85,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 0.85
+          }
+        }
+      },
+      "gx:zebra": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.15
+        ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "hurt": "mob.horse.hit",
+          "death": "mob.horse.death",
+          "step": {
+            "sound": "mob.horse.gallop",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:ed_ufo_drone": {
+        "volume": 0.9,
+        "pitch": [
+          1.7,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.7
+          }
+        }
+      },
+      "gx:ed_grey_alien": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.6
+        ],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "step": {
+            "sound": "mob.villager.idle",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:ed_tentacle_blob": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:ed_cube_bot": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:ed_space_cat": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.cat.meow",
+          "hurt": "mob.cat.hitt",
+          "death": "mob.cat.hitt",
+          "step": {
+            "sound": "mob.cat.step",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:ed_space_dog": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.wolf.panting",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:ed_rocket_pup": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.wolf.panting",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:ed_giant_beetle": {
+        "volume": 0.9,
+        "pitch": [
+          0.55,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 0.55
+          }
+        }
+      },
+      "gx:ed_giant_ant": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:ed_mantis": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
+      "gx:ed_firefly": {
+        "volume": 0.9,
+        "pitch": [
+          2.0,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.bat.idle",
+          "hurt": "mob.bat.hurt",
+          "death": "mob.bat.death",
+          "step": {
+            "sound": "mob.bat.takeoff",
+            "volume": 0.3,
+            "pitch": 2.0
+          }
+        }
+      },
+      "gx:ed_butterfly_swarm": {
+        "volume": 0.9,
+        "pitch": [
+          1.9,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.9
+          }
+        }
+      },
+      "gx:ed_star_scorpion": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:ed_moon_centipede": {
+        "volume": 0.9,
+        "pitch": [
+          0.9,
+          1.1
+        ],
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "hurt": "mob.silverfish.hit",
+          "death": "mob.silverfish.kill",
+          "step": {
+            "sound": "mob.silverfish.step",
+            "volume": 0.3,
+            "pitch": 0.9
+          }
+        }
+      },
+      "gx:ed_jellyfloat": {
+        "volume": 0.9,
+        "pitch": [
+          1.9,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "hurt": "mob.vex.hurt",
+          "death": "mob.vex.death",
+          "step": {
+            "sound": "mob.vex.ambient",
+            "volume": 0.3,
+            "pitch": 1.9
+          }
+        }
+      },
+      "gx:ed_crystal_golem": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:ed_lava_crab": {
+        "volume": 0.9,
+        "pitch": [
+          0.8,
+          1.0
+        ],
+        "events": {
+          "ambient": "mob.turtle.ambient",
+          "hurt": "mob.turtle.hurt",
+          "death": "mob.turtle.death",
+          "step": {
+            "sound": "mob.turtle.step",
+            "volume": 0.3,
+            "pitch": 0.8
+          }
+        }
+      },
+      "gx:ed_cyber_bunny": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.7
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:ed_moon_rover": {
+        "volume": 0.9,
+        "pitch": [
+          1.2,
+          1.4
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.2
+          }
+        }
+      },
+      "gx:ed_vacuum_bot": {
+        "volume": 0.9,
+        "pitch": [
+          1.8,
+          2.0
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.8
+          }
+        }
+      },
+      "gx:ed_toaster_bot": {
+        "volume": 0.9,
+        "pitch": [
+          1.6,
+          1.9
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.6
+          }
+        }
+      },
+      "gx:ed_mower_bot": {
+        "volume": 0.9,
+        "pitch": [
+          1.0,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.0
+          }
+        }
+      },
+      "gx:ed_cosmic_whale": {
+        "volume": 0.9,
+        "pitch": [
+          0.4,
+          0.5
+        ],
+        "events": {
+          "ambient": "mob.enderdragon.growl",
+          "hurt": "mob.enderdragon.hit",
+          "death": "mob.enderdragon.death",
+          "step": {
+            "sound": "mob.enderdragon.flap",
+            "volume": 0.3,
+            "pitch": 0.4
+          }
+        }
+      },
+      "gx:ed_moon_frog": {
+        "volume": 0.9,
+        "pitch": [
+          1.4,
+          1.7
+        ],
+        "events": {
+          "ambient": "mob.turtle.ambient",
+          "hurt": "mob.turtle.hurt",
+          "death": "mob.turtle.death",
+          "step": {
+            "sound": "mob.turtle.step",
+            "volume": 0.3,
+            "pitch": 1.4
+          }
+        }
+      },
+      "gx:ed_sputnik_bird": {
+        "volume": 0.9,
+        "pitch": [
+          1.3,
+          1.5
+        ],
+        "events": {
+          "ambient": "mob.parrot.idle",
+          "hurt": "mob.parrot.hurt",
+          "death": "mob.parrot.death",
+          "step": {
+            "sound": "mob.parrot.step",
+            "volume": 0.3,
+            "pitch": 1.3
+          }
+        }
+      },
       "gx:hoverbike": {
         "volume": 0.9,
         "pitch": [
@@ -321,6 +2021,227 @@
             "sound": "mob.irongolem.walk",
             "volume": 0.3,
             "pitch": 0.4
+          }
+        }
+      },
+      "gx:toycar_muscle": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_hotrod": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_dragster": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_twinmill": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_dunebuggy": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_police": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_firetruck": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_racer": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_monster": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:toycar_rover": {
+        "volume": 0.9,
+        "pitch": [
+          1.5,
+          1.8
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 1.5
+          }
+        }
+      },
+      "gx:car": {
+        "volume": 0.9,
+        "pitch": [
+          0.7,
+          0.9
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.7
+          }
+        }
+      },
+      "gx:helicopter": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.6
+        ],
+        "events": {
+          "ambient": "mob.irongolem.walk",
+          "hurt": "mob.irongolem.hit",
+          "death": "mob.irongolem.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 0.3,
+            "pitch": 0.5
+          }
+        }
+      },
+      "gx:plane": {
+        "volume": 0.9,
+        "pitch": [
+          0.5,
+          0.7
+        ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "step": {
+            "sound": "mob.phantom.flap",
+            "volume": 0.3,
+            "pitch": 0.5
           }
         }
       },
