@@ -24,7 +24,7 @@ export function arc(ctx) {
   const cd = p.cooldown ?? d.cooldown;
   if (cd) st.cooldown = cd * 20;
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 20);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 20, { ignoreId: ctx.player.id });
   let src = r.entity;
   const c = { ...ctx, point: r.point };
 

@@ -13,6 +13,7 @@
 //
 // A weapon's signature twist is a hook plus, at most, ~60 lines in archetypes/custom/.
 
+import { world } from "@minecraft/server";
 import { fields, spend, tick } from "./state.js";
 import { isProtected, isSelf, mobGriefing, familiesOf } from "./safety.js";
 import * as vfx from "./vfx.js";
@@ -31,28 +32,70 @@ function prune() {
   for (const [id, r] of recent) if (tick - r.tick > 40) recent.delete(id);
 }
 
+// Like a bow, damage is attributed to the shooter.  Script bolts carry a stub player
+// ({ id, location, dimension }), so resolve the live Player to use as damagingEntity.  Without a
+// damaging entity the hit has no attacker: mobs don't aggro, no kill credit / player-kill drops,
+// and some mobs ignore it entirely.
+function shooterOf(ctx) {
+  const p = ctx.player;
+  if (!p) return null;
+  if (typeof p.getComponent === "function") return p;
+  try { return world.getAllPlayers().find((x) => x.id === p.id) ?? null; } catch { return null; }
+}
+
+function hp(entity) {
+  try { const h = entity.getComponent("minecraft:health"); return h ? h.currentValue : null; }
+  catch { return null; }   // entity already dead / unloaded
+}
+
+const warned = new Set();
+function warnOnce(msg) {
+  if (warned.has(msg)) return;
+  warned.add(msg);
+  console.warn(`[GalaxyForge] ${msg}`);
+}
+
+// applyDamage can return true (or throw / return false) without health actually dropping, e.g. a
+// mob rejecting the source.  Escalate: attributed hit -> unattributed hit -> health component, and
+// stop as soon as health goes down (or the entity is gone, which reads as null).
+function strike(entity, amount, opts) {
+  const before = hp(entity);
+  const landed = () => { const now = hp(entity); return before === null || now === null || now < before; };
+  try { entity.applyDamage(amount, opts); } catch (e) { warnOnce(`applyDamage(attributed) threw: ${e?.message ?? e}`); }
+  if (landed()) return true;
+  if (opts.damagingEntity) {
+    try { entity.applyDamage(amount, { cause: opts.cause }); } catch (e) { warnOnce(`applyDamage threw: ${e?.message ?? e}`); }
+    if (landed()) return true;
+  }
+  try {
+    const h = entity.getComponent("minecraft:health");
+    if (h) { h.setCurrentValue(Math.max(0, before - amount)); return true; }
+  } catch (e) { warnOnce(`health fallback threw: ${e?.message ?? e}`); }
+  warnOnce(`damage did not land on ${entity.typeId}`);
+  return false;
+}
+
 export function hurt(entity, amount, ctx, cause) {
   if (!entity || amount <= 0) return false;
   if (isSelf(entity, ctx.player)) return false;
   if (isProtected(entity, ctx.player, { pvp: ctx.pvp })) return false;
   const opts = { cause: cause || "entityAttack" };
+  const shooter = shooterOf(ctx);
+  if (shooter) opts.damagingEntity = shooter;
   const last = recent.get(entity.id);
   if (last && tick - last.tick < IFRAMES) {
-    try {
-      const h = entity.getComponent("minecraft:health");
-      if (h) {
-        const left = h.currentValue - amount;
-        if (left > 0) { h.setCurrentValue(left); return true; }
-        amount = last.amount + h.currentValue + 1;
-      }
-    } catch { /* fall through to applyDamage */ }
-    try { const ok = entity.applyDamage(amount, opts); last.amount = Math.max(last.amount, amount); return ok; }
-    catch { return false; }
+    const h = hp(entity);
+    if (h !== null) {
+      const left = h - amount;
+      if (left > 0) { try { entity.getComponent("minecraft:health").setCurrentValue(left); return true; } catch { /* fall through */ } }
+      amount = last.amount + h + 1;
+    }
+    last.amount = Math.max(last.amount, amount);
+    return strike(entity, amount, opts);
   }
   recent.set(entity.id, { tick, amount });
   prune();
-  try { return entity.applyDamage(amount, opts); }
-  catch { return false; }
+  return strike(entity, amount, opts);
 }
 
 export function status(entity, id, ticks, amp) {

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_ender_axe"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XCX",
+      "XXX",
+      " S "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:ender_pearl"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "result": {
+      "item": "gx:giant_ender_axe",
+      "count": 1
+    }
+  }
+}

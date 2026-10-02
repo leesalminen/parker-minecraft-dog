@@ -17,7 +17,7 @@ export function attach(ctx, grapple) {
   if (grapple && st.cooldown > 0) return;
   st.lastFire = ctx.tick;
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 10);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 10, { ignoreId: ctx.player.id });
   const c = { ...ctx, point: r.point };
   vfx.line(ctx.dim, muzzleLoc(ctx), r.point, d.vfx.body, d.palette,
            { step: 0.4, max: 32, size: 0.22, life: 0.25 });

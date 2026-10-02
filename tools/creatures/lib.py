@@ -248,7 +248,7 @@ def build_behavior(spec):
         c["minecraft:experience_reward"] = {"on_death": b.get("xp", 5)}
     if role == "mount" or b.get("ride"):
         r = b.get("ride", {"seats": [[0, h, 0]]})
-        seats = [{"position": s, "min_rider_count": 0 if i == 0 else 1 + i - 1, "max_rider_count": 1, "lock_rider_rotation": 0}
+        seats = [{"position": s, "min_rider_count": 0 if i == 0 else 1 + i - 1, "max_rider_count": 1, "lock_rider_rotation": r.get("lock", 0)}
                  for i, s in enumerate(r["seats"])]
         seats[0]["min_rider_count"] = 0
         for i, s in enumerate(seats): s["min_rider_count"] = 0 if i == 0 else i; s["max_rider_count"] = len(seats)
@@ -363,7 +363,8 @@ def emit(spec, size_hint=None):
     dump(RP / f"entity/{key}.entity.json", {"format_version": "1.10.0", "minecraft:client_entity": {"description": {
         "identifier": ident, "materials": materials, "textures": {"default": f"textures/entity/{key}"},
         "geometry": {"default": f"geometry.{key}"}, "animations": amap,
-        "scripts": {"scale": str(spec.get("scale", 1.0)), "animate": play},
+        "scripts": dict({"scale": str(spec.get("scale", 1.0)), "animate": play},
+                        **({"pre_animation": spec["pre_animation"]} if spec.get("pre_animation") else {})),
         "render_controllers": [f"controller.render.{key}"],
         "spawn_egg": {"base_color": spec["egg"][0], "overlay_color": spec["egg"][1]}}}})
     dump(RP / f"render_controllers/{key}.render_controllers.json", {"format_version": "1.10.0", "render_controllers": {

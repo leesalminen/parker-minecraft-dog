@@ -1,0 +1,56 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gx:blaster_bolt_red",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "projectile",
+          "blaster_bolt"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:projectile": {
+        "power": 2.6,
+        "gravity": 0.0,
+        "inertia": 1.0,
+        "liquid_inertia": 1.0,
+        "uncertainty_base": 1.5,
+        "hit_sound": "random.fizz",
+        "anchor": 1,
+        "offset": [
+          0,
+          -0.1,
+          0
+        ],
+        "on_hit": {
+          "impact_damage": {
+            "damage": {
+              "min": 3,
+              "max": 5
+            },
+            "knockback": true,
+            "catch_fire": false
+          },
+          "remove_on_hit": {}
+        }
+      }
+    },
+    "events": {}
+  }
+}

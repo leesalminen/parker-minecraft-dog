@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_x_wing.wings": {
+      "loop": true,
+      "bones": {
+        "wing_ul": {
+          "rotation": [
+            "0",
+            "0",
+            "variable.open * -11"
+          ]
+        },
+        "wing_ll": {
+          "rotation": [
+            "0",
+            "0",
+            "variable.open * 11"
+          ]
+        },
+        "wing_ur": {
+          "rotation": [
+            "0",
+            "0",
+            "variable.open * -11"
+          ]
+        },
+        "wing_lr": {
+          "rotation": [
+            "0",
+            "0",
+            "variable.open * 11"
+          ]
+        }
+      }
+    },
+    "animation.gx_x_wing.fly": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 140) * 0.3",
+            "0"
+          ]
+        },
+        "r2": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 120) * 25",
+            "0"
+          ]
+        }
+      }
+    },
+    "animation.gx_x_wing.idle": {
+      "loop": true,
+      "bones": {
+        "r2": {
+          "rotation": [
+            "0",
+            "math.sin(query.life_time * 30) * 10",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

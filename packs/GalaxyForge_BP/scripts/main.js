@@ -24,6 +24,8 @@ import * as deploy from "./archetypes/deploy.js";
 import * as field from "./archetypes/field.js";
 import * as tether from "./archetypes/tether.js";
 import "./vehicles.js";
+import "./space.js";
+import "./giants.js";
 
 const ARCH = { hitscan, bolt, beam, charge, cone, lob, chain, deploy, field, tether };
 

@@ -1,0 +1,145 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gx:tie_fighter",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "gx_tie_fighter",
+          "gx_creature",
+          "vehicle",
+          "gx_vehicle",
+          "starfighter",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 80,
+        "max": 80
+      },
+      "minecraft:collision_box": {
+        "width": 2.0,
+        "height": 3.4
+      },
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:nameable": {},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 64
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:can_fly": {},
+      "minecraft:flying_speed": {
+        "value": 0.7
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.horse",
+        "seats": [
+          {
+            "position": [
+              0,
+              2.0,
+              0.2
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 1,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:input_air_controlled": {
+        "strafe_speed_modifier": 0.4,
+        "backwards_movement_modifier": 0.3
+      },
+      "minecraft:is_tamed": {},
+      "minecraft:fire_immune": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
+            "cause": "fly_into_wall",
+            "deals_damage": false
+          },
+          {
+            "cause": "contact",
+            "deals_damage": false
+          },
+          {
+            "cause": "suffocation",
+            "deals_damage": false
+          },
+          {
+            "cause": "drowning",
+            "deals_damage": false
+          },
+          {
+            "cause": "fire",
+            "deals_damage": false
+          },
+          {
+            "cause": "fire_tick",
+            "deals_damage": false
+          },
+          {
+            "cause": "lava",
+            "deals_damage": false
+          },
+          {
+            "cause": "magma",
+            "deals_damage": false
+          },
+          {
+            "cause": "block_explosion",
+            "deals_damage": false
+          },
+          {
+            "cause": "entity_explosion",
+            "deals_damage": false
+          },
+          {
+            "cause": "lightning",
+            "deals_damage": false
+          },
+          {
+            "cause": "freezing",
+            "deals_damage": false
+          },
+          {
+            "cause": "thorns",
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {}
+    }
+  }
+}

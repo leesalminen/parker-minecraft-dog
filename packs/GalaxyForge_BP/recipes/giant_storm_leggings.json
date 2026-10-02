@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_storm_leggings"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XXX",
+      "XCX",
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:lapis_lazuli"
+      },
+      "C": {
+        "item": "minecraft:lightning_rod"
+      }
+    },
+    "result": {
+      "item": "gx:giant_storm_leggings",
+      "count": 1
+    }
+  }
+}

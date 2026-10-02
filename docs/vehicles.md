@@ -22,7 +22,7 @@ removed.
 - **Plane:** hold W for speed, look where you want to go. Look up a bit on the ground to roll and take off. Once
   airborne it keeps a slow cruise even with no key held, so it can't stall. Nose up climbs, nose down dives, level
   holds altitude. Landing is soft; nothing damages you.
-- **Helicopter:** W flies forward, look to turn. Hovers on its own. Look steeply up (past 30 degrees) to climb,
+- **Helicopter:** W flies forward, look to turn (head look is free; `tickHeli` swings the airframe toward the pilot yaw). Hovers on its own. Look steeply up (past 30 degrees) to climb,
   steeply down (past 45 degrees) to descend; the jump key also climbs when the API reports it. It slows to a gentle
   touch-down within 2 blocks of the ground. Rotors spin fast while someone is aboard.
 - Empty planes and helicopters settle to the ground on their own.
@@ -92,3 +92,22 @@ Both are `hover` entities with `input_air_controlled`, so W moves them along the
 Limits: whether W moves a ridden `hover` entity in full 3D is the main unverified assumption. If W only moves it
 horizontally, the plane still takes off (look up on the ground) and cruises; the helicopter still climbs and
 descends by look angle. The pilot is the first rider only.
+
+## v1.8: starfighters, rocket, space suit, troopers
+
+| Entity | Notes |
+|---|---|
+| `gx:x_wing` X-Wing Starfighter | 1 seat, S-foils spread when boarded, 4 wingtip cannons (red bolts) |
+| `gx:tie_fighter` Twin-Ion Fighter | 1 seat inside an open spoke-frame pod (wide view), 2 chin cannons (green bolts) |
+| `gx:rocket` Galaxy Rocket | 2 seats, 360-degree glass cabin; jump = full thrust, look steeply down = descend, ceiling y=316 |
+
+- Fighters use the plane flight model with `CFG.fighter` (fast, VTOL lift-off: look up on the ground). Fire with
+  **hold JUMP, or click/punch**. Bolts are the weapon engine's script projectiles (`tickGuns` in `vehicles.js`; bolt.js
+  draws a streak when `def.vfx.streak`). Muzzle offsets are in `SHIPS`; if they don't line up with the barrels after a
+  model change, edit them there.
+- Space = overworld y >= 240 (`scripts/space.js`). Without all four `gx:space_*` pieces: 2 damage/second and a warning.
+  Suited: slow falling, jump boost, night vision, resistance. Suit is craftable from iron ingots (+ glass for the helmet).
+- Troopers: `stormtrooper`, `sandtrooper`, `scout_trooper` (hostile, shoot red bolts, also hunt clones);
+  `clone_trooper`, `clone_commander`, `clone_heavy` (tame with cooked beef / bread / porkchop; shoot monsters and
+  imperials, defend their owner). Bolts are `gx:blaster_bolt_{red,blue}` (`extras/troopers_patch.py`).
+- Untested in-game: seat/eye heights (`ride.seats` y), bolt model axis, and jump-as-fire. Tunables: `SHIPS`, `CFG`.

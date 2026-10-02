@@ -10,6 +10,8 @@ realistic firearms and launchers with scope zoom, recoil and synthesized gunshot
 `python3 tools/creatures/build_all.py && python3 tools/build.py`
 (needs Python 3 and ffmpeg), which writes them to `dist/`.
 
+**Giant armor:** 12 armor sets crafted at the Armor Forge that make you huge and strong, see `docs/giant-armor.md`.
+
 **Galaxy Home:** 80+ furniture blocks for a whole house, see `docs/furniture.md` (`python3 tools/furniture/build_furniture.py`).
 
 ## Galaxy Pup

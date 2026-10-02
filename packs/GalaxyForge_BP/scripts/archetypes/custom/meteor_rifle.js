@@ -20,7 +20,7 @@ export function onPress(ctx) {
     return true;
   }
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 90);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 90, { ignoreId: ctx.player.id });
   const point = r.point || add(ctx.eye, ctx.view, p.range ?? 90);
   if (!hitscan.shot(ctx)) return true;              // the marker beam itself
 

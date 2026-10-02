@@ -343,6 +343,24 @@ piece("laptop", "Laptop", "Home Office", [
     B("iron", 2, 0, 4, 14, 1, 14), B("iron", 4, 0.9, 6, 12, 1.1, 12),
     B({"*": "iron", "s": "@screen_on"}, 2, 1, 3, 14, 10, 4)], col=[(2, 0, 3, 14, 10, 14)])
 
+piece("gaming_pc", "Gaming PC Tower", "Home Office", [
+    B("iron", 4, 0, 3, 5, 1, 4), B("iron", 11, 0, 3, 12, 1, 4), B("iron", 4, 0, 14, 5, 1, 15), B("iron", 11, 0, 14, 12, 1, 15),
+    B({"*": "iron", "s": "@pc_front", "top": "rgb_strip"}, 4, 1, 3, 12, 15, 15),
+    B({"*": "pc_side"}, 12, 2, 4, 12.4, 14, 14),
+    B("rgb_strip", 4, 14.5, 3.5, 12, 15, 4.5), B("iron", 6, 15, 6, 10, 15.4, 12)], light=7)
+
+piece("gaming_desk", "Gaming Desk Setup", "Home Office", [
+    B("iron", 0, 7, 1, 16, 8, 15), B("rgb_strip", 0, 6, 14.6, 16, 7, 15),
+    B("iron", 0, 0, 1, 1, 7, 15), B("iron", 15, 0, 1, 16, 7, 15),
+    B({"*": "iron", "s": "@pc_front", "top": "rgb_strip"}, 1.5, 0, 3, 7.5, 7, 14),
+    B("mousepad", 2, 8, 7, 15, 8.2, 14),
+    B("iron", 6.5, 8, 3, 9.5, 9, 6), B("iron", 7.3, 9, 4, 8.7, 11, 5),
+    B({"*": "iron", "s": "@gaming_screen"}, 0.5, 10, 3, 15.5, 16, 4.2),
+    B("rgb_strip", 0.5, 9.6, 3, 15.5, 10, 4.2),
+    B({"*": "iron", "s": "@keyboard"}, 3, 8.2, 9.5, 11, 8.8, 13),
+    B("iron", 12.5, 8.2, 10.5, 14, 8.9, 12.5), B("rgb_strip", 12.7, 8.9, 10.7, 13.8, 9.1, 11.2)],
+    col=[(0, 0, 1, 16, 9, 15), (0.5, 9, 3, 15.5, 16, 4.2)], light=8)
+
 piece("printer", "Printer", "Home Office", [
     B("porcelain", 1, 0, 2, 15, 6, 14), B("fab_white", 3, 6, 5, 13, 7, 12),
     B("iron", 3, 2, 13.5, 13, 3, 14.5), B("paint_green", 12, 4, 13.5, 13.5, 5, 14.5)])

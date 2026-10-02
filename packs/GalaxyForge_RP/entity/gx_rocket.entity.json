@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:rocket",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_rocket"
+      },
+      "geometry": {
+        "default": "geometry.gx_rocket"
+      },
+      "animations": {
+        "fly": "animation.gx_rocket.fly",
+        "idle": "animation.gx_rocket.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "fly": "query.has_rider"
+          },
+          {
+            "idle": "!query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_rocket"
+      ],
+      "spawn_egg": {
+        "base_color": "#f1f3f5",
+        "overlay_color": "#d8362b"
+      }
+    }
+  }
+}

@@ -84,6 +84,7 @@ export function tickBolts(ctxTick) {
       }
     }
 
+    const prevLoc = b.loc;
     const step = mul(b.vel, 1 / 20);
     const next = add(b.loc, step);
     const dir = norm(step);
@@ -109,7 +110,8 @@ export function tickBolts(ctxTick) {
       b.loc = next;
     }
 
-    vfx.spawn(b.dim, b.effect, b.loc, { color: b.pal.core, size: b.size, life: 0.25 });
+    if (b.def.vfx?.streak) vfx.line(b.dim, prevLoc, b.loc, b.effect, b.pal, { step: 0.6, max: 6, size: b.size, life: 0.2 });
+    else vfx.spawn(b.dim, b.effect, b.loc, { color: b.pal.core, size: b.size, life: 0.25 });
     if (b.trail) vfx.trailPoint(b.dim, b.loc, b.trail, b.pal, { size: 0.3, life: 0.5 });
     if (b.custom?.onTick) { try { b.custom.onTick(c, b); } catch { /* ignore */ } }
   }

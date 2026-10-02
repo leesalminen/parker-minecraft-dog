@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:tie_fighter",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_tie_fighter"
+      },
+      "geometry": {
+        "default": "geometry.gx_tie_fighter"
+      },
+      "animations": {
+        "fly": "animation.gx_tie_fighter.fly",
+        "idle": "animation.gx_tie_fighter.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          {
+            "fly": "query.has_rider"
+          },
+          {
+            "idle": "!query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_tie_fighter"
+      ],
+      "spawn_egg": {
+        "base_color": "#8c959d",
+        "overlay_color": "#5fc8ff"
+      }
+    }
+  }
+}

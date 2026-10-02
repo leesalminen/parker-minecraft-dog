@@ -27,7 +27,7 @@ export function press(ctx) {
   let loc;
   if (p.hover) loc = add(ctx.player.location, { x: 0, y: 2.2, z: 0 }, 1);
   else {
-    const r = raycast(ctx.dim, ctx.eye, ctx.view, p.place_range ?? 8);
+    const r = raycast(ctx.dim, ctx.eye, ctx.view, p.place_range ?? 8, { ignoreId: ctx.player.id });
     loc = r.point || add(ctx.eye, ctx.view, 4);
     loc = { x: Math.floor(loc.x) + 0.5, y: Math.floor(loc.y) + 0.1, z: Math.floor(loc.z) + 0.5 };
   }

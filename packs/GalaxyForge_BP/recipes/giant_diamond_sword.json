@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_diamond_sword"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XXX",
+      "XXX",
+      " S "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:diamond"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gx:giant_diamond_sword",
+      "count": 1
+    }
+  }
+}

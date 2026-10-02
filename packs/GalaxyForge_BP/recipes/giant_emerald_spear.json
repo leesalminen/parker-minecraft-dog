@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_emerald_spear"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XXX",
+      "XXX",
+      " S "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:emerald"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gx:giant_emerald_spear",
+      "count": 1
+    }
+  }
+}

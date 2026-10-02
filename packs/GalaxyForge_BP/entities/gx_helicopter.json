@@ -61,22 +61,22 @@
           {
             "position": [
               -0.38,
-              0.53,
+              0.66,
               -0.16
             ],
             "min_rider_count": 0,
             "max_rider_count": 2,
-            "lock_rider_rotation": 0
+            "lock_rider_rotation": 181
           },
           {
             "position": [
               0.38,
-              0.53,
+              0.66,
               -0.16
             ],
             "min_rider_count": 1,
             "max_rider_count": 2,
-            "lock_rider_rotation": 0
+            "lock_rider_rotation": 181
           }
         ]
       },

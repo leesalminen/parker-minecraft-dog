@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:sandtrooper",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_sandtrooper"
+      },
+      "geometry": {
+        "default": "geometry.gx_sandtrooper"
+      },
+      "animations": {
+        "walk": "animation.gx_sandtrooper.walk",
+        "idle": "animation.gx_sandtrooper.idle",
+        "attack": "animation.gx_sandtrooper.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_sandtrooper"
+      ],
+      "spawn_egg": {
+        "base_color": "#d8d1bd",
+        "overlay_color": "#c86a24"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_kaiju_cleaver"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XCX",
+      "XXX",
+      " S "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "result": {
+      "item": "gx:giant_kaiju_cleaver",
+      "count": 1
+    }
+  }
+}

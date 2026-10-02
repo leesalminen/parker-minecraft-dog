@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:clone_heavy",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gx_clone_heavy"
+      },
+      "geometry": {
+        "default": "geometry.gx_clone_heavy"
+      },
+      "animations": {
+        "walk": "animation.gx_clone_heavy.walk",
+        "idle": "animation.gx_clone_heavy.idle",
+        "attack": "animation.gx_clone_heavy.attack",
+        "look": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.1",
+        "animate": [
+          "look",
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          "idle",
+          "attack"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_clone_heavy"
+      ],
+      "spawn_egg": {
+        "base_color": "#e9e9ec",
+        "overlay_color": "#d63a2f"
+      }
+    }
+  }
+}

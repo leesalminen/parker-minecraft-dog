@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_netherite_chestplate"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XCX",
+      "XXX",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:netherite_scrap"
+      },
+      "C": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "gx:giant_netherite_chestplate",
+      "count": 1
+    }
+  }
+}

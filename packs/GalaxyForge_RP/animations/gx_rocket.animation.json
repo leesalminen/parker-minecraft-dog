@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gx_rocket.fly": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "math.sin(query.life_time * 900) * 0.25",
+            "0",
+            "math.cos(query.life_time * 800) * 0.25"
+          ]
+        }
+      }
+    },
+    "animation.gx_rocket.idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "0",
+            "math.sin(query.life_time * 30) * 0.05",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

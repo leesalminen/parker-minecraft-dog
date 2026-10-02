@@ -59,7 +59,7 @@ export function release(ctx) {
   }
 
   // hitscan beam release
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, tier.range ?? p.range ?? 40);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, tier.range ?? p.range ?? 40, { ignoreId: ctx.player.id });
   const c = { ...ctx, point: r.point };
   const pierce = tier.pierce ?? p.pierce ?? 1;
   const targets = r.entity ? r.hits.slice(0, pierce).map((h) => h.entity) : [];

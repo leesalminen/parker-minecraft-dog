@@ -17,7 +17,7 @@ export function onPress(ctx) {
   if (d.ammo.type === "cell") st.ammo = Math.max(0, (st.ammo ?? d.ammo.mag) - 1);
   if (p.cooldown) st.cooldown = p.cooldown * 20;
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 80);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 80, { ignoreId: ctx.player.id });
   const cast = { ...ctx, point: r.point || { ...ctx.eye } };
 
   vfx.spawn(ctx.dim, "gx:ring_wave", cast.point,

@@ -21,7 +21,7 @@ export function hold(ctx) {
   st.beam = (st.beam ?? 0) + 1;
   heat.add(st, d, p.heat_rate ?? 1);
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range, { ignoreId: ctx.player.id });
   const c = { ...ctx, point: r.point };
   const tickRate = p.tick_rate ?? 4;
 
@@ -57,7 +57,7 @@ function refract(ctx, r, dmg) {
   const right = norm({ x: dir.z, y: 0, z: -dir.x });
   for (let i = -1; i <= 1; i++) {
     const fan = norm(add(dir, right, i * 0.28));
-    const rr = raycast(ctx.dim, add(base, fan, 0.3), fan, ctx.def.params.range * 0.6);
+    const rr = raycast(ctx.dim, add(base, fan, 0.3), fan, ctx.def.params.range * 0.6, { ignoreId: ctx.player.id });
     vfx.line(ctx.dim, add(base, fan, 0.3), rr.point, "gx:beam_bar", d.palette,
              { step: 0.6, max: 24, size: 0.16 });
     if (rr.entity) {

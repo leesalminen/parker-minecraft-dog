@@ -1,6 +1,6 @@
 # Galaxy Home furniture
 
-82 placeable furniture blocks (`gx:furn_<id>`) with custom geometry, in the creative inventory under Construction > **Galaxy Home**. Creative-only (no recipes).
+84 placeable furniture blocks (`gx:furn_<id>`) with custom geometry, in the creative inventory under Construction > **Galaxy Home**. Creative-only (no recipes).
 
 ## How it works
 
@@ -26,7 +26,7 @@
 
 **Bathroom** (8): Toilet (`toilet`), Bathroom Sink Vanity (`bathroom_sink`), Bathtub (`bathtub`), Shower Stall (`shower`), Towel Rack (`towel_rack`), Laundry Hamper (`laundry_hamper`), Bath Mat (`bath_mat`), Bathroom Mirror (`bathroom_mirror`)
 
-**Home Office** (6): Desk (`desk`), Office Chair (`office_chair`), Filing Cabinet (`filing_cabinet`), Desk Lamp (`desk_lamp`), Laptop (`laptop`), Printer (`printer`)
+**Home Office** (8): Desk (`desk`), Office Chair (`office_chair`), Filing Cabinet (`filing_cabinet`), Desk Lamp (`desk_lamp`), Laptop (`laptop`), Printer (`printer`), Gaming PC Tower (`gaming_pc`), Gaming Desk Setup (`gaming_desk`)
 
 **Laundry** (3): Washing Machine (`washer`), Dryer (`dryer`), Ironing Board (`ironing_board`)
 

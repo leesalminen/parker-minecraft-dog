@@ -10,6 +10,8 @@
 // teleport pops.  Every tunable is in the CFG block below.
 
 import { world, system } from "@minecraft/server";
+import { projectiles } from "./engine/state.js";
+import { norm, add } from "./engine/ray.js";
 
 const CFG = {
   car: {
@@ -33,6 +35,16 @@ const CFG = {
     rollAccel: 0.012,    // ground-roll acceleration while the pilot looks up
     climb: 0.16,         // max climb rate at full up-pitch
   },
+  // starfighters reuse the plane model of flight with more speed, agility and vertical lift-off
+  fighter: {
+    cruise: 0.42, takeoff: 0.1, turn: 0.14, sinkMax: 0.14, rollAccel: 0.02, climb: 0.3,
+    vtol: true, liftPitch: 10, liftRate: 0.1,
+  },
+  // rocket: heli-style hover, but jump = full thrust up, and it climbs to the top of the sky
+  rocket: {
+    upStart: 25, downStart: 30, maxUp: 0.85, maxDown: 0.35, drag: 0.96, landSlow: 0.12,
+    jumpClimb: true, ceiling: 316,
+  },
   heli: {
     upStart: 30,         // degrees of look-up before the copter climbs
     downStart: 45,       // degrees of look-down before it descends
@@ -40,6 +52,7 @@ const CFG = {
     maxDown: 0.15,
     drag: 0.93,          // horizontal drag per tick so it stops when you let go
     landSlow: 0.07,      // max descent rate within 2 blocks of the ground
+    turn: 0.18,          // fraction of the yaw error closed per tick (pilot look is free; the copter swings round)
   },
 };
 
@@ -231,8 +244,7 @@ function tickCar(car, now) {
 
 // ------------------------------------------------------------------ plane
 
-function tickPlane(plane, pilot, now) {
-  const cfg = CFG.plane;
+function tickPlane(plane, pilot, now, cfg = CFG.plane) {
   const vel = plane.getVelocity();
   const hv = Math.hypot(vel.x, vel.z);
   const alt = altitude(plane);
@@ -247,6 +259,11 @@ function tickPlane(plane, pilot, now) {
     // ground roll: look up to accelerate down the runway; a little lift once fast enough
     if (pitchUp > 10 && hv < cfg.cruise + 0.05) {
       try { plane.applyImpulse({ x: fx * cfg.rollAccel, y: 0, z: fz * cfg.rollAccel }); } catch (e) { warnOnce(e); }
+    }
+    if (cfg.vtol) {
+      if (pitchUp > cfg.liftPitch) impulseY(plane, cfg.liftRate - vel.y);       // fighters lift straight off
+      else if (alt <= 0.3 && vel.y < 0) plane.clearVelocity?.();
+      return;
     }
     if (hv > cfg.takeoff && pitchUp > 8) impulseY(plane, 0.09 - vel.y);
     else if (alt <= 0.3 && vel.y < 0) plane.clearVelocity?.();     // settled on the grass
@@ -287,17 +304,26 @@ function tickPlaneEmpty(plane) {
 
 // ------------------------------------------------------------------ helicopter
 
-function tickHeli(heli, pilot) {
-  const cfg = CFG.heli;
+function tickHeli(heli, pilot, cfg = CFG.heli) {
   const vel = heli.getVelocity();
   const look = pilot.getViewDirection();
   const pitchUp = Math.asin(clamp(look.y, -1, 1)) * 180 / Math.PI;
   const alt = altitude(heli);
 
+  if (cfg.turn) {   // free-look cockpit: swing the airframe toward where the pilot faces
+    try {
+      const cur = heli.getRotation().y;
+      let err = pilot.getRotation().y - cur;
+      err -= 360 * Math.round(err / 360);
+      if (Math.abs(err) > 0.5) heli.setRotation({ x: 0, y: cur + err * cfg.turn });
+    } catch (e) { warnOnce(e); }
+  }
+
   let vyDes = 0;
   if (pitchUp > cfg.upStart) vyDes = clamp((pitchUp - cfg.upStart) / 40, 0, 1) * cfg.maxUp;
   else if (-pitchUp > cfg.downStart) vyDes = -clamp((-pitchUp - cfg.downStart) / 30, 0, 1) * cfg.maxDown;
-  if (pilot.isJumping === true) vyDes = Math.max(vyDes, cfg.maxUp * 0.8);   // jump key climbs when the API exposes it
+  if (pilot.isJumping === true) vyDes = Math.max(vyDes, cfg.maxUp * (cfg.jumpClimb ? 1 : 0.8));   // jump key climbs when the API exposes it
+  if (cfg.ceiling && heli.location.y > cfg.ceiling) vyDes = Math.min(vyDes, 0);                  // top of the world
   if (alt < 2 && vyDes < -cfg.landSlow) vyDes = -cfg.landSlow;
   if (alt <= 0.15 && vyDes < 0) vyDes = 0;                                    // on the ground: stay put
 
@@ -315,6 +341,94 @@ function tickHeliEmpty(heli) {
     const iy = holdVy(heli, -0.1, vel);
     try { heli.applyImpulse({ x: -vel.x * 0.1, y: clamp(iy, -0.2, 0.2), z: -vel.z * 0.1 }); } catch (e) { warnOnce(e); }
   } else holdVy(heli, 0, vel, false);
+}
+
+// ------------------------------------------------------------------ starfighter guns
+//
+// Fire = hold JUMP, or right-click / punch (any of them; the jump key is the reliable one on touch and
+// controller).  Bolts are the weapon engine's own script projectiles (engine/state.js `projectiles`,
+// advanced by bolt.tickBolts), so they hit mobs, respect safety rules and cost nothing per tick when idle.
+// Muzzle offsets are in blocks, model space (x = the ship's left, -z = forward), at the S-foils' open angle.
+
+const SHIPS = {
+  "gx:x_wing": {
+    rate: 5, dmg: 9, speed: 110, size: 0.7, pitch: [0.9, 1.05],
+    pal: { core: [1, 0.9, 0.85], glow: [1, 0.12, 0.08], trail: [1, 0.3, 0.2] },
+    muzzles: [[5.34, 4.82, -3.3], [-5.34, 0.8, -3.3], [-5.34, 4.82, -3.3], [5.34, 0.8, -3.3]],   // fire in a cross pattern
+    perShot: 1,
+  },
+  "gx:tie_fighter": {
+    rate: 4, dmg: 8, speed: 105, size: 0.65, pitch: [1.3, 1.5],
+    pal: { core: [0.85, 1, 0.85], glow: [0.15, 1, 0.2], trail: [0.3, 1, 0.4] },
+    muzzles: [[0.56, 1.94, -2.3], [-0.56, 1.94, -2.3]],
+    perShot: 1,
+  },
+};
+
+const triggerAt = new Map();     // player id -> last tick a click / punch / item use was seen
+const gunState = new Map();      // vehicle id -> { last, idx }
+const hinted = new Set();
+
+function markTrigger(e) { const p = e.source ?? e.damagingEntity; if (p?.id) triggerAt.set(p.id, now); }
+try { world.afterEvents.itemUse.subscribe(markTrigger); } catch (e) { warnOnce(e); }
+try { world.afterEvents.entityHitEntity.subscribe(markTrigger); } catch (e) { warnOnce(e); }
+try { world.afterEvents.entityHitBlock.subscribe(markTrigger); } catch (e) { warnOnce(e); }
+
+function shipDef(cfg) {
+  return cfg._def ??= { id: "ship_blaster", params: { speed: cfg.speed }, palette: cfg.pal,
+                        vfx: { body: "gx:orb_droplet", streak: true }, hooks: null, custom: null, ammo: { type: "none" } };
+}
+
+function tickGuns(ship, pilot) {
+  const cfg = SHIPS[ship.typeId];
+  if (!cfg) return;
+  if (!hinted.has(pilot.id)) {
+    hinted.add(pilot.id);
+    try { pilot.onScreenDisplay.setActionBar("Look to steer  |  W = thrust  |  hold JUMP or click to fire"); } catch { /* ignore */ }
+  }
+  const firing = pilot.isJumping === true || now - (triggerAt.get(pilot.id) ?? -99) <= 6;
+  if (!firing) return;
+  const st = gunState.get(ship.id) ?? { last: -99, idx: 0 };
+  gunState.set(ship.id, st);
+  if (now - st.last < cfg.rate) return;
+  st.last = now;
+
+  const loc = ship.location;
+  const yaw = (ship.getRotation().y * Math.PI) / 180;
+  const fx = -Math.sin(yaw), fz = Math.cos(yaw);        // forward on the ground plane
+  const lx = Math.cos(yaw), lz = Math.sin(yaw);         // the ship's left
+  const view = pilot.getViewDirection();
+  const eye = pilot.getHeadLocation();
+  const aim = add(eye, view, 70);                       // guns converge on the crosshair
+  for (let k = 0; k < cfg.perShot; k++) {
+    const m = cfg.muzzles[st.idx++ % cfg.muzzles.length];
+    const from = { x: loc.x + lx * m[0] - fx * m[2], y: loc.y + m[1], z: loc.z + lz * m[0] - fz * m[2] };
+    const dir = norm({ x: aim.x - from.x, y: aim.y - from.y, z: aim.z - from.z });
+    projectiles.push({
+      def: shipDef(cfg), ownerId: pilot.id, dim: ship.dimension, pal: cfg.pal,
+      loc: from, origin: from, vel: { x: dir.x * cfg.speed, y: dir.y * cfg.speed, z: dir.z * cfg.speed },
+      life: 45, bounces: 0, pierce: 0, splits: 0, gravity: 0, homing: 0, fuse: 0,
+      damage: cfg.dmg, aoe: 2, aoe_mult: 0.5, size: cfg.size, stuck: false, stuckTicks: 0,
+      effect: "gx:orb_droplet", onHit: null, tickHook: null, custom: null, trail: null,
+    });
+    try { ship.dimension.playSound("gx.gun.bolt", from, { volume: 1.2, pitch: cfg.pitch[0] + Math.random() * (cfg.pitch[1] - cfg.pitch[0]) }); } catch { /* ignore */ }
+  }
+}
+
+// ------------------------------------------------------------------ rocket exhaust
+
+function rocketFx(rocket, pilot) {
+  const vel = rocket.getVelocity();
+  const thrusting = vel.y > 0.08 || pilot.isJumping === true;
+  if (!thrusting) return;
+  const l = rocket.location;
+  const dim = rocket.dimension;
+  try {
+    dim.spawnParticle("minecraft:basic_flame_particle", { x: l.x, y: l.y + 0.1, z: l.z });
+    dim.spawnParticle("minecraft:basic_flame_particle", { x: l.x + 0.3, y: l.y, z: l.z - 0.3 });
+    dim.spawnParticle("minecraft:basic_smoke_particle", { x: l.x, y: l.y - 0.3, z: l.z });
+    if (now % 8 === 0) dim.playSound("firework.launch", l, { volume: 2, pitch: 0.6 });
+  } catch { /* ignore */ }
 }
 
 // ------------------------------------------------------------------ main loop
@@ -338,6 +452,12 @@ system.runInterval(() => {
         switch (v.typeId) {
           case "gx:car": if (pilot) tickCar(v, now); break;
           case "gx:plane": if (pilot) tickPlane(v, pilot, now); else tickPlaneEmpty(v); break;
+          case "gx:x_wing": case "gx:tie_fighter":
+            if (pilot) { tickPlane(v, pilot, now, CFG.fighter); tickGuns(v, pilot); } else tickPlaneEmpty(v);
+            break;
+          case "gx:rocket":
+            if (pilot) { tickHeli(v, pilot, CFG.rocket); rocketFx(v, pilot); } else tickHeliEmpty(v);
+            break;
           case "gx:helicopter": if (pilot) tickHeli(v, pilot); else tickHeliEmpty(v); break;
           default: break;
         }

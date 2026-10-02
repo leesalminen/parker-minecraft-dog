@@ -9,7 +9,7 @@ import json
 import lib
 from lib import BP
 
-VEHICLES = ("car", "plane", "helicopter")
+VEHICLES = ("car", "plane", "helicopter", "tie_fighter", "x_wing", "rocket")
 
 STRIP = (
     "minecraft:attack", "minecraft:behavior.melee_attack", "minecraft:behavior.hurt_by_target",

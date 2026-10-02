@@ -1,6 +1,6 @@
 // hitscan: instant ray, tracer particle, optional pierce / ricochet / headshot bonus.
 
-import { system } from "@minecraft/server";
+import { system, world } from "@minecraft/server";
 import { raycast, add, dist, entitiesNear, spreadDir, eyeOf, viewOf } from "../engine/ray.js";
 import { applyEffects, hurt } from "../engine/damage.js";
 import { familiesOf } from "../engine/safety.js";
@@ -8,6 +8,9 @@ import * as vfx from "../engine/vfx.js";
 import * as sound from "../engine/sound.js";
 import * as heat from "../engine/heat.js";
 import * as firearm from "../engine/firearm.js";
+
+// Temporary: prints what a shot hit (every 6th round) so "no damage" can be diagnosed in-game.
+const DEBUG_SHOTS = true;
 
 export const POLISHED = [
   "minecraft:iron_block", "minecraft:gold_block", "minecraft:quartz_block", "minecraft:glass",
@@ -81,8 +84,27 @@ export function shot(ctx, bounce = 0, fromDir = null, fromOrigin = null, sub = f
   let last = null;
   for (let i = 0; i < pellets; i++) {
     const dir = spread ? spreadDir(baseDir, spread) : baseDir;
-    const r = raycast(ctx.dim, origin, dir, p.range);
+    const r = raycast(ctx.dim, origin, dir, p.range, { ignoreId: ctx.player.id });
     const point = r.point || add(origin, dir, p.range);
+    if (DEBUG_SHOTS && st.shots % 6 === 1) {
+      const hits = r.hits.slice(0, 3).map((h) => `${h.entity.typeId}@${h.dist.toFixed(1)}`).join(", ") || "none";
+      let near = "";
+      try {
+        const es = ctx.dim.getEntities({ location: origin, maxDistance: 40, excludeTypes: ["minecraft:player", "minecraft:item", "minecraft:xp_orb"] });
+        let best = null;
+        for (const e of es) {
+          const v = { x: e.location.x - origin.x, y: e.location.y + 0.9 - origin.y, z: e.location.z - origin.z };
+          const l = Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z) || 1;
+          const ang = Math.acos(Math.max(-1, Math.min(1, (v.x * dir.x + v.y * dir.y + v.z * dir.z) / l))) * 180 / Math.PI;
+          if (!best || ang < best.ang) best = { e, ang, l };
+        }
+        if (best) near = ` nearest-to-crosshair=${best.e.typeId}@${best.l.toFixed(1)}m off=${best.ang.toFixed(1)}deg`;
+      } catch { /* ignore */ }
+      try {
+        world.sendMessage(`§7[shot] ${d.id} range=${p.range} dmg=${p.damage} dir=${dir.x.toFixed(2)},${dir.y.toFixed(2)},${dir.z.toFixed(2)} ` +
+          `entities=[${hits}] block=${r.block?.typeId ?? "none"}${r.capped ? " §cRAY-BUDGET-CAPPED" : ""}${near}`);
+      } catch { /* ignore */ }
+    }
     last = { r, dir, point };
 
     const hits = r.entity ? (p.pierce ? r.hits.slice(0, p.pierce).map((h) => h.entity) : [r.entity]) : [];

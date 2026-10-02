@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:x_wing",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_x_wing"
+      },
+      "geometry": {
+        "default": "geometry.gx_x_wing"
+      },
+      "animations": {
+        "wings": "animation.gx_x_wing.wings",
+        "fly": "animation.gx_x_wing.fly",
+        "idle": "animation.gx_x_wing.idle"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "wings",
+          {
+            "fly": "query.has_rider"
+          },
+          {
+            "idle": "!query.has_rider"
+          }
+        ],
+        "pre_animation": [
+          "variable.open = math.lerp(variable.open, query.has_rider ? 1 : 0, 0.06);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gx_x_wing"
+      ],
+      "spawn_egg": {
+        "base_color": "#d5dade",
+        "overlay_color": "#c9352b"
+      }
+    }
+  }
+}

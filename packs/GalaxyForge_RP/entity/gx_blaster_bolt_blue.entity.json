@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gx:blaster_bolt_blue",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/gx_blaster_bolt_blue"
+      },
+      "geometry": {
+        "default": "geometry.gx_blaster_bolt"
+      },
+      "render_controllers": [
+        "controller.render.gx_blaster_bolt"
+      ]
+    }
+  }
+}

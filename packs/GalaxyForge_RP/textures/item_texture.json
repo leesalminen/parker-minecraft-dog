@@ -2,6 +2,186 @@
   "resource_pack_name": "GalaxyForge",
   "texture_name": "atlas.items",
   "texture_data": {
+    "gx_giant_ogre_helmet": {
+      "textures": "textures/items/gx_giant_ogre_helmet"
+    },
+    "gx_giant_ogre_chestplate": {
+      "textures": "textures/items/gx_giant_ogre_chestplate"
+    },
+    "gx_giant_ogre_leggings": {
+      "textures": "textures/items/gx_giant_ogre_leggings"
+    },
+    "gx_giant_ogre_boots": {
+      "textures": "textures/items/gx_giant_ogre_boots"
+    },
+    "gx_giant_copper_helmet": {
+      "textures": "textures/items/gx_giant_copper_helmet"
+    },
+    "gx_giant_copper_chestplate": {
+      "textures": "textures/items/gx_giant_copper_chestplate"
+    },
+    "gx_giant_copper_leggings": {
+      "textures": "textures/items/gx_giant_copper_leggings"
+    },
+    "gx_giant_copper_boots": {
+      "textures": "textures/items/gx_giant_copper_boots"
+    },
+    "gx_giant_iron_helmet": {
+      "textures": "textures/items/gx_giant_iron_helmet"
+    },
+    "gx_giant_iron_chestplate": {
+      "textures": "textures/items/gx_giant_iron_chestplate"
+    },
+    "gx_giant_iron_leggings": {
+      "textures": "textures/items/gx_giant_iron_leggings"
+    },
+    "gx_giant_iron_boots": {
+      "textures": "textures/items/gx_giant_iron_boots"
+    },
+    "gx_giant_gold_helmet": {
+      "textures": "textures/items/gx_giant_gold_helmet"
+    },
+    "gx_giant_gold_chestplate": {
+      "textures": "textures/items/gx_giant_gold_chestplate"
+    },
+    "gx_giant_gold_leggings": {
+      "textures": "textures/items/gx_giant_gold_leggings"
+    },
+    "gx_giant_gold_boots": {
+      "textures": "textures/items/gx_giant_gold_boots"
+    },
+    "gx_giant_frost_helmet": {
+      "textures": "textures/items/gx_giant_frost_helmet"
+    },
+    "gx_giant_frost_chestplate": {
+      "textures": "textures/items/gx_giant_frost_chestplate"
+    },
+    "gx_giant_frost_leggings": {
+      "textures": "textures/items/gx_giant_frost_leggings"
+    },
+    "gx_giant_frost_boots": {
+      "textures": "textures/items/gx_giant_frost_boots"
+    },
+    "gx_giant_magma_helmet": {
+      "textures": "textures/items/gx_giant_magma_helmet"
+    },
+    "gx_giant_magma_chestplate": {
+      "textures": "textures/items/gx_giant_magma_chestplate"
+    },
+    "gx_giant_magma_leggings": {
+      "textures": "textures/items/gx_giant_magma_leggings"
+    },
+    "gx_giant_magma_boots": {
+      "textures": "textures/items/gx_giant_magma_boots"
+    },
+    "gx_giant_storm_helmet": {
+      "textures": "textures/items/gx_giant_storm_helmet"
+    },
+    "gx_giant_storm_chestplate": {
+      "textures": "textures/items/gx_giant_storm_chestplate"
+    },
+    "gx_giant_storm_leggings": {
+      "textures": "textures/items/gx_giant_storm_leggings"
+    },
+    "gx_giant_storm_boots": {
+      "textures": "textures/items/gx_giant_storm_boots"
+    },
+    "gx_giant_ender_helmet": {
+      "textures": "textures/items/gx_giant_ender_helmet"
+    },
+    "gx_giant_ender_chestplate": {
+      "textures": "textures/items/gx_giant_ender_chestplate"
+    },
+    "gx_giant_ender_leggings": {
+      "textures": "textures/items/gx_giant_ender_leggings"
+    },
+    "gx_giant_ender_boots": {
+      "textures": "textures/items/gx_giant_ender_boots"
+    },
+    "gx_giant_emerald_helmet": {
+      "textures": "textures/items/gx_giant_emerald_helmet"
+    },
+    "gx_giant_emerald_chestplate": {
+      "textures": "textures/items/gx_giant_emerald_chestplate"
+    },
+    "gx_giant_emerald_leggings": {
+      "textures": "textures/items/gx_giant_emerald_leggings"
+    },
+    "gx_giant_emerald_boots": {
+      "textures": "textures/items/gx_giant_emerald_boots"
+    },
+    "gx_giant_diamond_helmet": {
+      "textures": "textures/items/gx_giant_diamond_helmet"
+    },
+    "gx_giant_diamond_chestplate": {
+      "textures": "textures/items/gx_giant_diamond_chestplate"
+    },
+    "gx_giant_diamond_leggings": {
+      "textures": "textures/items/gx_giant_diamond_leggings"
+    },
+    "gx_giant_diamond_boots": {
+      "textures": "textures/items/gx_giant_diamond_boots"
+    },
+    "gx_giant_netherite_helmet": {
+      "textures": "textures/items/gx_giant_netherite_helmet"
+    },
+    "gx_giant_netherite_chestplate": {
+      "textures": "textures/items/gx_giant_netherite_chestplate"
+    },
+    "gx_giant_netherite_leggings": {
+      "textures": "textures/items/gx_giant_netherite_leggings"
+    },
+    "gx_giant_netherite_boots": {
+      "textures": "textures/items/gx_giant_netherite_boots"
+    },
+    "gx_giant_kaiju_helmet": {
+      "textures": "textures/items/gx_giant_kaiju_helmet"
+    },
+    "gx_giant_kaiju_chestplate": {
+      "textures": "textures/items/gx_giant_kaiju_chestplate"
+    },
+    "gx_giant_kaiju_leggings": {
+      "textures": "textures/items/gx_giant_kaiju_leggings"
+    },
+    "gx_giant_kaiju_boots": {
+      "textures": "textures/items/gx_giant_kaiju_boots"
+    },
+    "gx_giant_ogre_club": {
+      "textures": "textures/items/gx_giant_ogre_club"
+    },
+    "gx_giant_copper_maul": {
+      "textures": "textures/items/gx_giant_copper_maul"
+    },
+    "gx_giant_iron_sword": {
+      "textures": "textures/items/gx_giant_iron_sword"
+    },
+    "gx_giant_gold_axe": {
+      "textures": "textures/items/gx_giant_gold_axe"
+    },
+    "gx_giant_frost_sword": {
+      "textures": "textures/items/gx_giant_frost_sword"
+    },
+    "gx_giant_magma_cleaver": {
+      "textures": "textures/items/gx_giant_magma_cleaver"
+    },
+    "gx_giant_storm_spear": {
+      "textures": "textures/items/gx_giant_storm_spear"
+    },
+    "gx_giant_ender_axe": {
+      "textures": "textures/items/gx_giant_ender_axe"
+    },
+    "gx_giant_emerald_spear": {
+      "textures": "textures/items/gx_giant_emerald_spear"
+    },
+    "gx_giant_diamond_sword": {
+      "textures": "textures/items/gx_giant_diamond_sword"
+    },
+    "gx_giant_netherite_maul": {
+      "textures": "textures/items/gx_giant_netherite_maul"
+    },
+    "gx_giant_kaiju_cleaver": {
+      "textures": "textures/items/gx_giant_kaiju_cleaver"
+    },
     "gx_saber_azure": {
       "textures": "textures/items/gx_saber_azure"
     },
@@ -70,6 +250,18 @@
     },
     "gx_multitool_netherite": {
       "textures": "textures/items/gx_multitool_netherite"
+    },
+    "gx_space_helmet": {
+      "textures": "textures/items/gx_space_helmet"
+    },
+    "gx_space_chestplate": {
+      "textures": "textures/items/gx_space_chestplate"
+    },
+    "gx_space_leggings": {
+      "textures": "textures/items/gx_space_leggings"
+    },
+    "gx_space_boots": {
+      "textures": "textures/items/gx_space_boots"
     },
     "gx_acid_sprayer": {
       "textures": "textures/items/gx_acid_sprayer"

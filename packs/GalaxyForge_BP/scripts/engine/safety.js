@@ -28,11 +28,21 @@ export function mobGriefing() {
   try { return world.gameRules.mobGriefing === true; } catch { return false; }
 }
 
+// Vehicles are `is_tamed` only because Bedrock requires it for steering, not because they are pets.
+// An empty one is fair game; one with anybody aboard is not (it would hurt the driver's own ride).
+function isEmptyVehicle(entity) {
+  if (!familiesOf(entity).includes("vehicle")) return false;
+  try {
+    const r = entity.getComponent("minecraft:rideable");
+    return !(r && r.getRiders().length > 0);
+  } catch { return false; }
+}
+
 /** True when this entity must never be damaged by a weapon. */
 export function isProtected(entity, player, opts = {}) {
   if (!entity) return true;
   if (entity.typeId === PUP) return true;
-  if (isTamed(entity)) return true;
+  if (isTamed(entity) && !isEmptyVehicle(entity)) return true;
   if (isPlayer(entity)) return !(opts.pvp ?? false);
   return false;
 }

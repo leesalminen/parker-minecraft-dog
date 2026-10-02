@@ -72,7 +72,7 @@ function speedloader(ctx) {
 
 function shoot(ctx, dir, boom) {
   const d = ctx.def, p = d.params;
-  const r = raycast(ctx.dim, ctx.eye, dir, p.range ?? 32);
+  const r = raycast(ctx.dim, ctx.eye, dir, p.range ?? 32, { ignoreId: ctx.player.id });
   const point = r.point || add(ctx.eye, dir, p.range ?? 32);
   const c = { ...ctx, point };
   if (r.entity && !isProtected(r.entity, ctx.player, { pvp: false })) {

@@ -2,6 +2,7 @@
 // busy tick can never stall the script watchdog.
 
 import { spend } from "./state.js";
+import { isProtected } from "./safety.js";
 
 export function add(a, b, s = 1) { return { x: a.x + b.x * s, y: a.y + b.y * s, z: a.z + b.z * s }; }
 
@@ -58,6 +59,9 @@ export function raycast(dim, origin, dir, maxDist, opts = {}) {
       for (const h of hits) {
         const e = h.entity;
         if (!e || e.id === opts.ignoreId) continue;
+        // Shots pass through anything weapons never hurt (pup, tamed mobs, vehicles, players with
+        // pvp off).  Otherwise a parked car or pet soaks up the ray and shields what is behind it.
+        if (!opts.hitProtected && isProtected(e, null)) continue;
         const d = typeof h.distance === "number" ? h.distance : dist(origin, e.location);
         if (d > blockDist) continue;
         res.hits.push({ entity: e, dist: d });

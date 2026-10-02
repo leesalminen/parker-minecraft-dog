@@ -19,7 +19,7 @@ export function onHold(ctx) {
   const d = ctx.def, p = d.params, st = ctx.st;
   if (st.cooldown > 0 || st.scratch.striking) return true;
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 120);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 120, { ignoreId: ctx.player.id });
   const point = r.point || add(ctx.eye, ctx.view, p.range ?? 120);
   st.charge = Math.min(LOCK_TICKS, (st.charge ?? 0) + 1);
 

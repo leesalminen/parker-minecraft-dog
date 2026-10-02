@@ -304,6 +304,64 @@ def stripe(a, b, w=4):
     return lambda x, y: shade(a if (y // w) % 2 == 0 else b, 1 + (hash01(x, y, 34) - .5) * .05)
 
 
+def _rainbow(t):
+    import colorsys
+    r, g, b = colorsys.hsv_to_rgb(t % 1.0, 0.85, 1.0)
+    return (int(r * 255), int(g * 255), int(b * 255), 255)
+
+
+def pc_front():
+    """Black mesh front panel with three glowing RGB fan rings."""
+    def f(x, y):
+        if x in (0, T - 1) or y in (0, T - 1): return "#0a0b0d"
+        for cy in (6, 16, 26):
+            d = math.hypot(x - 15.5, y - cy)
+            if 4.4 < d < 5.6: return _rainbow(math.atan2(y - cy, x - 15.5) / 6.283 + cy / 40)
+            if d <= 4.4:
+                if d < 1.5: return "#1a1c20"
+                return "#15171b" if (int(math.atan2(y - cy, x - 15.5) * 2.5) % 2) else "#22252a"
+        return "#101115" if (x + y) % 3 else "#191b20"
+    return f
+
+
+def pc_side():
+    """Tempered-glass side panel: see-through with a lit motherboard, GPU and RGB strip visible inside."""
+    def f(x, y):
+        if x in (0, T - 1) or y in (0, T - 1): return (20, 22, 26, 255)
+        if 4 <= y <= 9 and 3 <= x <= 28:                       # graphics card
+            if y == 9: return _rainbow(x / 26.0)
+            return (28, 30, 36, 255) if (x % 9) > 1 else (60, 64, 72, 255)
+        if 14 <= y <= 24 and 6 <= x <= 12: return (44, 48, 56, 255)      # cooler block
+        if 3 <= x <= 5 and 12 <= y <= 28: return _rainbow(y / 20.0)      # RAM strip
+        if (x - y) % 16 in (0, 1): return (150, 200, 220, 60)
+        return (20, 30, 40, 70)
+    return f
+
+
+def rgb_strip():
+    return lambda x, y: _rainbow((x + y) / 32.0)
+
+
+def gaming_screen():
+    def f(x, y):
+        if x in (0, T - 1) or y in (0, T - 1): return "#08080b"
+        base = mix("#1a0b3a", "#0a2a52", y / 32.0)
+        if y > 22:                                         # neon grid floor
+            if y % 4 == 0 or (x + (y - 22) * (x - 16) // 6) % 8 == 0: return "#ff3df0"
+            return mix("#12082a", "#3a0a5a", (y - 22) / 10)
+        if (x - 16) ** 2 + (y - 12) ** 2 < 36: return mix("#ffd23d", "#ff4d7a", (y - 6) / 12)   # sun
+        return base
+    return f
+
+
+def keyboard():
+    def f(x, y):
+        if x in (0, T - 1) or y in (0, T - 1): return "#0c0d10"
+        if x % 4 in (1, 2) and y % 4 in (1, 2): return _rainbow((x + y) / 40.0)
+        return "#15171b"
+    return f
+
+
 MATERIALS = {
     "oak": (grain("#b8945a"), "opaque"),
     "dark_wood": (grain("#5a3b22", seed=40), "opaque"),
@@ -377,4 +435,10 @@ MATERIALS = {
     "charcoal": (flat("#2b2a2a", .12, 55), "opaque"),
     "mail_blue": (metal("#3f6fc0", 56), "opaque"),
     "concrete": (flat("#a9a9a6", .07, 57), "opaque"),
+    "pc_front": (pc_front(), "opaque"),
+    "pc_side": (pc_side(), "blend"),
+    "rgb_strip": (rgb_strip(), "opaque"),
+    "gaming_screen": (gaming_screen(), "opaque"),
+    "keyboard": (keyboard(), "opaque"),
+    "mousepad": (flat("#14161c", .05, 58), "opaque"),
 }

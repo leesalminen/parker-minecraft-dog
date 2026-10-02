@@ -138,3 +138,155 @@ def sym(cubes, c):
     if "inflate" in c:
         m["inflate"] = c["inflate"]
     cubes.append(m)
+
+
+# ====================================================================== realism helpers (added for v1.8)
+def loft(stations, skin, dz=4, x0=0.0):
+    """Stack thin slabs along Z to make a smooth tapered body (fuselage, tail boom, hull, nose cone).
+    stations: [(z, half_width, y_bottom, y_top), ...] ascending in z; values are linearly interpolated."""
+    out = []
+    z = stations[0][0]
+    end = stations[-1][0]
+    while z < end - 1e-6:
+        step = min(dz, end - z)
+        zc = z + step / 2.0
+        for a, b in zip(stations, stations[1:]):
+            if a[0] <= zc <= b[0]:
+                t = (zc - a[0]) / (b[0] - a[0]) if b[0] != a[0] else 0
+                hw = a[1] + (b[1] - a[1]) * t
+                y0 = a[2] + (b[2] - a[2]) * t
+                y1 = a[3] + (b[3] - a[3]) * t
+                break
+        out.append({"o": [x0 - hw, y0, z], "s": [max(1, round(2 * hw)), max(1, round(y1 - y0)), max(1, round(step))],
+                    "skin": skin})
+        z += step
+    return out
+
+
+def wheel_cubes(cx, cy, cz, D, w, skin="tire"):
+    """Round wheel about the X axis: four D x (0.414 D) slabs at 0/45/90/135 degrees make an octagon.
+    Pair with tire_round() as the skin painter (it reads radius/angle from the cube, so seams vanish)."""
+    s = max(2, round(D * 0.4142))
+    return [{"o": [cx - w / 2.0, cy - D / 2.0, cz - s / 2.0], "s": [int(w), int(D), int(s)], "skin": skin,
+             "rot": [a, 0, 0], "pivot": [cx, cy, cz]} for a in (0, 45, 90, 135)]
+
+
+def tire_round(hub="#c3ccd2", lugs=0, lug_depth=0.55, rim_frac=0.56, bolts=5, tread="#15181b", side="#1c1f23"):
+    """Painter for wheel_cubes: true radial rings on the sidewall, lugged or ribbed tread on the outer facets."""
+    def fn(p):
+        c = p.cube
+        cy, cz = c["pivot"][1], c["pivot"][2]
+        th = math.radians(c["rot"][0])
+        x, y, z = p.p
+        dy, dz = y - cy, z - cz
+        r = math.hypot(dy, dz)
+        R = c["s"][1] / 2.0
+        ang = math.atan2(dy, dz) + th
+        if p.face in ("east", "west"):
+            if r > R * 0.985:
+                return shade(side, 0.8)
+            if r > R * rim_frac + 2.0:
+                base = mix(side, "#2b3036", noise3(x, y, z, 7, 1.6))
+                base = shade(base, 0.9 + 0.2 * noise3(x, y, z, 8, 0.7))
+                if r > R * 0.9 and hash01(int(ang * 9), int(r), 3) > 0.985:
+                    base = shade(base, 1.4)               # sidewall lettering fleck
+                return base
+            if r > R * rim_frac - 0.6:
+                return shade(hub, 0.55)                    # rim lip shadow
+            k = mix(hub, "#59636b", 0.2 + 0.5 * noise3(x, y, z, 9, 1.4))
+            if r < R * 0.16:
+                return shade("#3a4148", 0.9)
+            for i in range(bolts):
+                ba = 2 * math.pi * i / bolts
+                bx, by = math.cos(ba) * R * 0.3, math.sin(ba) * R * 0.3
+                px_, py_ = math.cos(ang) * r, math.sin(ang) * r
+                if math.hypot(px_ - bx, py_ - by) < max(0.9, R * 0.06):
+                    return shade(hub, 1.25)
+            if R * 0.36 < r < R * 0.4:
+                return shade(k, 0.7)
+            return k
+        # tread facets
+        col = mix(tread, "#2d3237", noise3(x, y, z, 11, 1.5))
+        if lugs:
+            f = ((ang / (2 * math.pi)) * lugs) % 1.0
+            u = p.x / max(1.0, p.fw - 1)
+            block = (f < 0.5) != (abs(u - 0.5) < 0.16 and False)
+            if f < 0.42:
+                col = shade(col, 1.18)
+            else:
+                col = shade(col, 1 - lug_depth * 0.6)
+            if abs(p.x + 0.5 - p.fw / 2.0) < 0.6 and p.fw > 6:
+                col = shade(col, 0.75)                     # centre groove
+        else:
+            for g in (0.25, 0.5, 0.75):
+                if abs((p.x + 0.5) / p.fw - g) < 0.05:
+                    col = shade(col, 0.6)
+        return col
+    return fn
+
+
+def seat_set(x, y, z, w=14, d=13, back_h=20, skin="fabric", trim="under", head=True, lean=-8):
+    """A bucket seat: cushion, leaning backrest, headrest, side bolsters.  (x, z) = centre of cushion, y = cushion bottom."""
+    cs = [
+        {"o": [x - w / 2.0, y, z - d / 2.0], "s": [w, 4, d], "skin": skin},
+        {"o": [x - w / 2.0, y + 4, z - d / 2.0 + 1], "s": [2, 2, d - 2], "skin": skin},
+        {"o": [x + w / 2.0 - 2, y + 4, z - d / 2.0 + 1], "s": [2, 2, d - 2], "skin": skin},
+        {"o": [x - w / 2.0, y + 4, z + d / 2.0], "s": [w, back_h, 3], "skin": skin, "rot": [lean, 0, 0],
+         "pivot": [x, y + 4, z + d / 2.0]},
+        {"o": [x - w / 2.0 + 1, y + 4 + back_h - 1, z + d / 2.0 + 0.5], "s": [2, 1, 3], "skin": trim, "rot": [lean, 0, 0],
+         "pivot": [x, y + 4, z + d / 2.0]},
+    ]
+    if head:
+        cs.append({"o": [x - 3.5, y + 4 + back_h, z + d / 2.0 + 0.4], "s": [7, 5, 3], "skin": skin, "rot": [lean, 0, 0],
+                   "pivot": [x, y + 4, z + d / 2.0]})
+    return cs
+
+
+def cyl_z(cx, cy, z0, length, D, skin):
+    """Octagonal cylinder along Z (nacelle, barrel): four D x 0.414D slabs at 0/45/90/135 degrees."""
+    D = int(D); t = max(2, int(round(D * 0.4142)))
+    return [{"o": [cx - D / 2.0, cy - t / 2.0, z0], "s": [D, t, int(length)], "skin": skin,
+             "rot": [0, 0, a], "pivot": [cx, cy, z0 + length / 2.0]} for a in (0, 45, 90, 135)]
+
+
+def ring_z(cx, cy, z, R, t, dz, skin):
+    """Hollow regular-octagon frame (apothem R) in the XY plane, open in the middle so a pilot inside can see out."""
+    out = []
+    side = max(2, int(round(R * 0.8284 + t * 0.8)))
+    for k in range(8):
+        th = k * 45
+        a = R - t / 2.0
+        bx, by = cx + a * math.sin(math.radians(th)), cy + a * math.cos(math.radians(th))
+        c = {"o": [bx - side / 2.0, by - t / 2.0, z], "s": [side, int(t), int(dz)], "skin": skin}
+        if th:
+            c["rot"] = [0, 0, th]; c["pivot"] = [bx, by, z + dz / 2.0]
+        out.append(c)
+    return out
+
+
+def panel_paint(cy, R, base="#1d2a3a", frame="#8b949c", spoke="#4a535c"):
+    """Hexagonal solar-panel painter (pointy-top hexagon in the YZ plane centred at height cy, z=0)."""
+    def fn(p):
+        x, y, z = p.p
+        if p.face not in ("east", "west"):
+            return shade(mix("#2a2f35", frame, 0.4 + 0.4 * noise3(x, y, z, 5, 2.0)), 0.9 if p.face == "bottom" else 1.0)
+        yy, zz = y - cy, z
+        hn = max(abs(yy), abs(yy) * 0.5 + abs(zz) * 0.866)
+        if hn > R - 3.2:
+            return shade(frame, 0.85 + 0.2 * noise3(x, y, z, 6, 1.5))
+        ang = math.degrees(math.atan2(zz, yy)) % 60.0
+        if min(ang, 60.0 - ang) * math.pi / 180 * max(hn, 1) < 0.9 or hn < 5:
+            return shade(spoke, 0.9 + 0.2 * noise3(x, y, z, 7, 1.2))
+        for rr in (R * 0.36, R * 0.68):
+            if abs(hn - rr) < 0.8:
+                return shade(spoke, 0.95)
+        c = mix(base, "#34506e", noise3(x, y, z, 8, 3.0))
+        return shade(c, 0.9 + 0.2 * noise3(x, y, z, 9, 0.8))
+    return fn
+
+
+def cyl_y(cx, cz, y0, h, D, skin):
+    """Upright octagonal prism (rocket body, tank): four D x 0.414D slabs turned 0/45/90/135 degrees about Y."""
+    D = int(D); t = max(2, int(round(D * 0.4142)))
+    return [{"o": [cx - D / 2.0, y0, cz - t / 2.0], "s": [D, int(h), t], "skin": skin,
+             "rot": [0, a, 0], "pivot": [cx, y0 + h / 2.0, cz]} for a in (0, 45, 90, 135)]

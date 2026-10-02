@@ -135,7 +135,9 @@ SPEC = {
         "role": "mount",
         "health": 60, "speed": 0.25, "damage": 0, "box": [1.7, 2.2],
         "hover": True, "fly_speed": 0.3, "knockback_resist": 1.0, "family": ["vehicle", "gx_vehicle"],
-        "ride": {"seats": [[-0.38, 0.53, -0.16], [0.38, 0.53, -0.16]]},
+        # y = cushion top (0.75) minus ~0.09: the old 0.53 sank the rider into the cushion.  lock 181 = free head
+        # look; the script (tickHeli) turns the copter toward the pilot's yaw instead of the camera being pinned.
+        "ride": {"seats": [[-0.38, 0.66, -0.16], [0.38, 0.66, -0.16]], "lock": 181},
         "sound": ("iron", [0.5, 0.6]),
         "xp": 0,
     },

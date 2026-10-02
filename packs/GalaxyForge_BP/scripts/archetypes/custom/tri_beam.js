@@ -27,7 +27,7 @@ export function onHold(ctx) {
   st.beam = (st.beam ?? 0) + 1;
   heat.add(st, d, p.heat_rate ?? 1);
 
-  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 40);
+  const r = raycast(ctx.dim, ctx.eye, ctx.view, p.range ?? 40, { ignoreId: ctx.player.id });
   const c = { ...ctx, point: r.point };
   const tickRate = p.tick_rate ?? 4;
 

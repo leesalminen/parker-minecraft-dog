@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gx:giant_magma_helmet"
+    },
+    "tags": [
+      "gx_armor_forge"
+    ],
+    "pattern": [
+      "XXX",
+      "XCX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:blaze_rod"
+      },
+      "C": {
+        "item": "minecraft:magma_cream"
+      }
+    },
+    "result": {
+      "item": "gx:giant_magma_helmet",
+      "count": 1
+    }
+  }
+}
